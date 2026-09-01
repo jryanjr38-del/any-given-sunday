@@ -643,9 +643,11 @@ function render(){
     body.appendChild(wrap);
     const w = P.meta.weights;
     const when = new Date(P.meta.generated).toLocaleString('en-US',{month:'long',day:'numeric',hour:'numeric',minute:'2-digit'});
+    const basisNote = P.meta.basisIsPriorSeason ? ` from the ${P.meta.basis} season` : '';
+    const pickThrough = P.meta.pickSeasons ? P.meta.pickSeasons[P.meta.pickSeasons.length-1] : '';
     method.textContent = w.points
-      ? `Score = ${Math.round(w.value*100)}% KeepTradeCut value — the top ${P.meta.depth} players (1QB) plus every rookie pick through ${P.meta.pickSeasons ? P.meta.pickSeasons[P.meta.pickSeasons.length-1] : ''} — ${Math.round(w.points*100)}% points per game, ${Math.round(w.record*100)}% win rate, each scaled across the league. Built ${when} from ${P.meta.matched} valued players.`
-      : `Preseason: score is KeepTradeCut value of each roster's top ${P.meta.depth} players (1QB) plus every rookie pick through ${P.meta.pickSeasons ? P.meta.pickSeasons[P.meta.pickSeasons.length-1] : ''}, scaled across the league. Points and record join the formula once games are played. Built ${when} from ${P.meta.matched} valued players.`;
+      ? `Score = ${Math.round(w.value*100)}% KeepTradeCut value — the top ${P.meta.depth} players (1QB) plus every rookie pick through ${pickThrough} — ${Math.round(w.points*100)}% points per game${basisNote}, ${Math.round(w.record*100)}% win rate${basisNote}, each scaled across the league. Built ${when} from ${P.meta.matched} valued players.`
+      : `Score is KeepTradeCut value of each roster's top ${P.meta.depth} players (1QB) plus every rookie pick through ${pickThrough}, scaled across the league. Built ${when} from ${P.meta.matched} valued players.`;
   })();
 
   /* ---- write-ups ---- */
