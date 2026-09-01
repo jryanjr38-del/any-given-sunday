@@ -1,0 +1,528 @@
+{
+ "meta": {
+  "season": 2026,
+  "basis": 2025,
+  "basisIsPriorSeason": true,
+  "generated": "2026-09-01T20:17:32.811Z",
+  "depth": 15,
+  "rounds": 4,
+  "pickSeasons": [
+   2027,
+   2028,
+   2029
+  ],
+  "weights": {
+   "value": 0.55,
+   "points": 0.28,
+   "record": 0.17
+  },
+  "matched": 294,
+  "looked": 300,
+  "sources": [
+   "Sleeper rosters and traded picks",
+   "KeepTradeCut dynasty values (1QB), players and rookie picks"
+  ]
+ },
+ "rankings": [
+  {
+   "rid": 1,
+   "team": "Rum Hammers",
+   "value": 112109,
+   "playerValue": 83387,
+   "picksValue": 28722,
+   "picks": 8,
+   "bestPicks": [
+    {
+     "label": "2027 1st (Jimmy Marino)",
+     "value": 6312
+    },
+    {
+     "label": "2028 1st",
+     "value": 5196
+    },
+    {
+     "label": "2027 2nd",
+     "value": 4205
+    }
+   ],
+   "top": [
+    {
+     "name": "Bijan Robinson",
+     "pos": "RB",
+     "value": 9994
+    },
+    {
+     "name": "Josh Allen",
+     "pos": "QB",
+     "value": 7591
+    },
+    {
+     "name": "Drake Maye",
+     "pos": "QB",
+     "value": 6383
+    }
+   ],
+   "counted": 15,
+   "rostered": 37,
+   "parts": {
+    "value": 76.5,
+    "points": 85.8,
+    "record": 77.8
+   },
+   "ppg": 135.78,
+   "score": 79.3,
+   "rank": 1,
+   "move": 0
+  },
+  {
+   "rid": 4,
+   "team": "The Uncletaker",
+   "value": 109025,
+   "playerValue": 91811,
+   "picksValue": 17214,
+   "picks": 6,
+   "bestPicks": [
+    {
+     "label": "2027 2nd",
+     "value": 4205
+    },
+    {
+     "label": "2028 2nd",
+     "value": 3661
+    },
+    {
+     "label": "2027 3rd",
+     "value": 2933
+    }
+   ],
+   "top": [
+    {
+     "name": "Puka Nacua",
+     "pos": "WR",
+     "value": 8567
+    },
+    {
+     "name": "Malik Nabers",
+     "pos": "WR",
+     "value": 7552
+    },
+    {
+     "name": "Trey McBride",
+     "pos": "TE",
+     "value": 7508
+    }
+   ],
+   "counted": 15,
+   "rostered": 36,
+   "parts": {
+    "value": 67.3,
+    "points": 100,
+    "record": 77.8
+   },
+   "ppg": 140.28,
+   "score": 78.2,
+   "rank": 2,
+   "move": 0
+  },
+  {
+   "rid": 6,
+   "team": "Kenzos",
+   "value": 111107,
+   "playerValue": 86590,
+   "picksValue": 24517,
+   "picks": 7,
+   "bestPicks": [
+    {
+     "label": "2027 1st",
+     "value": 6312
+    },
+    {
+     "label": "2028 1st",
+     "value": 5196
+    },
+    {
+     "label": "2028 2nd",
+     "value": 3661
+    }
+   ],
+   "top": [
+    {
+     "name": "Ja'Marr Chase",
+     "pos": "WR",
+     "value": 9999
+    },
+    {
+     "name": "Jahmyr Gibbs",
+     "pos": "RB",
+     "value": 9998
+    },
+    {
+     "name": "Kenneth Walker III",
+     "pos": "RB",
+     "value": 6376
+    }
+   ],
+   "counted": 15,
+   "rostered": 36,
+   "parts": {
+    "value": 73.5,
+    "points": 71.8,
+    "record": 66.7
+   },
+   "ppg": 131.31,
+   "score": 71.9,
+   "rank": 3,
+   "move": 0
+  },
+  {
+   "rid": 8,
+   "team": "Shadynasty",
+   "value": 104470,
+   "playerValue": 71543,
+   "picksValue": 32927,
+   "picks": 9,
+   "bestPicks": [
+    {
+     "label": "2027 1st",
+     "value": 6312
+    },
+    {
+     "label": "2028 1st",
+     "value": 5196
+    },
+    {
+     "label": "2027 2nd",
+     "value": 4205
+    }
+   ],
+   "top": [
+    {
+     "name": "Chris Olave",
+     "pos": "WR",
+     "value": 6246
+    },
+    {
+     "name": "Ladd McConkey",
+     "pos": "WR",
+     "value": 6223
+    },
+    {
+     "name": "Christian McCaffrey",
+     "pos": "RB",
+     "value": 6033
+    }
+   ],
+   "counted": 15,
+   "rostered": 35,
+   "parts": {
+    "value": 53.7,
+    "points": 87.9,
+    "record": 100
+   },
+   "ppg": 136.43,
+   "score": 71.1,
+   "rank": 4,
+   "move": 0
+  },
+  {
+   "rid": 7,
+   "team": "IR Specialist",
+   "value": 107783,
+   "playerValue": 79061,
+   "picksValue": 28722,
+   "picks": 8,
+   "bestPicks": [
+    {
+     "label": "2027 1st",
+     "value": 6312
+    },
+    {
+     "label": "2028 1st",
+     "value": 5196
+    },
+    {
+     "label": "2027 2nd",
+     "value": 4205
+    }
+   ],
+   "top": [
+    {
+     "name": "Jaxon Smith-Njigba",
+     "pos": "WR",
+     "value": 9236
+    },
+    {
+     "name": "De'Von Achane",
+     "pos": "RB",
+     "value": 7302
+    },
+    {
+     "name": "Emeka Egbuka",
+     "pos": "WR",
+     "value": 6513
+    }
+   ],
+   "counted": 15,
+   "rostered": 35,
+   "parts": {
+    "value": 63.6,
+    "points": 76.7,
+    "record": 77.8
+   },
+   "ppg": 132.89,
+   "score": 69.7,
+   "rank": 5,
+   "move": 0
+  },
+  {
+   "rid": 2,
+   "team": "Thunder Gun Express",
+   "value": 120004,
+   "playerValue": 77386,
+   "picksValue": 42618,
+   "picks": 10,
+   "bestPicks": [
+    {
+     "label": "2027 1st (Rum Hammers)",
+     "value": 6312
+    },
+    {
+     "label": "2027 1st",
+     "value": 6312
+    },
+    {
+     "label": "2027 1st (Brendawg21)",
+     "value": 6312
+    }
+   ],
+   "top": [
+    {
+     "name": "Brock Bowers",
+     "pos": "TE",
+     "value": 8285
+    },
+    {
+     "name": "Justin Jefferson",
+     "pos": "WR",
+     "value": 7523
+    },
+    {
+     "name": "Ashton Jeanty",
+     "pos": "RB",
+     "value": 7490
+    }
+   ],
+   "counted": 15,
+   "rostered": 35,
+   "parts": {
+    "value": 100,
+    "points": 0,
+    "record": 22.2
+   },
+   "ppg": 108.52,
+   "score": 58.8,
+   "rank": 6,
+   "move": 0
+  },
+  {
+   "rid": 9,
+   "team": "Los Muertos",
+   "value": 99269,
+   "playerValue": 74752,
+   "picksValue": 24517,
+   "picks": 7,
+   "bestPicks": [
+    {
+     "label": "2027 1st",
+     "value": 6312
+    },
+    {
+     "label": "2028 1st",
+     "value": 5196
+    },
+    {
+     "label": "2028 2nd",
+     "value": 3661
+    }
+   ],
+   "top": [
+    {
+     "name": "Amon-Ra St. Brown",
+     "pos": "WR",
+     "value": 8237
+    },
+    {
+     "name": "CeeDee Lamb",
+     "pos": "WR",
+     "value": 7457
+    },
+    {
+     "name": "James Cook",
+     "pos": "RB",
+     "value": 7013
+    }
+   ],
+   "counted": 15,
+   "rostered": 35,
+   "parts": {
+    "value": 38.2,
+    "points": 62.2,
+    "record": 55.6
+   },
+   "ppg": 128.28,
+   "score": 47.9,
+   "rank": 7,
+   "move": 0
+  },
+  {
+   "rid": 10,
+   "team": "Brendawg21",
+   "value": 103023,
+   "playerValue": 69105,
+   "picksValue": 33918,
+   "picks": 9,
+   "bestPicks": [
+    {
+     "label": "2027 1st (The Uncletaker)",
+     "value": 6312
+    },
+    {
+     "label": "2028 1st (The Uncletaker)",
+     "value": 5196
+    },
+    {
+     "label": "2028 1st",
+     "value": 5196
+    }
+   ],
+   "top": [
+    {
+     "name": "Jeremiyah Love",
+     "pos": "RB",
+     "value": 7487
+    },
+    {
+     "name": "DeVonta Smith",
+     "pos": "WR",
+     "value": 6164
+    },
+    {
+     "name": "Jadarian Price",
+     "pos": "RB",
+     "value": 5861
+    }
+   ],
+   "counted": 15,
+   "rostered": 31,
+   "parts": {
+    "value": 49.4,
+    "points": 35.9,
+    "record": 22.2
+   },
+   "ppg": 119.93,
+   "score": 41,
+   "rank": 8,
+   "move": 0
+  },
+  {
+   "rid": 5,
+   "team": "druppert",
+   "value": 103810,
+   "playerValue": 72155,
+   "picksValue": 31655,
+   "picks": 9,
+   "bestPicks": [
+    {
+     "label": "2027 1st",
+     "value": 6312
+    },
+    {
+     "label": "2028 1st",
+     "value": 5196
+    },
+    {
+     "label": "2027 2nd",
+     "value": 4205
+    }
+   ],
+   "top": [
+    {
+     "name": "George Pickens",
+     "pos": "WR",
+     "value": 6611
+    },
+    {
+     "name": "Carnell Tate",
+     "pos": "WR",
+     "value": 6123
+    },
+    {
+     "name": "Caleb Williams",
+     "pos": "QB",
+     "value": 5946
+    }
+   ],
+   "counted": 15,
+   "rostered": 35,
+   "parts": {
+    "value": 51.7,
+    "points": 17.2,
+    "record": 0
+   },
+   "ppg": 113.99,
+   "score": 33.3,
+   "rank": 9,
+   "move": 0
+  },
+  {
+   "rid": 3,
+   "team": "Jimmy Marino",
+   "value": 86469,
+   "playerValue": 64059,
+   "picksValue": 22410,
+   "picks": 7,
+   "bestPicks": [
+    {
+     "label": "2028 1st",
+     "value": 5196
+    },
+    {
+     "label": "2027 2nd",
+     "value": 4205
+    },
+    {
+     "label": "2028 2nd",
+     "value": 3661
+    }
+   ],
+   "top": [
+    {
+     "name": "Saquon Barkley",
+     "pos": "RB",
+     "value": 5987
+    },
+    {
+     "name": "A.J. Brown",
+     "pos": "WR",
+     "value": 5960
+    },
+    {
+     "name": "Jayden Daniels",
+     "pos": "QB",
+     "value": 5891
+    }
+   ],
+   "counted": 15,
+   "rostered": 34,
+   "parts": {
+    "value": 0,
+    "points": 33.1,
+    "record": 55.6
+   },
+   "ppg": 119.04,
+   "score": 18.7,
+   "rank": 10,
+   "move": 0
+  }
+ ]
+}
