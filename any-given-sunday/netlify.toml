@@ -1,0 +1,20 @@
+# Every deploy pulls fresh numbers from Sleeper before publishing.
+# If Sleeper is unreachable, the build script leaves the committed
+# history.json alone and the deploy still succeeds.
+
+[build]
+  command = "node scripts/build-history.mjs && node scripts/build-power.mjs"
+  publish = "."
+
+[build.environment]
+  NODE_VERSION = "20"
+
+[[headers]]
+  for = "/*.json"
+  [headers.values]
+    Cache-Control = "public, max-age=300"
+
+[[headers]]
+  for = "/index.html"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"

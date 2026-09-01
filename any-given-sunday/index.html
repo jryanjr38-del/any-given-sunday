@@ -1,0 +1,694 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="League site for the Any Given Sunday dynasty league: standings, schedule, write-ups, season history and the all-time record book.">
+<meta name="color-scheme" content="dark">
+<title>Any Given Sunday Dynasty</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600&family=Karla:ital,wght@0,400;0,500;0,700;1,400&display=swap">
+<style>
+:root{
+  --bg:#071310;
+  --bg-2:#0B1E17;
+  --panel:#0E2620;
+  --panel-2:#123027;
+  --line:#1C4436;
+  --line-soft:#153428;
+  --text:#E6F1E9;
+  --muted:#87A797;
+  --dim:#5F7E6E;
+  --lime:#B4FF3C;
+  --lime-2:#7FD226;
+  --gold:#EBC97B;
+  --warn:#FF8A5B;
+  --shadow:0 1px 0 rgba(180,255,60,.06);
+}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+body{
+  margin:0;background:var(--bg);color:var(--text);
+  font-family:Karla,"Helvetica Neue",Arial,sans-serif;
+  font-size:15px;line-height:1.55;-webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:1120px;margin:0 auto;padding:0 22px}
+h1,h2,h3,.num,th{font-family:Oswald,"Arial Narrow",Arial,sans-serif;font-weight:500;letter-spacing:.02em}
+.num,td.n,th.n{font-variant-numeric:tabular-nums}
+a{color:var(--lime-2)}
+
+/* ---------- masthead ---------- */
+.mast{
+  position:relative;overflow:hidden;
+  background:
+    linear-gradient(180deg,rgba(7,19,16,.10) 0%,rgba(7,19,16,.85) 78%,var(--bg) 100%),
+    repeating-linear-gradient(90deg,rgba(180,255,60,.11) 0 1px,transparent 1px 68px),
+    radial-gradient(115% 130% at 12% 0%,#17402F 0%,#0A1D16 55%,#071310 100%);
+  border-bottom:1px solid var(--line);
+}
+.mast .wrap{padding-top:52px;padding-bottom:34px}
+.eyebrow{
+  font-family:Oswald,Arial,sans-serif;font-size:12px;letter-spacing:.34em;
+  text-transform:uppercase;color:var(--lime);margin:0 0 14px
+}
+h1{
+  font-size:clamp(46px,8.4vw,104px);line-height:.92;margin:0;
+  text-transform:uppercase;font-weight:600;text-wrap:balance;
+}
+h1 .thin{display:block;font-weight:300;color:var(--muted)}
+.tagline{max-width:60ch;color:var(--muted);margin:18px 0 0;font-size:16px}
+.tagline b{color:var(--text);font-weight:500}
+.settings{
+  margin-top:26px;display:flex;flex-wrap:wrap;gap:0 18px;
+  font-family:Oswald,Arial,sans-serif;font-size:13px;letter-spacing:.06em;
+  text-transform:uppercase;color:var(--dim)
+}
+.settings span::after{content:"·";margin-left:18px;color:var(--line)}
+.settings span:last-child::after{content:""}
+
+/* ---------- nav ---------- */
+nav{position:sticky;top:0;z-index:20;background:rgba(7,19,16,.93);backdrop-filter:blur(8px);border-bottom:1px solid var(--line-soft)}
+nav .wrap{display:flex;gap:26px;overflow-x:auto;padding-top:13px;padding-bottom:13px}
+nav a{
+  font-family:Oswald,Arial,sans-serif;font-size:13px;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--muted);text-decoration:none;white-space:nowrap;padding-bottom:2px;border-bottom:2px solid transparent
+}
+nav a:hover,nav a:focus-visible{color:var(--lime);border-bottom-color:var(--lime)}
+
+/* ---------- sections ---------- */
+section{padding:56px 0 8px}
+.sec-head{display:flex;align-items:baseline;gap:16px;flex-wrap:wrap;margin-bottom:6px}
+h2{font-size:13px;letter-spacing:.3em;text-transform:uppercase;color:var(--lime);margin:0}
+.sec-sub{color:var(--muted);font-size:14px;margin:0 0 26px;max-width:70ch}
+h3{font-size:19px;margin:0 0 12px;text-transform:uppercase;letter-spacing:.08em;color:var(--text)}
+
+/* ---------- title row ---------- */
+.titles{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:1px;background:var(--line-soft);border:1px solid var(--line-soft)}
+.title-card{background:var(--bg-2);padding:20px 20px 22px}
+.title-card .yr{font-family:Oswald,Arial,sans-serif;font-size:13px;letter-spacing:.22em;color:var(--dim)}
+.title-card .champ{font-family:Oswald,Arial,sans-serif;font-size:25px;text-transform:uppercase;color:var(--gold);line-height:1.15;margin-top:4px}
+.title-card .via{font-size:13px;color:var(--muted);margin-top:8px}
+.title-card.next{background:linear-gradient(180deg,#10281F,#0B1E17)}
+.title-card.next .champ{color:var(--lime)}
+
+/* ---------- tables ---------- */
+.scroll{overflow-x:auto;border:1px solid var(--line-soft);background:var(--bg-2)}
+table{width:100%;border-collapse:collapse;font-size:14px;min-width:600px}
+th{
+  text-align:left;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--dim);
+  font-weight:400;padding:12px 12px;border-bottom:1px solid var(--line);white-space:nowrap;background:var(--panel)
+}
+td{padding:11px 12px;border-bottom:1px solid var(--line-soft);white-space:nowrap}
+tbody tr:last-child td{border-bottom:0}
+tbody tr:hover td{background:rgba(180,255,60,.045)}
+td.n,th.n{text-align:right}
+.team-cell{font-family:Oswald,Arial,sans-serif;font-size:16px;letter-spacing:.03em;text-transform:uppercase}
+.rank{color:var(--dim);width:34px;font-variant-numeric:tabular-nums}
+.mine td{box-shadow:inset 3px 0 0 var(--lime)}
+.mine .team-cell{color:var(--lime)}
+.champ-row .team-cell{color:var(--gold)}
+.pill{
+  display:inline-block;font-family:Oswald,Arial,sans-serif;font-size:10px;letter-spacing:.14em;
+  text-transform:uppercase;padding:2px 7px;border:1px solid currentColor;margin-left:9px;vertical-align:1px
+}
+.pill.gold{color:var(--gold)}
+.pill.lime{color:var(--lime-2)}
+.pill.playoff{color:var(--dim)}
+.sep{border-top:1px dashed var(--line)}
+
+/* ---------- season tabs ---------- */
+.tabs{display:flex;gap:1px;background:var(--line-soft);border:1px solid var(--line-soft);margin-bottom:20px;width:fit-content}
+.tabs button{
+  font-family:Oswald,Arial,sans-serif;font-size:15px;letter-spacing:.12em;
+  background:var(--bg-2);color:var(--muted);border:0;padding:10px 20px;cursor:pointer
+}
+.tabs button[aria-selected="true"]{background:var(--lime);color:#071310}
+.tabs button:hover:not([aria-selected="true"]){color:var(--lime)}
+.season-note{color:var(--muted);font-size:14px;margin:16px 0 0}
+.season-note b{color:var(--text);font-weight:500}
+
+/* ---------- record book ---------- */
+.records{display:grid;grid-template-columns:repeat(auto-fit,minmax(330px,1fr));gap:26px}
+.rec{border-top:2px solid var(--lime);padding-top:14px}
+.rec h3{font-size:15px;letter-spacing:.14em;margin-bottom:2px}
+.rec .cap{color:var(--dim);font-size:13px;margin:0 0 12px}
+ol.rl{list-style:none;margin:0;padding:0;counter-reset:r}
+ol.rl li{
+  counter-increment:r;display:grid;grid-template-columns:22px 1fr auto;gap:12px;align-items:baseline;
+  padding:9px 0;border-bottom:1px solid var(--line-soft)
+}
+ol.rl li:last-child{border-bottom:0}
+ol.rl li::before{content:counter(r);font-family:Oswald,Arial,sans-serif;color:var(--dim);font-size:13px}
+ol.rl li:first-child::before{color:var(--lime)}
+.rl .who{font-family:Oswald,Arial,sans-serif;font-size:15px;text-transform:uppercase;letter-spacing:.03em}
+.rl .when{display:block;font-family:Karla,sans-serif;font-size:12.5px;color:var(--muted);text-transform:none;letter-spacing:0}
+.rl .val{font-family:Oswald,Arial,sans-serif;font-size:19px;font-variant-numeric:tabular-nums;color:var(--lime)}
+.rl li:not(:first-child) .val{color:var(--text)}
+.rl .val.cold{color:var(--warn)}
+
+/* ---------- write-ups ---------- */
+.wu-layout{display:grid;grid-template-columns:minmax(0,1fr) 268px;gap:34px;align-items:start}
+@media (max-width:840px){.wu-layout{grid-template-columns:1fr}}
+.wu-main{border-left:2px solid var(--lime);padding-left:22px}
+.wu-kicker{font-family:Oswald,Arial,sans-serif;font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--lime);margin:0 0 6px}
+.wu-title{font-family:Oswald,Arial,sans-serif;font-size:clamp(24px,3.4vw,34px);text-transform:uppercase;line-height:1.08;margin:0;letter-spacing:.01em;text-wrap:balance}
+.wu-by{font-size:13px;color:var(--dim);margin:9px 0 18px}
+.wu-body p{margin:0 0 14px;max-width:66ch;font-size:15.5px}
+.wu-body p:last-child{margin-bottom:0}
+.wu-empty{color:var(--muted);font-size:15px}
+.wu-archive h4{font-family:Oswald,Arial,sans-serif;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--dim);margin:0 0 10px;font-weight:400}
+.wu-archive ul{list-style:none;margin:0;padding:0;border-top:1px solid var(--line-soft)}
+.wu-archive li{border-bottom:1px solid var(--line-soft)}
+.wu-archive button{
+  width:100%;text-align:left;background:none;border:0;cursor:pointer;padding:11px 4px;color:var(--muted);
+  font-family:Karla,sans-serif;font-size:13.5px;line-height:1.35
+}
+.wu-archive button:hover{color:var(--text)}
+.wu-archive button b{display:block;font-family:Oswald,Arial,sans-serif;font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--dim);font-weight:400;margin-bottom:2px}
+.wu-archive button[aria-current="true"]{color:var(--lime)}
+.wu-archive button[aria-current="true"] b{color:var(--lime-2)}
+.wu-tools{display:flex;gap:10px;margin-left:auto}
+.btn{
+  font-family:Oswald,Arial,sans-serif;font-size:12px;letter-spacing:.14em;text-transform:uppercase;
+  background:transparent;color:var(--lime);border:1px solid var(--line);padding:7px 14px;cursor:pointer
+}
+.btn:hover{border-color:var(--lime);background:rgba(180,255,60,.07)}
+.btn.primary{background:var(--lime);color:#071310;border-color:var(--lime)}
+.btn.ghost{color:var(--muted)}
+.btn[disabled]{opacity:.5;cursor:default}
+.editor{background:var(--bg-2);border:1px solid var(--line);padding:20px;margin-bottom:26px}
+.editor .row{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:14px}
+.editor label{display:block;font-family:Oswald,Arial,sans-serif;font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--dim);margin-bottom:5px}
+.editor input,.editor select,.editor textarea{
+  background:#0A1C15;border:1px solid var(--line);color:var(--text);font-family:Karla,sans-serif;font-size:15px;
+  padding:9px 11px;width:100%
+}
+.editor textarea{min-height:220px;line-height:1.55;resize:vertical}
+.editor input:focus,.editor select:focus,.editor textarea:focus,.btn:focus-visible,nav a:focus-visible{outline:2px solid var(--lime);outline-offset:2px}
+.editor .hint{color:var(--dim);font-size:12.5px;margin:0 0 14px}
+.editor .actions{display:flex;gap:10px;align-items:center}
+.editor .msg{font-size:13px;color:var(--warn);margin-left:6px}
+.f-week{flex:0 0 110px}
+.f-season{flex:0 0 120px}
+.f-author{flex:1 1 200px}
+
+/* ---------- schedule ---------- */
+.weeks{display:flex;flex-wrap:wrap;gap:1px;background:var(--line-soft);border:1px solid var(--line-soft)}
+.week{background:var(--bg-2);padding:14px 15px 16px;flex:1 1 215px;min-width:215px}
+.week .wk{font-family:Oswald,Arial,sans-serif;font-size:12px;letter-spacing:.2em;color:var(--dim);margin-bottom:9px}
+.week.live{background:var(--panel-2)}
+.week.live .wk{color:var(--lime)}
+.mu{font-size:13.5px;padding:4px 0;color:var(--muted);display:flex;gap:6px}
+.mu .at{color:var(--dim);font-size:11px;align-self:center}
+.mu b{font-weight:500;color:var(--text)}
+.mu .me{color:var(--lime)}
+
+/* ---------- h2h ---------- */
+.h2h{border-collapse:collapse;font-size:12.5px;min-width:620px}
+.h2h th{background:transparent;border-bottom:1px solid var(--line);padding:8px 6px;text-align:center;font-size:10px;letter-spacing:.08em}
+.h2h th.row{text-align:left;padding-left:12px;font-family:Oswald,Arial,sans-serif;font-size:13px;letter-spacing:.04em;text-transform:uppercase;color:var(--muted)}
+.h2h td{text-align:center;padding:8px 6px;border-bottom:1px solid var(--line-soft);font-variant-numeric:tabular-nums;color:var(--muted)}
+.h2h td.self{background:var(--panel);color:var(--dim)}
+.h2h td.win{color:var(--lime)}
+.h2h td.loss{color:var(--warn)}
+
+footer{border-top:1px solid var(--line);margin-top:60px;padding:26px 0 46px;color:var(--dim);font-size:13px}
+footer p{margin:0 0 6px;max-width:75ch}
+@media (max-width:640px){
+  .mast .wrap{padding-top:36px}
+  section{padding:42px 0 6px}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+
+/* ---------- scores on the schedule ---------- */
+.mu.final{color:var(--text)}
+.mu.final i{font-style:normal;color:var(--muted);font-variant-numeric:tabular-nums;margin-left:5px;font-size:12.5px}
+.mu .lost{color:var(--dim)}
+.mu .lost i{color:var(--dim)}
+.mu span{display:inline-block}
+tr.cutline td{border-bottom:2px solid var(--lime)}
+code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.92em;color:var(--lime-2)}
+
+/* ---------- power rankings ---------- */
+.pr{display:flex;flex-direction:column;gap:1px;background:var(--line-soft);border:1px solid var(--line-soft)}
+.pr-row{
+  background:var(--bg-2);display:grid;
+  grid-template-columns:52px minmax(0,1fr) 210px 96px;
+  gap:18px;align-items:center;padding:14px 18px
+}
+@media (max-width:760px){.pr-row{grid-template-columns:44px minmax(0,1fr) 78px;gap:12px}.pr-bars{display:none}}
+.pr-rank{font-family:Oswald,Arial,sans-serif;font-size:26px;color:var(--dim);font-variant-numeric:tabular-nums;text-align:right}
+.pr-row.top .pr-rank{color:var(--lime)}
+.pr-name{font-family:Oswald,Arial,sans-serif;font-size:19px;text-transform:uppercase;letter-spacing:.03em}
+.pr-row.mine .pr-name{color:var(--lime)}
+.pr-sub{font-family:Karla,sans-serif;font-size:12.5px;color:var(--muted);text-transform:none;letter-spacing:0;margin-top:3px}
+.pr-move{font-family:Oswald,Arial,sans-serif;font-size:12px;margin-left:9px;vertical-align:2px}
+.pr-move.up{color:var(--lime-2)}
+.pr-move.down{color:var(--warn)}
+.pr-move.flat{color:var(--dim)}
+.pr-bars{display:flex;flex-direction:column;gap:5px}
+.pr-bar{display:grid;grid-template-columns:52px 1fr;gap:8px;align-items:center;font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--dim);font-family:Oswald,Arial,sans-serif}
+.pr-bar span{height:5px;background:var(--line);position:relative;overflow:hidden}
+.pr-bar span i{position:absolute;inset:0 auto 0 0;background:var(--lime-2);display:block}
+.pr-bar.v span i{background:var(--lime)}
+.pr-score{font-family:Oswald,Arial,sans-serif;font-size:24px;font-variant-numeric:tabular-nums;text-align:right;color:var(--text)}
+.pr-row.top .pr-score{color:var(--lime)}
+.pr-picks{margin-left:10px;padding-left:10px;border-left:1px solid var(--line);color:var(--dim);white-space:nowrap}
+.pr-method{color:var(--dim);font-size:13px;margin:16px 0 0;max-width:78ch}
+.pr-pending{background:var(--bg-2);border:1px solid var(--line-soft);padding:22px;color:var(--muted);font-size:14.5px}
+</style>
+</head>
+<body>
+<header class="mast">
+  <div class="wrap">
+    <p class="eyebrow">Sleeper Dynasty · Est. 2022 · Season V</p>
+    <h1>Any Given<span class="thin">Sunday</span></h1>
+    <p class="tagline">Ten franchises, five seasons, and <b>four different champions</b> — three of whom backed into the title from the fourth seed or worse. The league is named for a reason.</p>
+    <div class="settings">
+      <span>10 teams</span><span>Dynasty</span><span>0.5 PPR</span><span>4-round rookie draft</span>
+      <span>4 taxi slots · 3 yrs</span><span>$100 FAAB</span><span>6 playoff teams · Wk 15</span>
+    </div>
+  </div>
+</header>
+
+<nav><div class="wrap">
+  <a href="#now">2026 Season</a>
+  <a href="#power">Power Rankings</a>
+  <a href="#writeups">Write-ups</a>
+  <a href="#schedule">Schedule</a>
+  <a href="#history">History</a>
+  <a href="#records">Record Book</a>
+  <a href="#ledger">All-Time Ledger</a>
+</div></nav>
+
+<main class="wrap">
+
+<section id="now">
+  <div class="sec-head"><h2>The Cup</h2></div>
+  <p class="sec-sub">Champions of the Any Given Sunday dynasty, with the regular-season seed each one carried into the bracket.</p>
+  <div class="titles" id="titles"></div>
+
+  <div class="sec-head" style="margin-top:48px"><h2 id="standings-head">2026 Standings</h2></div>
+  <p class="sec-sub" id="standings-sub">Week 1 has not been scored. Teams are listed with the record and points they carried out of 2025.</p>
+  <div class="scroll"><table id="standings"></table></div>
+</section>
+
+<section id="power">
+  <div class="sec-head"><h2>Power Rankings</h2></div>
+  <p class="sec-sub" id="power-sub">KeepTradeCut dynasty value — players and future rookie picks — blended with how the team is actually playing. Rebuilt every morning, so a trade shows up the next day.</p>
+  <div id="power-body"></div>
+  <p class="pr-method" id="power-method"></p>
+</section>
+
+<section id="writeups">
+  <div class="sec-head">
+    <h2>Write-ups</h2>
+  </div>
+  <p class="sec-sub" id="wu-sub">A recap is drafted every Tuesday morning once the week is scored. Write-ups live in <code>writeups.json</code> — edit that file on GitHub and the site redeploys itself.</p>
+
+
+  <div class="wu-layout">
+    <article class="wu-main" id="wu-main"></article>
+    <aside class="wu-archive" id="wu-archive"></aside>
+  </div>
+</section>
+
+<section id="schedule">
+  <div class="sec-head"><h2 id="schedule-head">2026 Schedule</h2></div>
+  <p class="sec-sub">Fourteen weeks of regular season. Playoffs open Week 15 with the top six seeds; the trade deadline falls at the end of Week 14.</p>
+  <div class="weeks" id="weeks"></div>
+</section>
+
+<section id="history">
+  <div class="sec-head"><h2>Season by Season</h2></div>
+  <p class="sec-sub">Final regular-season tables. Seeds one through six advanced; the champion is marked in gold.</p>
+  <div class="tabs" id="tabs" role="tablist"></div>
+  <div class="scroll"><table id="season-table"></table></div>
+  <p class="season-note" id="season-note"></p>
+</section>
+
+<section id="records">
+  <div class="sec-head"><h2>Record Book</h2></div>
+  <p class="sec-sub" id="records-sub">Every regular-season game played in league history.</p>
+  <div class="records" id="records-grid"></div>
+</section>
+
+<section id="ledger">
+  <div class="sec-head"><h2>All-Time Ledger</h2></div>
+  <p class="sec-sub">Franchise totals since the 2022 launch. Playoff berths count top-six regular-season finishes.</p>
+  <div class="scroll"><table id="ledger-table"></table></div>
+
+  <h3 style="margin-top:42px">Head to Head</h3>
+  <p class="sec-sub">Regular-season series, read across: the row team's record against each column.</p>
+  <div class="scroll"><table class="h2h" id="h2h-table"></table></div>
+</section>
+
+</main>
+
+<footer><div class="wrap">
+  <p>Live league data from Sleeper — league <span class="num">1329967656165462016</span> and its archived predecessors, pulled by <code>scripts/build-history.mjs</code>. Records cover regular-season games only; playoff results are credited through the league champion of record.</p>
+  <p id="stamp"></p>
+</div></footer>
+
+<script>
+let D = null, WRITEUPS = [];
+const MINE_DEFAULT = 2;
+const fmt = n => Number(n).toFixed(2);
+const el = (t,c,h)=>{const e=document.createElement(t);if(c)e.className=c;if(h!=null)e.innerHTML=h;return e;};
+const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+
+document.addEventListener('DOMContentLoaded', init, {once:true});
+
+async function init(){
+  try {
+    const [h, w] = await Promise.all([
+      fetch('history.json', {cache:'no-cache'}).then(r => { if(!r.ok) throw new Error('history.json'); return r.json(); }),
+      fetch('writeups.json', {cache:'no-cache'}).then(r => r.ok ? r.json() : []).catch(()=>[])
+    ]);
+    D = h; WRITEUPS = Array.isArray(w) ? w : [];
+  } catch (e) {
+    document.getElementById('wu-main').innerHTML =
+      '<p class="wu-empty">League data could not be loaded. If this just deployed, give it a minute and reload.</p>';
+    return;
+  }
+  render();
+}
+
+function render(){
+  const T = D.teams;
+  const MINE = (D.meta && D.meta.myRoster) || MINE_DEFAULT;
+  const CUR = (D.meta && D.meta.currentSeason) || Math.max(...Object.keys(D.seasons).map(Number));
+  const CUR_COMPLETE = (D.meta && D.meta.currentStatus) === 'complete';
+  const ALL_YEARS = Object.keys(D.seasons).map(Number).sort((a,b)=>a-b);
+  const DONE_YEARS = ALL_YEARS.filter(y => y < CUR || CUR_COMPLETE);
+  const curRows = D.seasons[CUR] || {};
+  const curPlayed = Object.values(curRows).some(r => (r.w + r.l + r.t) > 0);
+  const prevYear = ALL_YEARS.filter(y => y < CUR).pop();
+  const ids = Object.keys(T).map(Number).sort((a,b)=>a-b);
+
+  /* ---- champions ---- */
+  (function(){
+    const box = document.getElementById('titles');
+    box.innerHTML = '';
+    Object.keys(D.champs).map(Number).sort((a,b)=>a-b).forEach(y=>{
+      const rid = D.champs[y], s = (D.seasons[y]||{})[rid];
+      const c = el('div','title-card');
+      c.appendChild(el('div','yr', y));
+      c.appendChild(el('div','champ', esc(T[rid] || 'Unknown')));
+      c.appendChild(el('div','via', s
+        ? `${s.w}–${s.l} regular season · ${s.seed===1?'top seed':'#'+s.seed+' seed'} · ${fmt(s.pf)} PF`
+        : 'Champion'));
+      box.appendChild(c);
+    });
+    if(!D.champs[CUR]){
+      const c = el('div','title-card next');
+      c.appendChild(el('div','yr', CUR));
+      c.appendChild(el('div','champ','Open'));
+      const played = Object.values(curRows).reduce((n,r)=>n + r.w + r.l + r.t, 0) / 2;
+      c.appendChild(el('div','via', played ? `${played} games in, nobody has clinched anything.` : 'Ten teams, zero games played.'));
+      box.appendChild(c);
+    }
+  })();
+
+  /* ---- standings: live once games are played, carry-in before that ---- */
+  (function(){
+    const t = document.getElementById('standings');
+    const sub = document.getElementById('standings-sub');
+    document.getElementById('standings-head').textContent = CUR + ' Standings';
+    t.innerHTML = '';
+    const tb = el('tbody');
+
+    if(curPlayed){
+      sub.textContent = 'Top six make the playoffs; the line sits under the sixth row. Updated every Tuesday morning.';
+      t.innerHTML = `<thead><tr><th></th><th>Franchise</th><th class="n">W</th><th class="n">L</th>
+        <th class="n">PF</th><th class="n">PA</th><th class="n">Diff</th><th class="n">High</th><th class="n">Low</th></tr></thead>`;
+      const rows = Object.keys(curRows).map(Number).sort((a,b)=> curRows[a].seed - curRows[b].seed);
+      rows.forEach(id=>{
+        const r = curRows[id], diff = r.pf - r.pa;
+        const tr = el('tr', (id===MINE?'mine ':'') + (r.seed===6?'cutline':''));
+        tr.innerHTML = `<td class="rank">${r.seed}</td>
+          <td class="team-cell">${esc(T[id])}${r.seed<=6?'<span class="pill playoff">In</span>':''}</td>
+          <td class="n">${r.w}</td><td class="n">${r.l}</td>
+          <td class="n">${fmt(r.pf)}</td><td class="n">${fmt(r.pa)}</td>
+          <td class="n" style="color:${diff>=0?'var(--lime-2)':'var(--warn)'}">${diff>=0?'+':''}${fmt(diff)}</td>
+          <td class="n">${fmt(r.hi)}</td><td class="n">${fmt(r.lo)}</td>`;
+        tb.appendChild(tr);
+      });
+    } else {
+      const prev = D.seasons[prevYear] || {};
+      sub.textContent = `Week 1 has not been scored. Teams are listed with the record and points they carried out of ${prevYear}.`;
+      t.innerHTML = `<thead><tr><th></th><th>Franchise</th><th class="n">${CUR}</th>
+        <th class="n">${prevYear} finish</th><th class="n">${prevYear} PF</th><th class="n">All-time</th><th class="n">Titles</th></tr></thead>`;
+      const rows = ids.slice().sort((a,b)=> ((prev[b]||{}).w||0) - ((prev[a]||{}).w||0) || ((prev[b]||{}).pf||0) - ((prev[a]||{}).pf||0));
+      rows.forEach((id,i)=>{
+        const p = prev[id] || {w:0,l:0,pf:0,seed:99}, a = D.alltime[id] || {w:0,l:0,titles:0};
+        const former = (D.former[id]||{})[prevYear];
+        const tr = el('tr', id===MINE?'mine':'');
+        tr.innerHTML = `<td class="rank">${i+1}</td>
+          <td class="team-cell">${esc(T[id])}${former?`<span class="pill playoff">was ${esc(former)}</span>`:''}</td>
+          <td class="n">0–0</td>
+          <td class="n">${p.w}–${p.l}${p.seed<=6?'<span class="pill playoff">P</span>':''}</td>
+          <td class="n">${fmt(p.pf)}</td>
+          <td class="n">${a.w}–${a.l}</td>
+          <td class="n">${a.titles||'—'}</td>`;
+        tb.appendChild(tr);
+      });
+    }
+    t.appendChild(tb);
+  })();
+
+  /* ---- schedule, with scores once they exist ---- */
+  (function(){
+    const box = document.getElementById('weeks');
+    document.getElementById('schedule-head').textContent = CUR + ' Schedule';
+    box.innerHTML = '';
+    const played = w => w.games.some(g => g[0].pts > 0 || g[1].pts > 0);
+    const next = (D.schedule.find(w => !played(w)) || {}).week;
+    D.schedule.forEach(w=>{
+      const isNext = w.week === next, done = played(w);
+      const d = el('div','week' + (isNext?' live':''));
+      d.appendChild(el('div','wk', isNext ? `Week ${w.week} · Up next` : 'Week ' + w.week));
+      w.games.forEach(g=>{
+        const [x,y] = g;
+        const win = done ? (x.pts > y.pts ? x.rid : y.rid) : null;
+        const side = s => `<span class="${s.rid===MINE?'me ':''}${done && s.rid!==win?'lost':''}">${esc(T[s.rid])}${done?` <i>${fmt(s.pts)}</i>`:''}</span>`;
+        d.appendChild(el('div','mu' + (done?' final':''), `${side(x)}<span class="at">${done?'–':'at'}</span>${side(y)}`));
+      });
+      box.appendChild(d);
+    });
+  })();
+
+  /* ---- season tables ---- */
+  (function(){
+    const tabs = document.getElementById('tabs');
+    const table = document.getElementById('season-table');
+    const note = document.getElementById('season-note');
+    const NOTES = {
+      2022:'The inaugural season. <b>Rum Hammers</b> and <b>Shadynasty</b> tied atop the table at 11–3, then <b>druppert</b> came out of the four seed at 8–6 and took the first title.',
+      2023:'<b>Shadynasty</b> put up 2,186.58 points — still the league record — and went 12–2. <b>Kenzos</b> got in at 7–7 as the six seed and won the whole thing.',
+      2024:'The tightest table yet: four teams within a game of first. <b>Los Muertos</b> won it from the four seed, and <b>Shadynasty</b> fell to 4–10 the year after its 12–2.',
+      2025:'<b>Shadynasty</b> went wire to wire at 11–3 and finally converted, becoming the first top seed to win it. <b>druppert</b> bottomed out at 2–12.'
+    };
+    const years = DONE_YEARS.length ? DONE_YEARS : ALL_YEARS;
+    tabs.innerHTML = '';
+    function draw(y){
+      const s = D.seasons[y];
+      const order = Object.keys(s).map(Number).sort((a,b)=> s[a].seed - s[b].seed);
+      table.innerHTML = `<thead><tr><th></th><th>Franchise</th><th class="n">W</th><th class="n">L</th>
+        <th class="n">PF</th><th class="n">PA</th><th class="n">Diff</th><th class="n">High</th><th class="n">Low</th></tr></thead>`;
+      const tb = el('tbody');
+      order.forEach(id=>{
+        const r = s[id], champ = D.champs[y] === id, diff = r.pf - r.pa;
+        const nameThen = (D.former[id]||{})[y] || T[id];
+        const tr = el('tr', (champ?'champ-row ':'') + (id===MINE?'mine':''));
+        tr.innerHTML = `<td class="rank">${r.seed}</td>
+          <td class="team-cell">${esc(nameThen)}${champ?'<span class="pill gold">Champion</span>':(r.seed<=6?'<span class="pill playoff">Playoffs</span>':'')}</td>
+          <td class="n">${r.w}</td><td class="n">${r.l}</td>
+          <td class="n">${fmt(r.pf)}</td><td class="n">${fmt(r.pa)}</td>
+          <td class="n" style="color:${diff>=0?'var(--lime-2)':'var(--warn)'}">${diff>=0?'+':''}${fmt(diff)}</td>
+          <td class="n">${fmt(r.hi)}</td><td class="n">${fmt(r.lo)}</td>`;
+        tb.appendChild(tr);
+      });
+      table.appendChild(tb);
+      note.innerHTML = NOTES[y] || '';
+      note.hidden = !NOTES[y];
+      [...tabs.children].forEach(b=> b.setAttribute('aria-selected', String(+b.dataset.y === y)));
+    }
+    years.forEach(y=>{
+      const b = el('button', null, y);
+      b.dataset.y = y; b.setAttribute('role','tab');
+      b.onclick = ()=> draw(y);
+      tabs.appendChild(b);
+    });
+    draw(years[years.length-1]);
+  })();
+
+  /* ---- record book ---- */
+  (function(){
+    const grid = document.getElementById('records-grid');
+    const games = Object.values(D.seasons).reduce((n,rows)=> n + Object.values(rows).reduce((m,r)=> m + r.w + r.l + r.t, 0)/2, 0);
+    document.getElementById('records-sub').textContent =
+      `Every regular-season game played in league history — ${games} of them across ${ALL_YEARS.length} seasons.`;
+    grid.innerHTML = '';
+    function card(title, cap, rows, cold){
+      const c = el('div','rec');
+      c.appendChild(el('h3', null, title));
+      c.appendChild(el('p','cap', cap));
+      const ol = el('ol','rl');
+      rows.forEach(r=>{
+        const li = el('li');
+        li.innerHTML = `<div class="who">${esc(r.who)}<span class="when">${esc(r.when)}</span></div>
+          <div class="val${cold?' cold':''}">${r.val}</div>`;
+        ol.appendChild(li);
+      });
+      c.appendChild(ol);
+      grid.appendChild(c);
+    }
+    card('Highest Single Week','The seven best scoring weeks on record.',
+      D.top_weeks.slice(0,7).map(r=>({who:T[r.rid],when:`${r.yr} Week ${r.wk} · beat ${T[r.opp]} ${fmt(r.opp_pts)}`,val:fmt(r.pts)})));
+    card('Lowest Single Week','Weeks best left unmentioned at the draft.',
+      D.low_weeks.slice(0,7).map(r=>({who:T[r.rid],when:`${r.yr} Week ${r.wk} · lost to ${T[r.opp]} ${fmt(r.opp_pts)}`,val:fmt(r.pts)})),true);
+    card('Biggest Blowouts','Largest margin of victory in a single game.',
+      D.blowouts.slice(0,7).map(r=>({who:T[r.win],when:`${r.yr} Week ${r.wk} · over ${T[r.lose]} · ${fmt(r.wp)}–${fmt(r.lp)}`,val:'+'+fmt(r.m)})));
+    card('Closest Calls','Games decided by less than two points.',
+      D.nailbiters.slice(0,7).map(r=>({who:T[r.win],when:`${r.yr} Week ${r.wk} · over ${T[r.lose]} · ${fmt(r.wp)}–${fmt(r.lp)}`,val:fmt(r.m)})));
+    card('Highest Combined','Both teams cooking in the same week.',
+      D.shootouts.slice(0,7).map(r=>({who:`${T[r.a]} vs ${T[r.b]}`,when:`${r.yr} Week ${r.wk} · ${fmt(r.ap)}–${fmt(r.bp)}`,val:fmt(r.tot)})));
+    card('Best Single Seasons','Regular-season records, ties broken by points for.',
+      D.season_best.slice(0,7).map(r=>({who:T[r.rid],when:`${r.yr} · ${fmt(r.pf)} points for${D.champs[r.yr]===r.rid?' · champion':''}`,val:`${r.w}–${r.l}`})));
+    card('Most Points, One Season','Fourteen games, no help from the bracket.',
+      D.season_pf.slice(0,7).map(r=>({who:T[r.rid],when:`${r.yr} · finished ${r.w}–${r.l}`,val:fmt(r.pf)})));
+  })();
+
+  /* ---- all-time ledger ---- */
+  (function(){
+    const t = document.getElementById('ledger-table');
+    const denom = DONE_YEARS.length;
+    const order = ids.slice().sort((a,b)=>
+      (D.alltime[b].titles - D.alltime[a].titles) || (D.alltime[b].w - D.alltime[a].w) || (D.alltime[b].pf - D.alltime[a].pf));
+    t.innerHTML = `<thead><tr><th></th><th>Franchise</th><th class="n">W</th><th class="n">L</th><th class="n">Pct</th>
+      <th class="n">PF</th><th class="n">PA</th><th class="n">PPG</th><th class="n">Titles</th><th class="n">Playoffs</th></tr></thead>`;
+    const tb = el('tbody');
+    order.forEach((id,i)=>{
+      const a = D.alltime[id];
+      const tr = el('tr', id===MINE?'mine':'');
+      tr.innerHTML = `<td class="rank">${i+1}</td>
+        <td class="team-cell">${esc(T[id])}${a.titles?`<span class="pill gold">${a.titles}×</span>`:''}</td>
+        <td class="n">${a.w}</td><td class="n">${a.l}</td><td class="n">${a.pct.toFixed(3).replace(/^0/,'')}</td>
+        <td class="n">${fmt(a.pf)}</td><td class="n">${fmt(a.pa)}</td><td class="n">${a.ppg.toFixed(1)}</td>
+        <td class="n">${a.titles||'—'}</td><td class="n">${a.playoffs}/${denom}</td>`;
+      tb.appendChild(tr);
+    });
+    t.appendChild(tb);
+  })();
+
+  /* ---- head to head ---- */
+  (function(){
+    const t = document.getElementById('h2h-table');
+    const short = n => n.length > 14 ? n.slice(0,12)+'…' : n;
+    let head = '<thead><tr><th class="row">Series</th>';
+    ids.forEach(c => head += `<th>${esc(String(T[c]).split(' ')[0])}</th>`);
+    t.innerHTML = head + '</tr></thead>';
+    const tb = el('tbody');
+    ids.forEach(r=>{
+      const tr = el('tr', r===MINE?'mine':'');
+      let row = `<th class="row">${esc(short(String(T[r])))}</th>`;
+      ids.forEach(c=>{
+        if(r===c){ row += '<td class="self">—</td>'; return; }
+        const v = D.h2h[`${r}-${c}`] || [0,0];
+        row += `<td class="${v[0]>v[1]?'win':v[1]>v[0]?'loss':''}">${v[0]}–${v[1]}</td>`;
+      });
+      tr.innerHTML = row;
+      tb.appendChild(tr);
+    });
+    t.appendChild(tb);
+  })();
+
+
+  /* ---- power rankings ---- */
+  (async function(){
+    const body = document.getElementById('power-body');
+    const method = document.getElementById('power-method');
+    let P = null;
+    try {
+      const res = await fetch('power.json', {cache:'no-cache'});
+      if(res.ok) P = await res.json();
+    } catch(e){ /* not published yet */ }
+    if(!P || !P.rankings || !P.rankings.length){
+      body.innerHTML = '<div class="pr-pending">Power rankings publish on the next data refresh — the nightly job builds them from live rosters and current KeepTradeCut values. Nothing to show until it has run once.</div>';
+      return;
+    }
+    const wrap = el('div','pr');
+    P.rankings.forEach(t=>{
+      const row = el('div','pr-row' + (t.rank===1?' top':'') + (t.rid===MINE?' mine':''));
+      const move = t.move > 0 ? `<span class="pr-move up">▲${t.move}</span>`
+                 : t.move < 0 ? `<span class="pr-move down">▼${Math.abs(t.move)}</span>`
+                 : '<span class="pr-move flat">–</span>';
+      const top = (t.top||[]).map(p => `${esc(p.name)} <i style="color:var(--dim);font-style:normal">${p.pos}</i>`).join(' · ');
+      const picks = t.picks ? `<span class="pr-picks">${t.picks} pick${t.picks===1?'':'s'} · ${t.picksValue.toLocaleString()}</span>` : '';
+      row.innerHTML =
+        `<div class="pr-rank">${t.rank}</div>
+         <div><div class="pr-name">${esc(t.team)}${move}</div>
+              <div class="pr-sub">${top || '&nbsp;'}${picks}</div></div>
+         <div class="pr-bars">
+           <div class="pr-bar v"><label>Value</label><span><i style="width:${t.parts.value}%"></i></span></div>
+           <div class="pr-bar"><label>Points</label><span><i style="width:${t.parts.points}%"></i></span></div>
+           <div class="pr-bar"><label>Record</label><span><i style="width:${t.parts.record}%"></i></span></div>
+         </div>
+         <div class="pr-score">${t.score.toFixed(1)}</div>`;
+      wrap.appendChild(row);
+    });
+    body.innerHTML = '';
+    body.appendChild(wrap);
+    const w = P.meta.weights;
+    const when = new Date(P.meta.generated).toLocaleString('en-US',{month:'long',day:'numeric',hour:'numeric',minute:'2-digit'});
+    method.textContent = w.points
+      ? `Score = ${Math.round(w.value*100)}% KeepTradeCut value — the top ${P.meta.depth} players (1QB) plus every rookie pick through ${P.meta.pickSeasons ? P.meta.pickSeasons[P.meta.pickSeasons.length-1] : ''} — ${Math.round(w.points*100)}% points per game, ${Math.round(w.record*100)}% win rate, each scaled across the league. Built ${when} from ${P.meta.matched} valued players.`
+      : `Preseason: score is KeepTradeCut value of each roster's top ${P.meta.depth} players (1QB) plus every rookie pick through ${P.meta.pickSeasons ? P.meta.pickSeasons[P.meta.pickSeasons.length-1] : ''}, scaled across the league. Points and record join the formula once games are played. Built ${when} from ${P.meta.matched} valued players.`;
+  })();
+
+  /* ---- write-ups ---- */
+  (function(){
+    const wuKey = w => `${w.season}-${String(w.week).padStart(2,'0')}`;
+    const label = w => w.week === 0 ? `${w.season} Preseason` : `${w.season} · Week ${w.week}`;
+    const when = w => w.date ? new Date(w.date + 'T12:00:00').toLocaleDateString('en-US',{month:'long',day:'numeric',year:'numeric'}) : '';
+    const posts = WRITEUPS.slice().sort((a,b)=> wuKey(b).localeCompare(wuKey(a)));
+    const main = document.getElementById('wu-main');
+    const arch = document.getElementById('wu-archive');
+    let current = 0;
+    function draw(){
+      const w = posts[current];
+      if(!w){
+        main.innerHTML = '<p class="wu-empty">No write-ups yet. The first recap lands the Tuesday after Week 1.</p>';
+        arch.innerHTML = ''; return;
+      }
+      main.innerHTML =
+        `<p class="wu-kicker">${esc(label(w))}</p>
+         <h3 class="wu-title">${esc(w.title)}</h3>
+         <p class="wu-by">${w.author ? esc(w.author) : 'Unsigned'}${when(w) ? ' · ' + when(w) : ''}</p>
+         <div class="wu-body">${String(w.body).split(/\n{2,}/).map(p=>`<p>${esc(p.trim()).replace(/\n/g,'<br>')}</p>`).join('')}</div>`;
+      if(posts.length > 1){
+        arch.innerHTML = '<h4>Archive</h4>';
+        const ul = el('ul');
+        posts.forEach((p,i)=>{
+          const li = el('li');
+          const b = el('button', null, `<b>${esc(label(p))}</b>${esc(p.title)}`);
+          b.setAttribute('aria-current', String(i===current));
+          b.onclick = ()=>{ current = i; draw(); };
+          li.appendChild(b); ul.appendChild(li);
+        });
+        arch.appendChild(ul);
+      } else { arch.innerHTML = ''; }
+    }
+    draw();
+  })();
+
+  const gen = (D.meta && D.meta.generated) || '';
+  document.getElementById('stamp').textContent = gen
+    ? 'League data last pulled from Sleeper on ' + new Date(gen + 'T12:00:00').toLocaleDateString('en-US',{month:'long',day:'numeric',year:'numeric'}) + '. Refreshed automatically every Tuesday morning.'
+    : 'Refreshed automatically every Tuesday morning.';
+}
+</script>
+</body>
+</html>
