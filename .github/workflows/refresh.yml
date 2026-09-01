@@ -1,0 +1,40 @@
+name: Refresh league data
+
+# 8:00 AM Eastern daily (12:00 UTC) — standings and the record book only really
+# move on Tuesdays, but power rankings follow roster moves, so this runs every day.
+# Also runnable by hand from the Actions tab.
+on:
+  schedule:
+    - cron: "0 12 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Pull league history from Sleeper
+        run: node scripts/build-history.mjs
+
+      - name: Rebuild power rankings from Sleeper + KeepTradeCut
+        run: node scripts/build-power.mjs
+
+      - name: Commit if anything changed
+        run: |
+          if git diff --quiet -- history.json power.json; then
+            echo "Nothing moved today."
+            exit 0
+          fi
+          git config user.name "league-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add history.json power.json
+          git commit -m "Refresh league data ($(date -u +%Y-%m-%d))"
+          git push
