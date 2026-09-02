@@ -24,7 +24,14 @@ jobs:
       - name: Pull league history from Sleeper
         run: node scripts/build-history.mjs
 
-      - name: Rebuild power rankings from Sleeper + KeepTradeCut
+      # KeepTradeCut builds its league board in the browser, so mirroring it
+      # needs a real one. Installed here rather than committed to the repo.
+      - name: Install headless Chromium
+        run: |
+          npm install playwright --no-save --no-audit --no-fund
+          npx playwright install --with-deps chromium
+
+      - name: Mirror the KeepTradeCut power rankings
         run: node scripts/build-power.mjs
 
       - name: Commit if anything changed
