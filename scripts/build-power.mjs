@@ -1,17 +1,19 @@
 /**
- * Rebuilds power.json — dynasty power rankings for the current season.
+ * Rebuilds power.json by mirroring KeepTradeCut's own league power rankings.
  *
- * Two public sources, no credentials:
- *   - Sleeper: current rosters (so a trade or waiver claim shows up on the next run)
- *   - KeepTradeCut: dynasty player values, 1QB set (this league starts one QB)
+ * KTC runs the rankings for a Sleeper league at
+ *   keeptradecut.com/dynasty/power-rankings/league-overview  (leagueId + platform=2)
+ * and embeds the finished board in that page as a `var leagueTeams = [...]`
+ * literal: every team's score, raw and age-adjusted value, average age, and the
+ * full roster broken out by position with per-player and per-pick values.
  *
- * The composite score blends roster value with on-field results. Before Week 1
- * there are no results, so it leans entirely on value; once games are played the
- * weights below apply. Every component is published alongside the score so the
- * league can argue with the math rather than the black box.
+ * We parse that literal rather than recomputing anything, so the site shows the
+ * same numbers the league sees on KTC. Sleeper is used only to map KTC's team
+ * ids (Sleeper owner ids) onto roster ids, which is how the rest of the site
+ * keys its data.
  *
- * Failure is soft: if either source is unreachable or the name matching falls
- * apart, the committed power.json is left alone.
+ * No credentials: both sources are public. If either is unreachable or the page
+ * shape changes, the committed power.json is left alone.
  */
 
 import { readFile, writeFile } from "node:fs/promises";
@@ -24,209 +26,130 @@ const HISTORY = join(ROOT, "history.json");
 
 const LEAGUE = "1329967656165462016";
 const SLEEPER = "https://api.sleeper.app/v1";
-const KTC = "https://keeptradecut.com/dynasty-rankings";
-
-const WEIGHTS = { value: 0.55, points: 0.28, record: 0.17 };
-// Before the season starts there are no 2026 results, so last year's are used —
-// weaker evidence about this year's team, so they carry less.
-const PRESEASON_WEIGHTS = { value: 0.75, points: 0.15, record: 0.1 };
-const DEPTH = 15;          // starters + meaningful bench; deeper than this is noise in a 10-team league
-const ROUNDS = 4;          // the rookie draft is four rounds
-const MIN_MATCH_RATE = 0.7; // below this, name matching has gone wrong — don't publish
+const KTC_BOARD =
+  "https://keeptradecut.com/dynasty/power-rankings/league-overview" +
+  `?leagueId=${LEAGUE}&platform=2`; // platform 2 = Sleeper
 
 const json = async (url) => {
   const res = await fetch(url, { headers: { accept: "application/json" } });
-  if (!res.ok) throw new Error(`${url} → HTTP ${res.status}`);
+  if (!res.ok) throw new Error(`${url.split("?")[0]} → HTTP ${res.status}`);
   return res.json();
 };
 
-/** KTC ships the rankings as a `playersArray` literal inside the page. */
-async function ktcValues() {
-  const res = await fetch(KTC, { headers: { "user-agent": "any-given-sunday-league-site" } });
-  if (!res.ok) throw new Error(`KTC → HTTP ${res.status}`);
-  const html = await res.text();
-  const start = html.indexOf("var playersArray");
-  if (start === -1) throw new Error("KTC page shape changed — playersArray not found");
-  const open = html.indexOf("[", start);
-  let depth = 0, end = -1;
+/** Pull a `var <name> = [ ... ];` array literal out of a page. */
+function extractArray(html, name) {
+  const at = html.search(new RegExp(`${name}\\s*=\\s*\\[`));
+  if (at === -1) throw new Error(`KTC page shape changed — ${name} not found`);
+  const open = html.indexOf("[", at);
+  let depth = 0;
   for (let i = open; i < html.length; i++) {
     const c = html[i];
     if (c === "[") depth++;
-    else if (c === "]" && --depth === 0) { end = i + 1; break; }
+    else if (c === "]" && --depth === 0) return JSON.parse(html.slice(open, i + 1));
   }
-  if (end === -1) throw new Error("KTC playersArray did not terminate");
-  const players = JSON.parse(html.slice(open, end));
-  const byKey = new Map();
-  for (const p of players) {
-    const v = (p.oneQBValues && p.oneQBValues.value) ?? p.value;
-    if (!v || !p.playerName || p.position === "RDP") continue;
-    byKey.set(key(p.playerName, p.position), { value: v, name: p.playerName, pos: p.position, team: p.team });
-  }
-  return { players: byKey, pickValue: pickValues(players) };
+  throw new Error(`${name} literal did not terminate`);
 }
 
-/**
- * Rookie draft picks, from KTC's "RDP" entries: "2027 1st", "2027 Early 2nd", …
- * A generic entry is used when KTC publishes one; otherwise the Early/Mid/Late
- * values for that year and round are averaged, which is what an untraded pick
- * is worth before anyone knows where it lands.
- */
-const ORDINALS = { "1st": 1, "2nd": 2, "3rd": 3, "4th": 4 };
-function pickValues(players) {
-  const generic = new Map(), tiered = new Map();
-  for (const p of players) {
-    if (p.position !== "RDP" || !p.playerName) continue;
-    const v = (p.oneQBValues && p.oneQBValues.value) ?? p.value;
-    if (!v) continue;
-    const m = /^(\d{4})\s+(?:(early|mid|late)\s+)?(1st|2nd|3rd|4th)$/i.exec(p.playerName.trim());
-    if (!m) continue;
-    const k = `${m[1]}-${ORDINALS[m[3].toLowerCase()]}`;
-    if (m[2]) {
-      if (!tiered.has(k)) tiered.set(k, []);
-      tiered.get(k).push(v);
-    } else generic.set(k, v);
-  }
-  return (season, round) => {
-    const k = `${season}-${round}`;
-    if (generic.has(k)) return generic.get(k);
-    const t = tiered.get(k);
-    return t && t.length ? Math.round(t.reduce((a, b) => a + b, 0) / t.length) : 0;
-  };
+async function ktcBoard() {
+  const res = await fetch(KTC_BOARD, {
+    headers: { "user-agent": "any-given-sunday-league-site", accept: "text/html" },
+  });
+  if (!res.ok) throw new Error(`KTC → HTTP ${res.status}`);
+  const teams = extractArray(await res.text(), "leagueTeams");
+  if (!Array.isArray(teams) || !teams.length) throw new Error("KTC returned no teams");
+  return teams;
 }
 
-/** Who owns which future pick: everyone owns their own until a trade says otherwise. */
-function pickOwnership(traded, rosterIds, seasons, rounds) {
-  const owner = new Map();
-  for (const season of seasons)
-    for (let round = 1; round <= rounds; round++)
-      for (const rid of rosterIds) owner.set(`${season}|${round}|${rid}`, rid);
-  for (const t of traded) {
-    const k = `${t.season}|${t.round}|${t.roster_id}`;
-    if (owner.has(k)) owner.set(k, t.owner_id);
-  }
-  return owner;
-}
+const round1 = (n) => Math.round(Number(n) * 10) / 10;
 
-const SUFFIX = /\b(jr|sr|ii|iii|iv|v)\b/g;
-const key = (name, pos) =>
-  String(name).toLowerCase().normalize("NFKD").replace(/[̀-ͯ]/g, "")
-    .replace(/[^a-z\s]/g, "").replace(SUFFIX, "").replace(/\s+/g, " ").trim() + "|" + (pos || "");
+/** A rostered player, trimmed to what the page shows. */
+const player = (p) => ({
+  name: p.playerName,
+  pos: p.position,
+  team: p.team || null,
+  age: p.age ? round1(p.age) : null,
+  value: p.value ?? null,
+  rank: p.positionalRank ?? null,
+  rookie: !!p.rookie,
+});
+
+/** A future rookie pick. `from` is set when it came from another team. */
+const pick = (p) => ({
+  name: p.pickString || p.playerName,
+  year: p.year ?? null,
+  round: p.round ?? null,
+  value: p.value ?? null,
+  from: p.from || null,
+});
+
+const groupOf = (t, key, fn) => (t.display && Array.isArray(t.display[key]) ? t.display[key].map(fn) : []);
 
 async function build() {
   const history = JSON.parse(await readFile(HISTORY, "utf8"));
-  const teams = history.teams;
   const season = history.meta.currentSeason;
-  const rows = history.seasons[season] || {};
 
-  const [rosters, players, ktc, traded] = await Promise.all([
-    json(`${SLEEPER}/league/${LEAGUE}/rosters`),
-    json(`${SLEEPER}/players/nfl`),
-    ktcValues(),
-    json(`${SLEEPER}/league/${LEAGUE}/traded_picks`).catch(() => []),
-  ]);
-  const values = ktc.players;
+  const [teams, rosters] = await Promise.all([ktcBoard(), json(`${SLEEPER}/league/${LEAGUE}/rosters`)]);
 
-  // Pick classes worth counting: the next three rookie drafts.
-  const rosterIds = rosters.map((r) => r.roster_id);
-  const pickSeasons = [season + 1, season + 2, season + 3].map(String);
-  const owner = pickOwnership(traded, rosterIds, pickSeasons, ROUNDS);
-  const picksByTeam = new Map(rosterIds.map((rid) => [rid, []]));
-  for (const [k, ownerRid] of owner) {
-    const [ps, rd, orig] = k.split("|");
-    const value = ktc.pickValue(ps, Number(rd));
-    if (!value) continue;
-    const held = picksByTeam.get(Number(ownerRid));
-    if (held) held.push({ season: Number(ps), round: Number(rd), from: Number(orig), value });
-  }
+  // KTC's teamId is the Sleeper owner id; the rest of the site keys off roster id.
+  const ridByOwner = new Map(rosters.map((r) => [String(r.owner_id), r.roster_id]));
 
-  let looked = 0, matched = 0;
-  const valueOf = (pid) => {
-    const p = players[pid];
-    if (!p || !p.position || ["K", "DEF"].includes(p.position)) return null; // KTC doesn't value kickers or defenses
-    looked++;
-    const hit = values.get(key(p.full_name || `${p.first_name} ${p.last_name}`, p.position));
-    if (hit) matched++;
-    return hit ? { value: hit.value, name: hit.name, pos: p.position } : null;
-  };
+  const ranked = teams
+    .map((t) => {
+      const groups = {
+        qb: groupOf(t, "qbs", player),
+        rb: groupOf(t, "rbs", player),
+        wr: groupOf(t, "wrs", player),
+        te: groupOf(t, "tes", player),
+        picks: groupOf(t, "picks", pick),
+      };
+      const valueOf = (list) => list.reduce((n, x) => n + (x.value || 0), 0);
+      return {
+        rank: t.adjValRank ?? t.rawValRank ?? null,
+        rid: ridByOwner.get(String(t.teamId)) ?? null,
+        team: String(t.name || "").trim(),
+        score: t.teamScore ?? null,
+        total: t.total ?? null,
+        adjTotal: t.adjTotal ?? null,
+        avgAge: t.avgAge ? round1(t.avgAge) : null,
+        rawRank: t.rawValRank ?? null,
+        groups,
+        groupValues: {
+          qb: valueOf(groups.qb), rb: valueOf(groups.rb),
+          wr: valueOf(groups.wr), te: valueOf(groups.te), picks: valueOf(groups.picks),
+        },
+        counts: {
+          qb: groups.qb.length, rb: groups.rb.length,
+          wr: groups.wr.length, te: groups.te.length, picks: groups.picks.length,
+        },
+        best: [...groups.qb, ...groups.rb, ...groups.wr, ...groups.te]
+          .sort((a, b) => (b.value || 0) - (a.value || 0))
+          .slice(0, 3)
+          .map(({ name, pos, value }) => ({ name, pos, value })),
+      };
+    })
+    .sort((a, b) => (a.rank ?? 99) - (b.rank ?? 99));
 
-  const teamRows = rosters.map((r) => {
-    const held = (r.players || []).map(valueOf).filter(Boolean).sort((a, b) => b.value - a.value);
-    const core = held.slice(0, DEPTH);
-    const picks = (picksByTeam.get(r.roster_id) || []).sort((a, b) => b.value - a.value);
-    const playerValue = core.reduce((n, p) => n + p.value, 0);
-    const picksValue = picks.reduce((n, p) => n + p.value, 0);
-    return {
-      rid: r.roster_id,
-      team: teams[r.roster_id] || `Team ${r.roster_id}`,
-      value: playerValue + picksValue,
-      playerValue, picksValue,
-      picks: picks.length,
-      bestPicks: picks.slice(0, 3).map((p) => ({
-        label: `${p.season} ${["", "1st", "2nd", "3rd", "4th"][p.round]}${p.from === r.roster_id ? "" : " (" + (teams[p.from] || "Team " + p.from) + ")"}`,
-        value: p.value,
-      })),
-      top: core.slice(0, 3).map((p) => ({ name: p.name, pos: p.pos, value: p.value })),
-      counted: core.length,
-      rostered: (r.players || []).length,
-    };
-  });
+  const unmapped = ranked.filter((t) => t.rid == null).length;
+  if (unmapped > ranked.length / 2) throw new Error(`${unmapped} teams could not be matched to a Sleeper roster`);
 
-  if (looked && matched / looked < MIN_MATCH_RATE) {
-    throw new Error(`only ${matched}/${looked} players matched KTC — refusing to publish`);
-  }
-
-  const played = Object.values(rows).some((r) => r.w + r.l + r.t > 0);
-  const basis = played ? season : Object.keys(history.seasons).map(Number).filter((y) => y < season).pop();
-  const basisRows = played ? rows : history.seasons[basis] || {};
-
-  const scale = (vals) => {
-    const lo = Math.min(...vals), hi = Math.max(...vals);
-    return (v) => (hi === lo ? 50 : ((v - lo) / (hi - lo)) * 100);
-  };
-  const ppg = (rid) => {
-    const r = basisRows[rid];
-    const g = r ? r.w + r.l + r.t : 0;
-    return g ? r.pf / g : 0;
-  };
-  const winPct = (rid) => {
-    const r = basisRows[rid];
-    const g = r ? r.w + r.l + r.t : 0;
-    return g ? r.w / g : 0;
-  };
-
-  const sv = scale(teamRows.map((t) => t.value));
-  const sp = scale(teamRows.map((t) => ppg(t.rid)));
-  const sw = scale(teamRows.map((t) => winPct(t.rid)));
-  const hasResults = teamRows.some((t) => ppg(t.rid) > 0);
-  const mix = !hasResults ? { value: 1, points: 0, record: 0 } : played ? WEIGHTS : PRESEASON_WEIGHTS;
-
-  const ranked = teamRows.map((t) => {
-    const parts = {
-      value: Math.round(sv(t.value) * 10) / 10,
-      points: Math.round(sp(ppg(t.rid)) * 10) / 10,
-      record: Math.round(sw(winPct(t.rid)) * 10) / 10,
-    };
-    const score = parts.value * mix.value + parts.points * mix.points + parts.record * mix.record;
-    return { ...t, parts, ppg: Math.round(ppg(t.rid) * 100) / 100, score: Math.round(score * 10) / 10 };
-  }).sort((a, b) => b.score - a.score);
-
-  ranked.forEach((t, i) => { t.rank = i + 1; });
-
+  // Movement since the last published board.
   let previous = {};
   try {
     const old = JSON.parse(await readFile(OUT, "utf8"));
-    if (old.meta && old.meta.season === season) previous = Object.fromEntries(old.rankings.map((t) => [t.rid, t.rank]));
+    if (old.meta && old.meta.season === season) {
+      previous = Object.fromEntries(old.rankings.map((t) => [t.team, t.rank]));
+    }
   } catch { /* first run */ }
-  for (const t of ranked) t.move = previous[t.rid] ? previous[t.rid] - t.rank : 0;
+  for (const t of ranked) t.move = previous[t.team] ? previous[t.team] - t.rank : 0;
 
   return {
     meta: {
-      season, basis, basisIsPriorSeason: !played,
+      season,
       generated: new Date().toISOString(),
-      depth: DEPTH, rounds: ROUNDS, pickSeasons: pickSeasons.map(Number),
-      weights: mix,
-      matched, looked,
-          sources: ["Sleeper rosters and traded picks", "KeepTradeCut dynasty values (1QB), players and rookie picks"],
+      leagueId: LEAGUE,
+      source: "KeepTradeCut league power rankings",
+      sourceUrl: KTC_BOARD,
+      note: "Scores, values and age adjustments are KeepTradeCut's own — this mirrors their board rather than recomputing it.",
     },
     rankings: ranked,
   };
@@ -235,8 +158,9 @@ async function build() {
 try {
   const data = await build();
   await writeFile(OUT, JSON.stringify(data, null, 1) + "\n");
-  const picks = data.rankings.reduce((n, t) => n + t.picks, 0);
-  console.log(`power.json rebuilt — ${data.rankings.length} teams, ${data.meta.matched}/${data.meta.looked} players valued, ${picks} draft picks counted`);
+  const players = data.rankings.reduce((n, t) => n + t.counts.qb + t.counts.rb + t.counts.wr + t.counts.te, 0);
+  const picks = data.rankings.reduce((n, t) => n + t.counts.picks, 0);
+  console.log(`power.json rebuilt from KTC — ${data.rankings.length} teams, ${players} players, ${picks} picks`);
 } catch (err) {
   console.error(`Power rankings refresh failed: ${err.message}`);
   console.error("Keeping the committed power.json.");
