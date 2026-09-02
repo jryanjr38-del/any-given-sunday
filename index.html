@@ -105,8 +105,6 @@ tbody tr:hover td{background:rgba(180,255,60,.045)}
 td.n,th.n{text-align:right}
 .team-cell{font-family:Oswald,Arial,sans-serif;font-size:16px;letter-spacing:.03em;text-transform:uppercase}
 .rank{color:var(--dim);width:34px;font-variant-numeric:tabular-nums}
-.mine td{box-shadow:inset 3px 0 0 var(--lime)}
-.mine .team-cell{color:var(--lime)}
 .champ-row .team-cell{color:var(--gold)}
 .pill{
   display:inline-block;font-family:Oswald,Arial,sans-serif;font-size:10px;letter-spacing:.14em;
@@ -202,7 +200,6 @@ ol.rl li:first-child::before{color:var(--lime)}
 .mu{font-size:13.5px;padding:4px 0;color:var(--muted);display:flex;gap:6px}
 .mu .at{color:var(--dim);font-size:11px;align-self:center}
 .mu b{font-weight:500;color:var(--text)}
-.mu .me{color:var(--lime)}
 
 /* ---------- h2h ---------- */
 .h2h{border-collapse:collapse;font-size:12.5px;min-width:620px}
@@ -232,30 +229,53 @@ code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.92em;col
 
 /* ---------- power rankings ---------- */
 .pr{display:flex;flex-direction:column;gap:1px;background:var(--line-soft);border:1px solid var(--line-soft)}
+.pr-item{background:var(--bg-2)}
 .pr-row{
-  background:var(--bg-2);display:grid;
-  grid-template-columns:52px minmax(0,1fr) 210px 96px;
+  width:100%;text-align:left;background:none;border:0;color:inherit;font:inherit;cursor:pointer;
+  display:grid;grid-template-columns:52px minmax(0,1fr) 132px 84px 26px;
   gap:18px;align-items:center;padding:14px 18px
 }
-@media (max-width:760px){.pr-row{grid-template-columns:44px minmax(0,1fr) 78px;gap:12px}.pr-bars{display:none}}
+.pr-row:hover{background:rgba(180,255,60,.05)}
+.pr-row:focus-visible{outline:2px solid var(--lime);outline-offset:-2px}
+@media (max-width:760px){
+  .pr-row{grid-template-columns:42px minmax(0,1fr) 66px 22px;gap:12px;padding:12px 14px}
+  .pr-meter{display:none}
+}
 .pr-rank{font-family:Oswald,Arial,sans-serif;font-size:26px;color:var(--dim);font-variant-numeric:tabular-nums;text-align:right}
-.pr-row.top .pr-rank{color:var(--lime)}
+.pr-item.top .pr-rank{color:var(--lime)}
 .pr-name{font-family:Oswald,Arial,sans-serif;font-size:19px;text-transform:uppercase;letter-spacing:.03em}
-.pr-row.mine .pr-name{color:var(--lime)}
-.pr-sub{font-family:Karla,sans-serif;font-size:12.5px;color:var(--muted);text-transform:none;letter-spacing:0;margin-top:3px}
+.pr-sub{display:block;font-family:Karla,sans-serif;font-size:12.5px;color:var(--muted);text-transform:none;letter-spacing:0;margin-top:3px}
+.pr-sub i{font-style:normal;color:var(--dim)}
 .pr-move{font-family:Oswald,Arial,sans-serif;font-size:12px;margin-left:9px;vertical-align:2px}
 .pr-move.up{color:var(--lime-2)}
 .pr-move.down{color:var(--warn)}
 .pr-move.flat{color:var(--dim)}
-.pr-bars{display:flex;flex-direction:column;gap:5px}
-.pr-bar{display:grid;grid-template-columns:52px 1fr;gap:8px;align-items:center;font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--dim);font-family:Oswald,Arial,sans-serif}
-.pr-bar span{height:5px;background:var(--line);position:relative;overflow:hidden}
-.pr-bar span i{position:absolute;inset:0 auto 0 0;background:var(--lime-2);display:block}
-.pr-bar.v span i{background:var(--lime)}
-.pr-score{font-family:Oswald,Arial,sans-serif;font-size:24px;font-variant-numeric:tabular-nums;text-align:right;color:var(--text)}
-.pr-row.top .pr-score{color:var(--lime)}
-.pr-picks{margin-left:10px;padding-left:10px;border-left:1px solid var(--line);color:var(--dim);white-space:nowrap}
+.pr-meter{height:6px;background:var(--line);position:relative;overflow:hidden}
+.pr-meter i{position:absolute;inset:0 auto 0 0;background:var(--lime-2);display:block}
+.pr-item.top .pr-meter i{background:var(--lime)}
+.pr-score{font-family:Oswald,Arial,sans-serif;font-size:24px;font-variant-numeric:tabular-nums;text-align:right}
+.pr-item.top .pr-score{color:var(--lime)}
+.pr-caret{color:var(--dim);font-size:12px;text-align:center;transition:transform .15s ease}
+.pr-row[aria-expanded="true"] .pr-caret{transform:rotate(90deg);color:var(--lime)}
+.pr-detail{border-top:1px solid var(--line-soft);padding:18px 18px 22px;background:var(--bg)}
+.pr-detail[hidden]{display:none}
+.pr-stats{display:flex;flex-wrap:wrap;gap:0 26px;margin:0 0 18px;font-size:13px;color:var(--muted)}
+.pr-stats b{font-family:Oswald,Arial,sans-serif;color:var(--text);font-weight:500;font-variant-numeric:tabular-nums;margin-left:6px}
+.pr-groups{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:1px;background:var(--line-soft);border:1px solid var(--line-soft)}
+.pr-group{background:var(--bg-2);padding:12px 13px 14px;min-width:0}
+.pr-group h4{
+  font-family:Oswald,Arial,sans-serif;font-size:11px;letter-spacing:.18em;text-transform:uppercase;
+  color:var(--lime);margin:0 0 9px;font-weight:400;display:flex;justify-content:space-between;gap:8px
+}
+.pr-group h4 span{color:var(--dim);font-variant-numeric:tabular-nums}
+.pr-group ul{list-style:none;margin:0;padding:0}
+.pr-group li{display:flex;justify-content:space-between;gap:10px;padding:4px 0;font-size:13px;border-bottom:1px solid rgba(28,68,54,.4)}
+.pr-group li:last-child{border-bottom:0}
+.pr-group li em{font-style:normal;color:var(--dim);font-size:11.5px;margin-left:4px}
+.pr-group li b{font-weight:400;color:var(--muted);font-variant-numeric:tabular-nums;white-space:nowrap}
+.pr-group .who{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .pr-method{color:var(--dim);font-size:13px;margin:16px 0 0;max-width:78ch}
+.pr-method a{color:var(--lime-2)}
 .pr-pending{background:var(--bg-2);border:1px solid var(--line-soft);padding:22px;color:var(--muted);font-size:14.5px}
 </style>
 </head>
@@ -267,7 +287,7 @@ code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.92em;col
     <p class="tagline">Ten franchises, five seasons, and <b>four different champions</b> — three of whom backed into the title from the fourth seed or worse. The league is named for a reason.</p>
     <div class="settings">
       <span>10 teams</span><span>Dynasty</span><span>0.5 PPR</span><span>4-round rookie draft</span>
-      <span>4 taxi slots · 3 yrs</span><span>$100 FAAB</span><span>6 playoff teams · Wk 15</span>
+      <span>4 taxi slots · 3 yrs</span><span>6 playoff teams · Wk 15</span>
     </div>
   </div>
 </header>
@@ -296,7 +316,7 @@ code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.92em;col
 
 <section id="power">
   <div class="sec-head"><h2>Power Rankings</h2></div>
-  <p class="sec-sub" id="power-sub">KeepTradeCut dynasty value — players and future rookie picks — blended with how the team is actually playing. Rebuilt every morning, so a trade shows up the next day.</p>
+  <p class="sec-sub" id="power-sub">A mirror of KeepTradeCut's dynasty power rankings for this league — players and future picks, valued and age-adjusted by KTC. Rebuilt every morning, so a trade shows up the next day.</p>
   <div id="power-body"></div>
   <p class="pr-method" id="power-method"></p>
 </section>
@@ -353,7 +373,6 @@ code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.92em;col
 
 <script>
 let D = null, WRITEUPS = [];
-const MINE_DEFAULT = 2;
 const fmt = n => Number(n).toFixed(2);
 const el = (t,c,h)=>{const e=document.createElement(t);if(c)e.className=c;if(h!=null)e.innerHTML=h;return e;};
 const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
@@ -377,7 +396,6 @@ async function init(){
 
 function render(){
   const T = D.teams;
-  const MINE = (D.meta && D.meta.myRoster) || MINE_DEFAULT;
   const CUR = (D.meta && D.meta.currentSeason) || Math.max(...Object.keys(D.seasons).map(Number));
   const CUR_COMPLETE = (D.meta && D.meta.currentStatus) === 'complete';
   const ALL_YEARS = Object.keys(D.seasons).map(Number).sort((a,b)=>a-b);
@@ -426,7 +444,7 @@ function render(){
       const rows = Object.keys(curRows).map(Number).sort((a,b)=> curRows[a].seed - curRows[b].seed);
       rows.forEach(id=>{
         const r = curRows[id], diff = r.pf - r.pa;
-        const tr = el('tr', (id===MINE?'mine ':'') + (r.seed===6?'cutline':''));
+        const tr = el('tr', r.seed===6?'cutline':'');
         tr.innerHTML = `<td class="rank">${r.seed}</td>
           <td class="team-cell">${esc(T[id])}${r.seed<=6?'<span class="pill playoff">In</span>':''}</td>
           <td class="n">${r.w}</td><td class="n">${r.l}</td>
@@ -444,7 +462,7 @@ function render(){
       rows.forEach((id,i)=>{
         const p = prev[id] || {w:0,l:0,pf:0,seed:99}, a = D.alltime[id] || {w:0,l:0,titles:0};
         const former = (D.former[id]||{})[prevYear];
-        const tr = el('tr', id===MINE?'mine':'');
+        const tr = el('tr');
         tr.innerHTML = `<td class="rank">${i+1}</td>
           <td class="team-cell">${esc(T[id])}${former?`<span class="pill playoff">was ${esc(former)}</span>`:''}</td>
           <td class="n">0–0</td>
@@ -472,7 +490,7 @@ function render(){
       w.games.forEach(g=>{
         const [x,y] = g;
         const win = done ? (x.pts > y.pts ? x.rid : y.rid) : null;
-        const side = s => `<span class="${s.rid===MINE?'me ':''}${done && s.rid!==win?'lost':''}">${esc(T[s.rid])}${done?` <i>${fmt(s.pts)}</i>`:''}</span>`;
+        const side = s => `<span class="${done && s.rid!==win?'lost':''}">${esc(T[s.rid])}${done?` <i>${fmt(s.pts)}</i>`:''}</span>`;
         d.appendChild(el('div','mu' + (done?' final':''), `${side(x)}<span class="at">${done?'–':'at'}</span>${side(y)}`));
       });
       box.appendChild(d);
@@ -501,7 +519,7 @@ function render(){
       order.forEach(id=>{
         const r = s[id], champ = D.champs[y] === id, diff = r.pf - r.pa;
         const nameThen = (D.former[id]||{})[y] || T[id];
-        const tr = el('tr', (champ?'champ-row ':'') + (id===MINE?'mine':''));
+        const tr = el('tr', champ?'champ-row':'');
         tr.innerHTML = `<td class="rank">${r.seed}</td>
           <td class="team-cell">${esc(nameThen)}${champ?'<span class="pill gold">Champion</span>':(r.seed<=6?'<span class="pill playoff">Playoffs</span>':'')}</td>
           <td class="n">${r.w}</td><td class="n">${r.l}</td>
@@ -572,7 +590,7 @@ function render(){
     const tb = el('tbody');
     order.forEach((id,i)=>{
       const a = D.alltime[id];
-      const tr = el('tr', id===MINE?'mine':'');
+      const tr = el('tr');
       tr.innerHTML = `<td class="rank">${i+1}</td>
         <td class="team-cell">${esc(T[id])}${a.titles?`<span class="pill gold">${a.titles}×</span>`:''}</td>
         <td class="n">${a.w}</td><td class="n">${a.l}</td><td class="n">${a.pct.toFixed(3).replace(/^0/,'')}</td>
@@ -592,7 +610,7 @@ function render(){
     t.innerHTML = head + '</tr></thead>';
     const tb = el('tbody');
     ids.forEach(r=>{
-      const tr = el('tr', r===MINE?'mine':'');
+      const tr = el('tr');
       let row = `<th class="row">${esc(short(String(T[r])))}</th>`;
       ids.forEach(c=>{
         if(r===c){ row += '<td class="self">—</td>'; return; }
@@ -606,7 +624,7 @@ function render(){
   })();
 
 
-  /* ---- power rankings ---- */
+  /* ---- power rankings: mirrors KeepTradeCut's board for this league ---- */
   (async function(){
     const body = document.getElementById('power-body');
     const method = document.getElementById('power-method');
@@ -616,38 +634,64 @@ function render(){
       if(res.ok) P = await res.json();
     } catch(e){ /* not published yet */ }
     if(!P || !P.rankings || !P.rankings.length){
-      body.innerHTML = '<div class="pr-pending">Power rankings publish on the next data refresh — the nightly job builds them from live rosters and current KeepTradeCut values. Nothing to show until it has run once.</div>';
+      body.innerHTML = '<div class="pr-pending">Power rankings publish on the next data refresh — the nightly job mirrors KeepTradeCut\'s board for this league. Nothing to show until it has run once.</div>';
       return;
     }
+    const num = n => Number(n||0).toLocaleString();
+    const top = P.rankings.reduce((m,t)=> Math.max(m, t.score||0), 0) || 100;
+    const GROUPS = [['qb','Quarterbacks'],['rb','Running backs'],['wr','Receivers'],['te','Tight ends'],['picks','Picks']];
+
     const wrap = el('div','pr');
     P.rankings.forEach(t=>{
-      const row = el('div','pr-row' + (t.rank===1?' top':'') + (t.rid===MINE?' mine':''));
+      const item = el('div','pr-item' + (t.rank===1?' top':''));
       const move = t.move > 0 ? `<span class="pr-move up">▲${t.move}</span>`
                  : t.move < 0 ? `<span class="pr-move down">▼${Math.abs(t.move)}</span>`
                  : '<span class="pr-move flat">–</span>';
-      const top = (t.top||[]).map(p => `${esc(p.name)} <i style="color:var(--dim);font-style:normal">${p.pos}</i>`).join(' · ');
-      const picks = t.picks ? `<span class="pr-picks">${t.picks} pick${t.picks===1?'':'s'} · ${t.picksValue.toLocaleString()}</span>` : '';
-      row.innerHTML =
-        `<div class="pr-rank">${t.rank}</div>
-         <div><div class="pr-name">${esc(t.team)}${move}</div>
-              <div class="pr-sub">${top || '&nbsp;'}${picks}</div></div>
-         <div class="pr-bars">
-           <div class="pr-bar v"><label>Value</label><span><i style="width:${t.parts.value}%"></i></span></div>
-           <div class="pr-bar"><label>Points</label><span><i style="width:${t.parts.points}%"></i></span></div>
-           <div class="pr-bar"><label>Record</label><span><i style="width:${t.parts.record}%"></i></span></div>
-         </div>
-         <div class="pr-score">${t.score.toFixed(1)}</div>`;
-      wrap.appendChild(row);
+      const best = (t.best||[]).map(p => `${esc(p.name)} <i>${esc(p.pos)}</i>`).join(' · ');
+      const btn = el('button','pr-row');
+      btn.type = 'button';
+      btn.setAttribute('aria-expanded','false');
+      btn.innerHTML =
+        `<span class="pr-rank">${t.rank}</span>
+         <span><span class="pr-name">${esc(t.team)}${move}</span>
+               <span class="pr-sub">${best || '&nbsp;'}</span></span>
+         <span class="pr-meter"><i style="width:${Math.round((t.score/top)*100)}%"></i></span>
+         <span class="pr-score">${t.score}</span>
+         <span class="pr-caret">▶</span>`;
+
+      const detail = el('div','pr-detail');
+      detail.hidden = true;
+      detail.innerHTML =
+        `<p class="pr-stats">
+           <span>Roster value<b>${num(t.total)}</b></span>
+           <span>Age adjusted<b>${num(t.adjTotal)}</b></span>
+           <span>Average age<b>${t.avgAge ?? '—'}</b></span>
+           <span>By raw value<b>#${t.rawRank ?? '—'}</b></span>
+         </p>
+         <div class="pr-groups">${GROUPS.map(([k,label])=>{
+            const list = (t.groups && t.groups[k]) || [];
+            if(!list.length) return '';
+            return `<div class="pr-group"><h4>${label}<span>${num((t.groupValues||{})[k])}</span></h4><ul>${
+              list.map(p => `<li><span class="who">${esc(p.name)}${p.pos && k!=='picks' ? ` <em>${esc(p.pos)}${p.age?' · '+p.age:''}</em>` : ''}</span><b>${num(p.value)}</b></li>`).join('')
+            }</ul></div>`;
+          }).join('')}</div>`;
+
+      btn.onclick = ()=>{
+        const open = btn.getAttribute('aria-expanded') === 'true';
+        btn.setAttribute('aria-expanded', String(!open));
+        detail.hidden = open;
+      };
+      item.appendChild(btn);
+      item.appendChild(detail);
+      wrap.appendChild(item);
     });
     body.innerHTML = '';
     body.appendChild(wrap);
-    const w = P.meta.weights;
+
     const when = new Date(P.meta.generated).toLocaleString('en-US',{month:'long',day:'numeric',hour:'numeric',minute:'2-digit'});
-    const basisNote = P.meta.basisIsPriorSeason ? ` from the ${P.meta.basis} season` : '';
-    const pickThrough = P.meta.pickSeasons ? P.meta.pickSeasons[P.meta.pickSeasons.length-1] : '';
-    method.textContent = w.points
-      ? `Score = ${Math.round(w.value*100)}% KeepTradeCut value — the top ${P.meta.depth} players (1QB) plus every rookie pick through ${pickThrough} — ${Math.round(w.points*100)}% points per game${basisNote}, ${Math.round(w.record*100)}% win rate${basisNote}, each scaled across the league. Built ${when} from ${P.meta.matched} valued players.`
-      : `Score is KeepTradeCut value of each roster's top ${P.meta.depth} players (1QB) plus every rookie pick through ${pickThrough}, scaled across the league. Built ${when} from ${P.meta.matched} valued players.`;
+    method.innerHTML =
+      `These are KeepTradeCut's numbers, not ours — their team score, roster value and age adjustment for this league, mirrored as published. Click any team to see the roster they valued. Last pulled ${esc(when)}. ` +
+      `<a href="${esc(P.meta.sourceUrl || 'https://keeptradecut.com/dynasty/power-rankings')}" target="_blank" rel="noopener">View on KeepTradeCut</a>.`;
   })();
 
   /* ---- write-ups ---- */
