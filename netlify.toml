@@ -1,9 +1,13 @@
-# Every deploy pulls fresh numbers from Sleeper before publishing.
-# If Sleeper is unreachable, the build script leaves the committed
-# history.json alone and the deploy still succeeds.
+# Every deploy pulls fresh standings from Sleeper before publishing.
+# Power rankings are not rebuilt here: mirroring KeepTradeCut's board needs a
+# real browser, which runs in the daily GitHub Action instead. Netlify serves
+# the power.json that job commits.
+#
+# If Sleeper is unreachable, the build script leaves the committed history.json
+# alone and the deploy still succeeds.
 
 [build]
-  command = "node scripts/build-history.mjs && node scripts/build-power.mjs"
+  command = "node scripts/build-history.mjs"
   publish = "."
 
 [build.environment]
