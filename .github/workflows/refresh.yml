@@ -34,6 +34,8 @@ jobs:
       - name: Mirror the KeepTradeCut power rankings
         run: node scripts/build-power.mjs
 
+      # Someone editing the repo while this runs would otherwise lose the push
+      # to a non-fast-forward; rebase and retry instead of failing the job.
       - name: Commit if anything changed
         run: |
           if git diff --quiet -- history.json power.json; then
@@ -44,4 +46,13 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add history.json power.json
           git commit -m "Refresh league data ($(date -u +%Y-%m-%d))"
-          git push
+          for attempt in 1 2 3; do
+            if git pull --rebase --autostash origin main && git push; then
+              echo "Pushed on attempt $attempt."
+              exit 0
+            fi
+            echo "Push raced with another commit — retrying ($attempt of 3)."
+            sleep 5
+          done
+          echo "::error::Could not push the refreshed data after three attempts"
+          exit 1
