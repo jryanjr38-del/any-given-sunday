@@ -66,7 +66,9 @@ async function collectSeasons() {
       year: Number(league.season),
       leagueId: id,
       status: league.status,
-      champion: Number((league.metadata || {}).latest_league_winner_roster_id) || null,
+           champion: league.status === "complete"
+        ? Number((league.metadata || {}).latest_league_winner_roster_id) || null
+        : null,
       names: Object.fromEntries(
         rosters.map((r) => [r.roster_id, nameByOwner.get(r.owner_id) || FALLBACK_TEAMS[r.roster_id] || `Team ${r.roster_id}`]),
       ),
