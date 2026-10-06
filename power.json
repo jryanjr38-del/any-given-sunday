@@ -1,7 +1,7 @@
 {
  "meta": {
   "season": 2026,
-  "generated": "2026-09-29T17:42:21.849Z",
+  "generated": "2026-10-06T17:59:38.632Z",
   "leagueId": "1329967656165462016",
   "source": "KeepTradeCut league power rankings",
   "sourceUrl": "https://keeptradecut.com/dynasty/power-rankings/league-overview?leagueId=1329967656165462016&platform=2",
@@ -12,9 +12,9 @@
    "rank": 1,
    "rawRank": 4,
    "score": 99,
-   "total": 167969,
-   "adjTotal": 52226,
-   "avgAge": 26.4,
+   "total": 168292,
+   "adjTotal": 52206,
+   "avgAge": 26.5,
    "groups": {
     "qb": [
      {
@@ -22,8 +22,8 @@
       "pos": "QB",
       "team": "LAC",
       "age": 28.6,
-      "value": 4929,
-      "rank": 11,
+      "value": 4703,
+      "rank": 12,
       "rookie": false
      },
      {
@@ -31,16 +31,16 @@
       "pos": "QB",
       "team": "LAR",
       "age": 23.8,
-      "value": 3315,
-      "rank": 27,
+      "value": 3338,
+      "rank": 26,
       "rookie": true
      },
      {
       "name": "J.J. McCarthy",
       "pos": "QB",
-      "team": "MIN",
+      "team": "NYG",
       "age": 23.7,
-      "value": 1916,
+      "value": 1965,
       "rank": 34,
       "rookie": false
      },
@@ -49,7 +49,7 @@
       "pos": "QB",
       "team": "ARI",
       "age": 24.9,
-      "value": 1798,
+      "value": 1918,
       "rank": 36,
       "rookie": true
      },
@@ -58,7 +58,7 @@
       "pos": "QB",
       "team": "NYJ",
       "age": 36,
-      "value": 1739,
+      "value": 1803,
       "rank": 38,
       "rookie": false
      },
@@ -66,9 +66,9 @@
       "name": "Deshaun Watson",
       "pos": "QB",
       "team": "CLE",
-      "age": 31,
-      "value": 970,
-      "rank": 54,
+      "age": 31.1,
+      "value": 1175,
+      "rank": 50,
       "rookie": false
      }
     ],
@@ -77,8 +77,8 @@
       "name": "Jahmyr Gibbs",
       "pos": "RB",
       "team": "DET",
-      "age": 24.5,
-      "value": 9997,
+      "age": 24.6,
+      "value": 9999,
       "rank": 1,
       "rookie": false
      },
@@ -86,9 +86,9 @@
       "name": "Kenneth Walker III",
       "pos": "RB",
       "team": "KCC",
-      "age": 25.9,
-      "value": 7433,
-      "rank": 4,
+      "age": 26,
+      "value": 7634,
+      "rank": 3,
       "rookie": false
      },
      {
@@ -96,7 +96,7 @@
       "pos": "RB",
       "team": "LAR",
       "age": 26.1,
-      "value": 5889,
+      "value": 6072,
       "rank": 13,
       "rookie": false
      },
@@ -105,8 +105,8 @@
       "pos": "RB",
       "team": "TBB",
       "age": 24.1,
-      "value": 5727,
-      "rank": 15,
+      "value": 5624,
+      "rank": 17,
       "rookie": false
      },
      {
@@ -114,8 +114,8 @@
       "pos": "RB",
       "team": "SEA",
       "age": 25.7,
-      "value": 4022,
-      "rank": 32,
+      "value": 4218,
+      "rank": 30,
       "rookie": false
      },
      {
@@ -123,7 +123,7 @@
       "pos": "RB",
       "team": "NEP",
       "age": 28.6,
-      "value": 3889,
+      "value": 3831,
       "rank": 36,
       "rookie": false
      },
@@ -132,17 +132,17 @@
       "pos": "RB",
       "team": "LAC",
       "age": 24.7,
-      "value": 3131,
-      "rank": 53,
+      "value": 3402,
+      "rank": 44,
       "rookie": false
      },
      {
       "name": "MarShawn Lloyd",
       "pos": "RB",
       "team": "GBP",
-      "age": 25.7,
-      "value": 3096,
-      "rank": 54,
+      "age": 25.8,
+      "value": 2924,
+      "rank": 59,
       "rookie": false
      },
      {
@@ -150,17 +150,8 @@
       "pos": "RB",
       "team": "BUF",
       "age": 26.9,
-      "value": 2450,
-      "rank": 69,
-      "rookie": false
-     },
-     {
-      "name": "Chris Brooks",
-      "pos": "RB",
-      "team": "GBP",
-      "age": 26.7,
-      "value": 2174,
-      "rank": 78,
+      "value": 2312,
+      "rank": 74,
       "rookie": false
      },
      {
@@ -168,8 +159,17 @@
       "pos": "RB",
       "team": "BAL",
       "age": 28.9,
-      "value": 1982,
-      "rank": 86,
+      "value": 2006,
+      "rank": 82,
+      "rookie": false
+     },
+     {
+      "name": "Chris Brooks",
+      "pos": "RB",
+      "team": "GBP",
+      "age": 26.7,
+      "value": 1950,
+      "rank": 84,
       "rookie": false
      }
     ],
@@ -179,7 +179,7 @@
       "pos": "WR",
       "team": "CIN",
       "age": 26.6,
-      "value": 9441,
+      "value": 9069,
       "rank": 2,
       "rookie": false
      },
@@ -187,9 +187,9 @@
       "name": "Nico Collins",
       "pos": "WR",
       "team": "HOU",
-      "age": 27.5,
-      "value": 6177,
-      "rank": 16,
+      "age": 27.6,
+      "value": 6333,
+      "rank": 13,
       "rookie": false
      },
      {
@@ -197,8 +197,8 @@
       "pos": "WR",
       "team": "GBP",
       "age": 23.2,
-      "value": 5360,
-      "rank": 26,
+      "value": 5716,
+      "rank": 23,
       "rookie": false
      },
      {
@@ -206,17 +206,17 @@
       "pos": "WR",
       "team": "PHI",
       "age": 22.3,
-      "value": 4854,
-      "rank": 33,
+      "value": 4802,
+      "rank": 34,
       "rookie": true
      },
      {
       "name": "Josh Downs",
       "pos": "WR",
       "team": "IND",
-      "age": 25.1,
-      "value": 4526,
-      "rank": 37,
+      "age": 25.2,
+      "value": 4434,
+      "rank": 38,
       "rookie": false
      },
      {
@@ -224,8 +224,8 @@
       "pos": "WR",
       "team": "TBB",
       "age": 30.6,
-      "value": 3462,
-      "rank": 67,
+      "value": 3210,
+      "rank": 74,
       "rookie": false
      },
      {
@@ -233,8 +233,8 @@
       "pos": "WR",
       "team": "HOU",
       "age": 24.4,
-      "value": 3195,
-      "rank": 73,
+      "value": 3092,
+      "rank": 77,
       "rookie": false
      },
      {
@@ -242,17 +242,17 @@
       "pos": "WR",
       "team": "LVR",
       "age": 27.6,
-      "value": 2655,
-      "rank": 93,
+      "value": 2579,
+      "rank": 98,
       "rookie": false
      },
      {
       "name": "Xavier Hutchinson",
       "pos": "WR",
       "team": "HOU",
-      "age": 26.3,
-      "value": 2598,
-      "rank": 97,
+      "age": 26.4,
+      "value": 2571,
+      "rank": 99,
       "rookie": false
      },
      {
@@ -260,8 +260,8 @@
       "pos": "WR",
       "team": "CHI",
       "age": 22.6,
-      "value": 2534,
-      "rank": 100,
+      "value": 2464,
+      "rank": 102,
       "rookie": true
      },
      {
@@ -269,27 +269,27 @@
       "pos": "WR",
       "team": "SEA",
       "age": 33.3,
-      "value": 2055,
-      "rank": 117,
+      "value": 2076,
+      "rank": 116,
       "rookie": false
      }
     ],
     "te": [
      {
-      "name": "Tucker Kraft",
+      "name": "Harold Fannin",
       "pos": "TE",
-      "team": "GBP",
-      "age": 25.9,
+      "team": "CLE",
+      "age": 22.2,
       "value": 5371,
       "rank": 5,
       "rookie": false
      },
      {
-      "name": "Harold Fannin",
+      "name": "Tucker Kraft",
       "pos": "TE",
-      "team": "CLE",
-      "age": 22.2,
-      "value": 5151,
+      "team": "GBP",
+      "age": 25.9,
+      "value": 5297,
       "rank": 6,
       "rookie": false
      },
@@ -298,17 +298,17 @@
       "pos": "TE",
       "team": "LAC",
       "age": 23.3,
-      "value": 3606,
-      "rank": 15,
+      "value": 3518,
+      "rank": 17,
       "rookie": false
      },
      {
       "name": "T.J. Hockenson",
       "pos": "TE",
       "team": "MIN",
-      "age": 29.2,
-      "value": 3116,
-      "rank": 23,
+      "age": 29.3,
+      "value": 3138,
+      "rank": 22,
       "rookie": false
      }
     ],
@@ -317,88 +317,88 @@
       "name": "2027 1st from Kenzos",
       "year": "2027",
       "round": 1,
-      "value": 6200,
+      "value": 6163,
       "from": "Kenzos"
      },
      {
       "name": "2028 1st from Kenzos",
       "year": "2028",
       "round": 1,
-      "value": 5223,
+      "value": 5228,
       "from": "Kenzos"
      },
      {
       "name": "2029 1st from Kenzos",
       "year": "2029",
       "round": 1,
-      "value": 4606,
+      "value": 4672,
       "from": "Kenzos"
      },
      {
       "name": "2028 2nd from Kenzos",
       "year": "2028",
       "round": 2,
-      "value": 4017,
+      "value": 4022,
       "from": "Kenzos"
      },
      {
       "name": "2029 2nd from Kenzos",
       "year": "2029",
       "round": 2,
-      "value": 3530,
+      "value": 3617,
       "from": "Kenzos"
      },
      {
       "name": "2027 3rd from Kenzos",
       "year": "2027",
       "round": 3,
-      "value": 3117,
+      "value": 3112,
       "from": "Kenzos"
      },
      {
       "name": "2028 3rd from Kenzos",
       "year": "2028",
       "round": 3,
-      "value": 2827,
+      "value": 2841,
       "from": "Kenzos"
      },
      {
       "name": "2027 4th from Kenzos",
       "year": "2027",
       "round": 4,
-      "value": 2756,
+      "value": 2820,
       "from": "Kenzos"
      },
      {
       "name": "2029 3rd from Kenzos",
       "year": "2029",
       "round": 3,
-      "value": 2474,
+      "value": 2508,
       "from": "Kenzos"
      },
      {
       "name": "2028 4th from Kenzos",
       "year": "2028",
       "round": 4,
-      "value": 2462,
+      "value": 2502,
       "from": "Kenzos"
      },
      {
       "name": "2029 4th from Kenzos",
       "year": "2029",
       "round": 4,
-      "value": 2199,
+      "value": 2263,
       "from": "Kenzos"
      }
     ]
    },
    "rid": 6,
    "groupValues": {
-    "qb": 14667,
-    "rb": 49790,
-    "wr": 46857,
-    "te": 17244,
-    "picks": 39411
+    "qb": 14902,
+    "rb": 49972,
+    "wr": 46346,
+    "te": 17324,
+    "picks": 39748
    },
    "counts": {
     "qb": 6,
@@ -411,450 +411,29 @@
     {
      "name": "Jahmyr Gibbs",
      "pos": "RB",
-     "value": 9997
+     "value": 9999
     },
     {
      "name": "Ja'Marr Chase",
      "pos": "WR",
-     "value": 9441
+     "value": 9069
     },
     {
      "name": "Kenneth Walker III",
      "pos": "RB",
-     "value": 7433
+     "value": 7634
     }
    ],
    "team": "Kenzos",
-   "move": 1
+   "move": 0
   },
   {
    "rank": 2,
-   "rawRank": 3,
-   "score": 97,
-   "total": 171821,
-   "adjTotal": 51283,
-   "avgAge": 26.2,
-   "groups": {
-    "qb": [
-     {
-      "name": "Joe Burrow",
-      "pos": "QB",
-      "team": "CIN",
-      "age": 29.8,
-      "value": 5808,
-      "rank": 5,
-      "rookie": false
-     },
-     {
-      "name": "Jaxson Dart",
-      "pos": "QB",
-      "team": "NYG",
-      "age": 23.4,
-      "value": 4773,
-      "rank": 12,
-      "rookie": false
-     },
-     {
-      "name": "Jacoby Brissett",
-      "pos": "QB",
-      "team": "ARI",
-      "age": 33.8,
-      "value": 2210,
-      "rank": 31,
-      "rookie": false
-     },
-     {
-      "name": "Jameis Winston",
-      "pos": "QB",
-      "team": "NYG",
-      "age": 32.7,
-      "value": 1508,
-      "rank": 43,
-      "rookie": false
-     },
-     {
-      "name": "Marcus Mariota",
-      "pos": "QB",
-      "team": "WAS",
-      "age": 32.9,
-      "value": 1256,
-      "rank": 48,
-      "rookie": false
-     }
-    ],
-    "rb": [
-     {
-      "name": "Chase Brown",
-      "pos": "RB",
-      "team": "CIN",
-      "age": 26.5,
-      "value": 6341,
-      "rank": 9,
-      "rookie": false
-     },
-     {
-      "name": "Breece Hall",
-      "pos": "RB",
-      "team": "NYJ",
-      "age": 25.3,
-      "value": 6147,
-      "rank": 11,
-      "rookie": false
-     },
-     {
-      "name": "Javonte Williams",
-      "pos": "RB",
-      "team": "DAL",
-      "age": 26.4,
-      "value": 5720,
-      "rank": 16,
-      "rookie": false
-     },
-     {
-      "name": "Blake Corum",
-      "pos": "RB",
-      "team": "LAR",
-      "age": 25.8,
-      "value": 4407,
-      "rank": 27,
-      "rookie": false
-     },
-     {
-      "name": "Kyle Monangai",
-      "pos": "RB",
-      "team": "CHI",
-      "age": 24.3,
-      "value": 4312,
-      "rank": 28,
-      "rookie": false
-     },
-     {
-      "name": "Braelon Allen",
-      "pos": "RB",
-      "team": "NYJ",
-      "age": 22.7,
-      "value": 3504,
-      "rank": 43,
-      "rookie": false
-     },
-     {
-      "name": "Jordan Mason",
-      "pos": "RB",
-      "team": "MIN",
-      "age": 27.4,
-      "value": 3431,
-      "rank": 44,
-      "rookie": false
-     },
-     {
-      "name": "Kaytron Allen",
-      "pos": "RB",
-      "team": "WAS",
-      "age": 23.7,
-      "value": 2935,
-      "rank": 58,
-      "rookie": true
-     },
-     {
-      "name": "Adam Randall",
-      "pos": "RB",
-      "team": "BAL",
-      "age": 22.2,
-      "value": 2479,
-      "rank": 67,
-      "rookie": true
-     },
-     {
-      "name": "Raheim Sanders",
-      "pos": "RB",
-      "team": "CLE",
-      "age": 24.3,
-      "value": 2339,
-      "rank": 73,
-      "rookie": false
-     },
-     {
-      "name": "Trevor Etienne",
-      "pos": "RB",
-      "team": "CAR",
-      "age": 22.2,
-      "value": 2293,
-      "rank": 74,
-      "rookie": false
-     }
-    ],
-    "wr": [
-     {
-      "name": "Puka Nacua",
-      "pos": "WR",
-      "team": "LAR",
-      "age": 25.3,
-      "value": 7751,
-      "rank": 4,
-      "rookie": false
-     },
-     {
-      "name": "Malik Nabers",
-      "pos": "WR",
-      "team": "NYG",
-      "age": 23.2,
-      "value": 7010,
-      "rank": 7,
-      "rookie": false
-     },
-     {
-      "name": "Drake London",
-      "pos": "WR",
-      "team": "ATL",
-      "age": 25.2,
-      "value": 6979,
-      "rank": 8,
-      "rookie": false
-     },
-     {
-      "name": "Garrett Wilson",
-      "pos": "WR",
-      "team": "NYJ",
-      "age": 26.2,
-      "value": 6482,
-      "rank": 11,
-      "rookie": false
-     },
-     {
-      "name": "Tetairoa McMillan",
-      "pos": "WR",
-      "team": "CAR",
-      "age": 23.5,
-      "value": 6430,
-      "rank": 13,
-      "rookie": false
-     },
-     {
-      "name": "Wan'Dale Robinson",
-      "pos": "WR",
-      "team": "TEN",
-      "age": 25.7,
-      "value": 3718,
-      "rank": 56,
-      "rookie": false
-     },
-     {
-      "name": "Ted Hurst",
-      "pos": "WR",
-      "team": "TBB",
-      "age": 22.2,
-      "value": 3329,
-      "rank": 70,
-      "rookie": true
-     },
-     {
-      "name": "Malik Washington",
-      "pos": "WR",
-      "team": "MIA",
-      "age": 25.7,
-      "value": 3278,
-      "rank": 71,
-      "rookie": false
-     },
-     {
-      "name": "Jalen McMillan",
-      "pos": "WR",
-      "team": "TBB",
-      "age": 24.8,
-      "value": 3090,
-      "rank": 78,
-      "rookie": false
-     },
-     {
-      "name": "Rashid Shaheed",
-      "pos": "WR",
-      "team": "SEA",
-      "age": 28.1,
-      "value": 2960,
-      "rank": 82,
-      "rookie": false
-     },
-     {
-      "name": "Jauan Jennings",
-      "pos": "WR",
-      "team": "MIN",
-      "age": 29.2,
-      "value": 2430,
-      "rank": 104,
-      "rookie": false
-     },
-     {
-      "name": "Darnell Mooney",
-      "pos": "WR",
-      "team": "NYG",
-      "age": 28.9,
-      "value": 2170,
-      "rank": 113,
-      "rookie": false
-     }
-    ],
-    "te": [
-     {
-      "name": "Trey McBride",
-      "pos": "TE",
-      "team": "ARI",
-      "age": 26.8,
-      "value": 7725,
-      "rank": 2,
-      "rookie": false
-     },
-     {
-      "name": "Colston Loveland",
-      "pos": "TE",
-      "team": "CHI",
-      "age": 22.5,
-      "value": 5992,
-      "rank": 4,
-      "rookie": false
-     },
-     {
-      "name": "Isaiah Likely",
-      "pos": "TE",
-      "team": "NYG",
-      "age": 26.4,
-      "value": 4556,
-      "rank": 10,
-      "rookie": false
-     },
-     {
-      "name": "Dallas Goedert",
-      "pos": "TE",
-      "team": "PHI",
-      "age": 31.7,
-      "value": 3277,
-      "rank": 20,
-      "rookie": false
-     },
-     {
-      "name": "Cade Otton",
-      "pos": "TE",
-      "team": "TBB",
-      "age": 27.4,
-      "value": 2637,
-      "rank": 31,
-      "rookie": false
-     }
-    ],
-    "picks": [
-     {
-      "name": "2029 1st from The Uncletaker",
-      "year": "2029",
-      "round": 1,
-      "value": 4606,
-      "from": "The Uncletaker"
-     },
-     {
-      "name": "2027 2nd from The Uncletaker",
-      "year": "2027",
-      "round": 2,
-      "value": 4556,
-      "from": "The Uncletaker"
-     },
-     {
-      "name": "2028 2nd from The Uncletaker",
-      "year": "2028",
-      "round": 2,
-      "value": 4017,
-      "from": "The Uncletaker"
-     },
-     {
-      "name": "2029 2nd from The Uncletaker",
-      "year": "2029",
-      "round": 2,
-      "value": 3530,
-      "from": "The Uncletaker"
-     },
-     {
-      "name": "2027 3rd from The Uncletaker",
-      "year": "2027",
-      "round": 3,
-      "value": 3117,
-      "from": "The Uncletaker"
-     },
-     {
-      "name": "2028 3rd from The Uncletaker",
-      "year": "2028",
-      "round": 3,
-      "value": 2827,
-      "from": "The Uncletaker"
-     },
-     {
-      "name": "2027 4th from The Uncletaker",
-      "year": "2027",
-      "round": 4,
-      "value": 2756,
-      "from": "The Uncletaker"
-     },
-     {
-      "name": "2029 3rd from The Uncletaker",
-      "year": "2029",
-      "round": 3,
-      "value": 2474,
-      "from": "The Uncletaker"
-     },
-     {
-      "name": "2028 4th from The Uncletaker",
-      "year": "2028",
-      "round": 4,
-      "value": 2462,
-      "from": "The Uncletaker"
-     },
-     {
-      "name": "2029 4th from The Uncletaker",
-      "year": "2029",
-      "round": 4,
-      "value": 2199,
-      "from": "The Uncletaker"
-     }
-    ]
-   },
-   "rid": 4,
-   "groupValues": {
-    "qb": 15555,
-    "rb": 43908,
-    "wr": 55627,
-    "te": 24187,
-    "picks": 32544
-   },
-   "counts": {
-    "qb": 5,
-    "rb": 11,
-    "wr": 12,
-    "te": 5,
-    "picks": 10
-   },
-   "best": [
-    {
-     "name": "Puka Nacua",
-     "pos": "WR",
-     "value": 7751
-    },
-    {
-     "name": "Trey McBride",
-     "pos": "TE",
-     "value": 7725
-    },
-    {
-     "name": "Malik Nabers",
-     "pos": "WR",
-     "value": 7010
-    }
-   ],
-   "team": "The Uncletaker",
-   "move": -1
-  },
-  {
-   "rank": 3,
    "rawRank": 2,
    "score": 97,
-   "total": 173138,
-   "adjTotal": 51278,
-   "avgAge": 26.3,
+   "total": 173973,
+   "adjTotal": 51258,
+   "avgAge": 26.4,
    "groups": {
     "qb": [
      {
@@ -862,7 +441,7 @@
       "pos": "QB",
       "team": "BUF",
       "age": 30.4,
-      "value": 7791,
+      "value": 7817,
       "rank": 1,
       "rookie": false
      },
@@ -871,8 +450,8 @@
       "pos": "QB",
       "team": "NEP",
       "age": 24.1,
-      "value": 5938,
-      "rank": 4,
+      "value": 5634,
+      "rank": 5,
       "rookie": false
      },
      {
@@ -880,7 +459,7 @@
       "pos": "QB",
       "team": "DET",
       "age": 32,
-      "value": 4052,
+      "value": 4055,
       "rank": 18,
       "rookie": false
      }
@@ -900,8 +479,8 @@
       "pos": "RB",
       "team": "CLE",
       "age": 22.9,
-      "value": 5549,
-      "rank": 20,
+      "value": 5726,
+      "rank": 16,
       "rookie": false
      },
      {
@@ -909,7 +488,7 @@
       "pos": "RB",
       "team": "DEN",
       "age": 23.1,
-      "value": 4286,
+      "value": 4235,
       "rank": 29,
       "rookie": true
      },
@@ -917,9 +496,9 @@
       "name": "RJ Harvey",
       "pos": "RB",
       "team": "DEN",
-      "age": 25.6,
-      "value": 4060,
-      "rank": 31,
+      "age": 25.7,
+      "value": 4099,
+      "rank": 32,
       "rookie": false
      },
      {
@@ -927,17 +506,26 @@
       "pos": "RB",
       "team": "GBP",
       "age": 28.6,
-      "value": 3806,
-      "rank": 37,
+      "value": 3781,
+      "rank": 38,
       "rookie": false
      },
      {
       "name": "Tyler Allgeier",
       "pos": "RB",
       "team": "ARI",
-      "age": 26.4,
-      "value": 3289,
+      "age": 26.5,
+      "value": 3327,
       "rank": 46,
+      "rookie": false
+     },
+     {
+      "name": "Sean Tucker",
+      "pos": "RB",
+      "team": "TBB",
+      "age": 25,
+      "value": 2547,
+      "rank": 65,
       "rookie": false
      },
      {
@@ -945,26 +533,8 @@
       "pos": "RB",
       "team": "LAC",
       "age": 25.1,
-      "value": 2535,
-      "rank": 65,
-      "rookie": false
-     },
-     {
-      "name": "Sean Tucker",
-      "pos": "RB",
-      "team": "TBB",
-      "age": 24.9,
-      "value": 2525,
+      "value": 2523,
       "rank": 66,
-      "rookie": false
-     },
-     {
-      "name": "George Holani",
-      "pos": "RB",
-      "team": "SEA",
-      "age": 26.8,
-      "value": 2390,
-      "rank": 71,
       "rookie": false
      },
      {
@@ -972,8 +542,17 @@
       "pos": "RB",
       "team": "SEA",
       "age": 27.4,
-      "value": 2273,
-      "rank": 76,
+      "value": 2511,
+      "rank": 67,
+      "rookie": false
+     },
+     {
+      "name": "George Holani",
+      "pos": "RB",
+      "team": "SEA",
+      "age": 26.8,
+      "value": 2400,
+      "rank": 71,
       "rookie": false
      },
      {
@@ -981,17 +560,17 @@
       "pos": "RB",
       "team": "ARI",
       "age": 31.4,
-      "value": 1634,
-      "rank": 95,
+      "value": 1529,
+      "rank": 97,
       "rookie": false
      },
      {
       "name": "Austin Ekeler",
       "pos": "RB",
-      "team": "FA",
+      "team": "WAS",
       "age": 31.4,
-      "value": 279,
-      "rank": 177,
+      "value": 1145,
+      "rank": 108,
       "rookie": false
      }
     ],
@@ -1000,8 +579,8 @@
       "name": "Jordyn Tyson",
       "pos": "WR",
       "team": "NOS",
-      "age": 22.1,
-      "value": 5531,
+      "age": 22.2,
+      "value": 5599,
       "rank": 24,
       "rookie": true
      },
@@ -1010,8 +589,8 @@
       "pos": "WR",
       "team": "CAR",
       "age": 24.9,
-      "value": 5271,
-      "rank": 27,
+      "value": 5239,
+      "rank": 28,
       "rookie": false
      },
      {
@@ -1019,8 +598,8 @@
       "pos": "WR",
       "team": "CHI",
       "age": 24.3,
-      "value": 5166,
-      "rank": 30,
+      "value": 4943,
+      "rank": 32,
       "rookie": false
      },
      {
@@ -1028,8 +607,8 @@
       "pos": "WR",
       "team": "BUF",
       "age": 29.5,
-      "value": 4575,
-      "rank": 36,
+      "value": 4480,
+      "rank": 37,
       "rookie": false
      },
      {
@@ -1037,8 +616,8 @@
       "pos": "WR",
       "team": "JAC",
       "age": 24,
-      "value": 4369,
-      "rank": 39,
+      "value": 4187,
+      "rank": 41,
       "rookie": false
      },
      {
@@ -1046,7 +625,7 @@
       "pos": "WR",
       "team": "WAS",
       "age": 31,
-      "value": 4055,
+      "value": 4051,
       "rank": 45,
       "rookie": false
      },
@@ -1055,17 +634,8 @@
       "pos": "WR",
       "team": "MIA",
       "age": 22.3,
-      "value": 3966,
-      "rank": 51,
-      "rookie": true
-     },
-     {
-      "name": "Germie Bernard",
-      "pos": "WR",
-      "team": "PIT",
-      "age": 22.8,
-      "value": 3512,
-      "rank": 63,
+      "value": 4007,
+      "rank": 47,
       "rookie": true
      },
      {
@@ -1073,26 +643,35 @@
       "pos": "WR",
       "team": "SFO",
       "age": 30.7,
-      "value": 3489,
-      "rank": 64,
+      "value": 3492,
+      "rank": 62,
       "rookie": false
+     },
+     {
+      "name": "Germie Bernard",
+      "pos": "WR",
+      "team": "PIT",
+      "age": 22.8,
+      "value": 3346,
+      "rank": 68,
+      "rookie": true
      },
      {
       "name": "Keon Coleman",
       "pos": "WR",
       "team": "BUF",
       "age": 23.4,
-      "value": 3168,
-      "rank": 75,
+      "value": 3316,
+      "rank": 70,
       "rookie": false
      },
      {
       "name": "Ricky Pearsall",
       "pos": "WR",
       "team": "SFO",
-      "age": 26,
-      "value": 3134,
-      "rank": 76,
+      "age": 26.1,
+      "value": 3152,
+      "rank": 75,
       "rookie": false
      },
      {
@@ -1100,8 +679,8 @@
       "pos": "WR",
       "team": "SEA",
       "age": 23.8,
-      "value": 2801,
-      "rank": 87,
+      "value": 2827,
+      "rank": 85,
       "rookie": false
      },
      {
@@ -1109,8 +688,8 @@
       "pos": "WR",
       "team": "CIN",
       "age": 27,
-      "value": 1858,
-      "rank": 123,
+      "value": 1748,
+      "rank": 129,
       "rookie": false
      }
     ],
@@ -1120,7 +699,7 @@
       "pos": "TE",
       "team": "IND",
       "age": 24.4,
-      "value": 6197,
+      "value": 6177,
       "rank": 3,
       "rookie": false
      },
@@ -1129,8 +708,8 @@
       "pos": "TE",
       "team": "DET",
       "age": 25.7,
-      "value": 5130,
-      "rank": 7,
+      "value": 5169,
+      "rank": 8,
       "rookie": false
      },
      {
@@ -1138,7 +717,7 @@
       "pos": "TE",
       "team": "JAC",
       "age": 25.8,
-      "value": 3427,
+      "value": 3505,
       "rank": 18,
       "rookie": false
      },
@@ -1147,8 +726,8 @@
       "pos": "TE",
       "team": "HOU",
       "age": 30.2,
-      "value": 3119,
-      "rank": 22,
+      "value": 3133,
+      "rank": 23,
       "rookie": false
      }
     ],
@@ -1157,95 +736,95 @@
       "name": "2027 1st from Jimmy Marino",
       "year": "2027",
       "round": 1,
-      "value": 6200,
+      "value": 6163,
       "from": "Jimmy Marino"
      },
      {
       "name": "2028 1st from Rum Hammers",
       "year": "2028",
       "round": 1,
-      "value": 5223,
+      "value": 5228,
       "from": "Rum Hammers"
      },
      {
       "name": "2029 1st from Rum Hammers",
       "year": "2029",
       "round": 1,
-      "value": 4606,
+      "value": 4672,
       "from": "Rum Hammers"
      },
      {
       "name": "2027 2nd from Rum Hammers",
       "year": "2027",
       "round": 2,
-      "value": 4556,
+      "value": 4529,
       "from": "Rum Hammers"
      },
      {
       "name": "2028 2nd from Rum Hammers",
       "year": "2028",
       "round": 2,
-      "value": 4017,
+      "value": 4022,
       "from": "Rum Hammers"
      },
      {
       "name": "2029 2nd from Rum Hammers",
       "year": "2029",
       "round": 2,
-      "value": 3530,
+      "value": 3617,
       "from": "Rum Hammers"
      },
      {
       "name": "2027 3rd from Rum Hammers",
       "year": "2027",
       "round": 3,
-      "value": 3117,
+      "value": 3112,
       "from": "Rum Hammers"
      },
      {
       "name": "2028 3rd from Rum Hammers",
       "year": "2028",
       "round": 3,
-      "value": 2827,
+      "value": 2841,
       "from": "Rum Hammers"
      },
      {
       "name": "2027 4th from Rum Hammers",
       "year": "2027",
       "round": 4,
-      "value": 2756,
+      "value": 2820,
       "from": "Rum Hammers"
      },
      {
       "name": "2029 3rd from Rum Hammers",
       "year": "2029",
       "round": 3,
-      "value": 2474,
+      "value": 2508,
       "from": "Rum Hammers"
      },
      {
       "name": "2028 4th from Rum Hammers",
       "year": "2028",
       "round": 4,
-      "value": 2462,
+      "value": 2502,
       "from": "Rum Hammers"
      },
      {
       "name": "2029 4th from Rum Hammers",
       "year": "2029",
       "round": 4,
-      "value": 2199,
+      "value": 2263,
       "from": "Rum Hammers"
      }
     ]
    },
    "rid": 1,
    "groupValues": {
-    "qb": 17781,
-    "rb": 42622,
-    "wr": 50895,
-    "te": 17873,
-    "picks": 43967
+    "qb": 17506,
+    "rb": 43819,
+    "wr": 50387,
+    "te": 17984,
+    "picks": 44277
    },
    "counts": {
     "qb": 3,
@@ -1263,33 +842,454 @@
     {
      "name": "Josh Allen",
      "pos": "QB",
-     "value": 7791
+     "value": 7817
     },
     {
      "name": "Tyler Warren",
      "pos": "TE",
-     "value": 6197
+     "value": 6177
     }
    ],
    "team": "Rum Hammers",
-   "move": 0
+   "move": 1
+  },
+  {
+   "rank": 3,
+   "rawRank": 3,
+   "score": 96,
+   "total": 171764,
+   "adjTotal": 51042,
+   "avgAge": 26.3,
+   "groups": {
+    "qb": [
+     {
+      "name": "Joe Burrow",
+      "pos": "QB",
+      "team": "CIN",
+      "age": 29.8,
+      "value": 5735,
+      "rank": 4,
+      "rookie": false
+     },
+     {
+      "name": "Jaxson Dart",
+      "pos": "QB",
+      "team": "NYG",
+      "age": 23.4,
+      "value": 4733,
+      "rank": 11,
+      "rookie": false
+     },
+     {
+      "name": "Jacoby Brissett",
+      "pos": "QB",
+      "team": "ARI",
+      "age": 33.8,
+      "value": 2249,
+      "rank": 31,
+      "rookie": false
+     },
+     {
+      "name": "Jameis Winston",
+      "pos": "QB",
+      "team": "NYG",
+      "age": 32.8,
+      "value": 1454,
+      "rank": 45,
+      "rookie": false
+     },
+     {
+      "name": "Marcus Mariota",
+      "pos": "QB",
+      "team": "WAS",
+      "age": 32.9,
+      "value": 1334,
+      "rank": 47,
+      "rookie": false
+     }
+    ],
+    "rb": [
+     {
+      "name": "Chase Brown",
+      "pos": "RB",
+      "team": "CIN",
+      "age": 26.5,
+      "value": 6224,
+      "rank": 8,
+      "rookie": false
+     },
+     {
+      "name": "Breece Hall",
+      "pos": "RB",
+      "team": "NYJ",
+      "age": 25.4,
+      "value": 6110,
+      "rank": 11,
+      "rookie": false
+     },
+     {
+      "name": "Javonte Williams",
+      "pos": "RB",
+      "team": "DAL",
+      "age": 26.4,
+      "value": 5804,
+      "rank": 15,
+      "rookie": false
+     },
+     {
+      "name": "Kyle Monangai",
+      "pos": "RB",
+      "team": "CHI",
+      "age": 24.3,
+      "value": 4470,
+      "rank": 26,
+      "rookie": false
+     },
+     {
+      "name": "Blake Corum",
+      "pos": "RB",
+      "team": "LAR",
+      "age": 25.9,
+      "value": 4290,
+      "rank": 28,
+      "rookie": false
+     },
+     {
+      "name": "Braelon Allen",
+      "pos": "RB",
+      "team": "NYJ",
+      "age": 22.7,
+      "value": 3779,
+      "rank": 39,
+      "rookie": false
+     },
+     {
+      "name": "Jordan Mason",
+      "pos": "RB",
+      "team": "MIN",
+      "age": 27.4,
+      "value": 3428,
+      "rank": 43,
+      "rookie": false
+     },
+     {
+      "name": "Kaytron Allen",
+      "pos": "RB",
+      "team": "WAS",
+      "age": 23.7,
+      "value": 2844,
+      "rank": 60,
+      "rookie": true
+     },
+     {
+      "name": "Raheim Sanders",
+      "pos": "RB",
+      "team": "CLE",
+      "age": 24.3,
+      "value": 2435,
+      "rank": 68,
+      "rookie": false
+     },
+     {
+      "name": "Adam Randall",
+      "pos": "RB",
+      "team": "BAL",
+      "age": 22.2,
+      "value": 2354,
+      "rank": 73,
+      "rookie": true
+     },
+     {
+      "name": "Trevor Etienne",
+      "pos": "RB",
+      "team": "CAR",
+      "age": 22.2,
+      "value": 2308,
+      "rank": 75,
+      "rookie": false
+     }
+    ],
+    "wr": [
+     {
+      "name": "Puka Nacua",
+      "pos": "WR",
+      "team": "LAR",
+      "age": 25.4,
+      "value": 7792,
+      "rank": 4,
+      "rookie": false
+     },
+     {
+      "name": "Drake London",
+      "pos": "WR",
+      "team": "ATL",
+      "age": 25.2,
+      "value": 6979,
+      "rank": 8,
+      "rookie": false
+     },
+     {
+      "name": "Malik Nabers",
+      "pos": "WR",
+      "team": "NYG",
+      "age": 23.2,
+      "value": 6951,
+      "rank": 9,
+      "rookie": false
+     },
+     {
+      "name": "Tetairoa McMillan",
+      "pos": "WR",
+      "team": "CAR",
+      "age": 23.5,
+      "value": 6559,
+      "rank": 11,
+      "rookie": false
+     },
+     {
+      "name": "Garrett Wilson",
+      "pos": "WR",
+      "team": "NYJ",
+      "age": 26.2,
+      "value": 6435,
+      "rank": 12,
+      "rookie": false
+     },
+     {
+      "name": "Wan'Dale Robinson",
+      "pos": "WR",
+      "team": "TEN",
+      "age": 25.8,
+      "value": 3682,
+      "rank": 56,
+      "rookie": false
+     },
+     {
+      "name": "Ted Hurst",
+      "pos": "WR",
+      "team": "TBB",
+      "age": 22.3,
+      "value": 3461,
+      "rank": 65,
+      "rookie": true
+     },
+     {
+      "name": "Malik Washington",
+      "pos": "WR",
+      "team": "MIA",
+      "age": 25.8,
+      "value": 3409,
+      "rank": 67,
+      "rookie": false
+     },
+     {
+      "name": "Jalen McMillan",
+      "pos": "WR",
+      "team": "TBB",
+      "age": 24.8,
+      "value": 2975,
+      "rank": 79,
+      "rookie": false
+     },
+     {
+      "name": "Rashid Shaheed",
+      "pos": "WR",
+      "team": "SEA",
+      "age": 28.1,
+      "value": 2920,
+      "rank": 83,
+      "rookie": false
+     },
+     {
+      "name": "Jauan Jennings",
+      "pos": "WR",
+      "team": "MIN",
+      "age": 29.2,
+      "value": 2403,
+      "rank": 105,
+      "rookie": false
+     },
+     {
+      "name": "Darnell Mooney",
+      "pos": "WR",
+      "team": "NYG",
+      "age": 28.9,
+      "value": 2004,
+      "rank": 118,
+      "rookie": false
+     }
+    ],
+    "te": [
+     {
+      "name": "Trey McBride",
+      "pos": "TE",
+      "team": "ARI",
+      "age": 26.9,
+      "value": 7562,
+      "rank": 2,
+      "rookie": false
+     },
+     {
+      "name": "Colston Loveland",
+      "pos": "TE",
+      "team": "CHI",
+      "age": 22.5,
+      "value": 5884,
+      "rank": 4,
+      "rookie": false
+     },
+     {
+      "name": "Isaiah Likely",
+      "pos": "TE",
+      "team": "NYG",
+      "age": 26.5,
+      "value": 4455,
+      "rank": 11,
+      "rookie": false
+     },
+     {
+      "name": "Dallas Goedert",
+      "pos": "TE",
+      "team": "PHI",
+      "age": 31.8,
+      "value": 3264,
+      "rank": 19,
+      "rookie": false
+     },
+     {
+      "name": "Cade Otton",
+      "pos": "TE",
+      "team": "TBB",
+      "age": 27.5,
+      "value": 2592,
+      "rank": 31,
+      "rookie": false
+     }
+    ],
+    "picks": [
+     {
+      "name": "2029 1st from The Uncletaker",
+      "year": "2029",
+      "round": 1,
+      "value": 4672,
+      "from": "The Uncletaker"
+     },
+     {
+      "name": "2027 2nd from The Uncletaker",
+      "year": "2027",
+      "round": 2,
+      "value": 4529,
+      "from": "The Uncletaker"
+     },
+     {
+      "name": "2028 2nd from The Uncletaker",
+      "year": "2028",
+      "round": 2,
+      "value": 4022,
+      "from": "The Uncletaker"
+     },
+     {
+      "name": "2029 2nd from The Uncletaker",
+      "year": "2029",
+      "round": 2,
+      "value": 3617,
+      "from": "The Uncletaker"
+     },
+     {
+      "name": "2027 3rd from The Uncletaker",
+      "year": "2027",
+      "round": 3,
+      "value": 3112,
+      "from": "The Uncletaker"
+     },
+     {
+      "name": "2028 3rd from The Uncletaker",
+      "year": "2028",
+      "round": 3,
+      "value": 2841,
+      "from": "The Uncletaker"
+     },
+     {
+      "name": "2027 4th from The Uncletaker",
+      "year": "2027",
+      "round": 4,
+      "value": 2820,
+      "from": "The Uncletaker"
+     },
+     {
+      "name": "2029 3rd from The Uncletaker",
+      "year": "2029",
+      "round": 3,
+      "value": 2508,
+      "from": "The Uncletaker"
+     },
+     {
+      "name": "2028 4th from The Uncletaker",
+      "year": "2028",
+      "round": 4,
+      "value": 2502,
+      "from": "The Uncletaker"
+     },
+     {
+      "name": "2029 4th from The Uncletaker",
+      "year": "2029",
+      "round": 4,
+      "value": 2263,
+      "from": "The Uncletaker"
+     }
+    ]
+   },
+   "rid": 4,
+   "groupValues": {
+    "qb": 15505,
+    "rb": 44046,
+    "wr": 55570,
+    "te": 23757,
+    "picks": 32886
+   },
+   "counts": {
+    "qb": 5,
+    "rb": 11,
+    "wr": 12,
+    "te": 5,
+    "picks": 10
+   },
+   "best": [
+    {
+     "name": "Puka Nacua",
+     "pos": "WR",
+     "value": 7792
+    },
+    {
+     "name": "Trey McBride",
+     "pos": "TE",
+     "value": 7562
+    },
+    {
+     "name": "Drake London",
+     "pos": "WR",
+     "value": 6979
+    }
+   ],
+   "team": "The Uncletaker",
+   "move": -1
   },
   {
    "rank": 4,
    "rawRank": 1,
    "score": 94,
-   "total": 174053,
-   "adjTotal": 49764,
-   "avgAge": 25.4,
+   "total": 174069,
+   "adjTotal": 49596,
+   "avgAge": 25.3,
    "groups": {
     "qb": [
      {
       "name": "Jalen Hurts",
       "pos": "QB",
       "team": "PHI",
-      "age": 28.1,
-      "value": 5292,
-      "rank": 7,
+      "age": 28.2,
+      "value": 5147,
+      "rank": 10,
       "rookie": false
      },
      {
@@ -1297,8 +1297,8 @@
       "pos": "QB",
       "team": "DEN",
       "age": 26.6,
-      "value": 4642,
-      "rank": 13,
+      "value": 4531,
+      "rank": 15,
       "rookie": false
      },
      {
@@ -1306,17 +1306,26 @@
       "pos": "QB",
       "team": "MIA",
       "age": 27.4,
-      "value": 3382,
-      "rank": 26,
+      "value": 3315,
+      "rank": 27,
       "rookie": false
+     },
+     {
+      "name": "Jalon Daniels",
+      "pos": "QB",
+      "team": "TBB",
+      "age": 23.9,
+      "value": 2248,
+      "rank": 32,
+      "rookie": true
      },
      {
       "name": "Garrett Nussmeier",
       "pos": "QB",
       "team": "KCC",
-      "age": 24.6,
-      "value": 1301,
-      "rank": 47,
+      "age": 24.7,
+      "value": 1241,
+      "rank": 49,
       "rookie": true
      }
     ],
@@ -1326,26 +1335,26 @@
       "pos": "RB",
       "team": "LVR",
       "age": 22.8,
-      "value": 7720,
-      "rank": 3,
+      "value": 7536,
+      "rank": 4,
       "rookie": false
      },
      {
       "name": "Omarion Hampton",
       "pos": "RB",
       "team": "LAC",
-      "age": 23.5,
-      "value": 6586,
-      "rank": 8,
+      "age": 23.6,
+      "value": 6144,
+      "rank": 10,
       "rookie": false
      },
      {
       "name": "Mike Washington Jr.",
       "pos": "RB",
       "team": "LVR",
-      "age": 23.2,
-      "value": 3603,
-      "rank": 39,
+      "age": 23.3,
+      "value": 3785,
+      "rank": 37,
       "rookie": true
      },
      {
@@ -1353,8 +1362,8 @@
       "pos": "RB",
       "team": "MIN",
       "age": 31.8,
-      "value": 3233,
-      "rank": 50,
+      "value": 3321,
+      "rank": 48,
       "rookie": false
      },
      {
@@ -1362,8 +1371,8 @@
       "pos": "RB",
       "team": "MIA",
       "age": 23.5,
-      "value": 2783,
-      "rank": 60,
+      "value": 2959,
+      "rank": 56,
       "rookie": false
      },
      {
@@ -1371,53 +1380,35 @@
       "pos": "RB",
       "team": "NOS",
       "age": 24.3,
-      "value": 2577,
-      "rank": 63,
-      "rookie": false
-     },
-     {
-      "name": "Trey Benson",
-      "pos": "RB",
-      "team": "ARI",
-      "age": 24.2,
-      "value": 2061,
-      "rank": 83,
+      "value": 2743,
+      "rank": 62,
       "rookie": false
      },
      {
       "name": "Eli Heidenreich",
       "pos": "RB",
       "team": "PIT",
-      "age": 23.2,
-      "value": 2061,
-      "rank": 84,
+      "age": 23.3,
+      "value": 1996,
+      "rank": 83,
       "rookie": true
+     },
+     {
+      "name": "Trey Benson",
+      "pos": "RB",
+      "team": "ARI",
+      "age": 24.2,
+      "value": 1891,
+      "rank": 85,
+      "rookie": false
      },
      {
       "name": "Roschon Johnson",
       "pos": "RB",
       "team": "CHI",
       "age": 25.7,
-      "value": 1904,
+      "value": 1809,
       "rank": 88,
-      "rookie": false
-     },
-     {
-      "name": "Jacob Saylors",
-      "pos": "RB",
-      "team": "DET",
-      "age": 25.6,
-      "value": 1435,
-      "rank": 99,
-      "rookie": false
-     },
-     {
-      "name": "DeeJay Dallas",
-      "pos": "RB",
-      "team": "MIN",
-      "age": 28,
-      "value": 420,
-      "rank": 153,
       "rookie": false
      }
     ],
@@ -1427,8 +1418,8 @@
       "pos": "WR",
       "team": "MIN",
       "age": 27.3,
-      "value": 7438,
-      "rank": 5,
+      "value": 7220,
+      "rank": 6,
       "rookie": false
      },
      {
@@ -1436,8 +1427,8 @@
       "pos": "WR",
       "team": "CHI",
       "age": 22.8,
-      "value": 5780,
-      "rank": 21,
+      "value": 6002,
+      "rank": 17,
       "rookie": false
      },
      {
@@ -1445,8 +1436,8 @@
       "pos": "WR",
       "team": "ARI",
       "age": 26.6,
-      "value": 4626,
-      "rank": 34,
+      "value": 5047,
+      "rank": 31,
       "rookie": false
      },
      {
@@ -1454,26 +1445,17 @@
       "pos": "WR",
       "team": "WAS",
       "age": 22.2,
-      "value": 4060,
-      "rank": 44,
+      "value": 4082,
+      "rank": 43,
       "rookie": true
-     },
-     {
-      "name": "Jayden Reed",
-      "pos": "WR",
-      "team": "GBP",
-      "age": 26.4,
-      "value": 3569,
-      "rank": 59,
-      "rookie": false
      },
      {
       "name": "Pat Bryant",
       "pos": "WR",
       "team": "DEN",
       "age": 23.8,
-      "value": 3555,
-      "rank": 62,
+      "value": 3591,
+      "rank": 57,
       "rookie": false
      },
      {
@@ -1481,7 +1463,16 @@
       "pos": "WR",
       "team": "LVR",
       "age": 25.6,
-      "value": 3476,
+      "value": 3504,
+      "rank": 60,
+      "rookie": false
+     },
+     {
+      "name": "Jayden Reed",
+      "pos": "WR",
+      "team": "GBP",
+      "age": 26.4,
+      "value": 3455,
       "rank": 66,
       "rookie": false
      },
@@ -1490,35 +1481,35 @@
       "pos": "WR",
       "team": "KCC",
       "age": 23.6,
-      "value": 3112,
-      "rank": 77,
+      "value": 3083,
+      "rank": 78,
       "rookie": true
-     },
-     {
-      "name": "Travis Hunter",
-      "pos": "WR",
-      "team": "JAC",
-      "age": 23.4,
-      "value": 2877,
-      "rank": 83,
-      "rookie": false
      },
      {
       "name": "Rashod Bateman",
       "pos": "WR",
       "team": "BAL",
       "age": 26.8,
-      "value": 2853,
+      "value": 2830,
       "rank": 84,
+      "rookie": false
+     },
+     {
+      "name": "Travis Hunter",
+      "pos": "WR",
+      "team": "JAC",
+      "age": 23.4,
+      "value": 2788,
+      "rank": 87,
       "rookie": false
      },
      {
       "name": "Troy Franklin",
       "pos": "WR",
       "team": "DEN",
-      "age": 23.6,
-      "value": 2803,
-      "rank": 86,
+      "age": 23.7,
+      "value": 2763,
+      "rank": 90,
       "rookie": false
      },
      {
@@ -1526,8 +1517,8 @@
       "pos": "WR",
       "team": "DAL",
       "age": 26.9,
-      "value": 2591,
-      "rank": 98,
+      "value": 2587,
+      "rank": 97,
       "rookie": false
      }
     ],
@@ -1537,7 +1528,7 @@
       "pos": "TE",
       "team": "LVR",
       "age": 23.8,
-      "value": 7929,
+      "value": 8125,
       "rank": 1,
       "rookie": false
      },
@@ -1546,8 +1537,8 @@
       "pos": "TE",
       "team": "LAR",
       "age": 23.6,
-      "value": 3986,
-      "rank": 13,
+      "value": 4013,
+      "rank": 12,
       "rookie": false
      },
      {
@@ -1555,8 +1546,8 @@
       "pos": "TE",
       "team": "TEN",
       "age": 24.1,
-      "value": 2759,
-      "rank": 29,
+      "value": 2717,
+      "rank": 28,
       "rookie": false
      },
      {
@@ -1564,17 +1555,17 @@
       "pos": "TE",
       "team": "NYJ",
       "age": 22.4,
-      "value": 2627,
-      "rank": 33,
+      "value": 2577,
+      "rank": 32,
       "rookie": false
      },
      {
       "name": "Erick All",
       "pos": "TE",
       "team": "CIN",
-      "age": 26,
-      "value": 1629,
-      "rank": 53,
+      "age": 26.1,
+      "value": 1527,
+      "rank": 57,
       "rookie": false
      },
      {
@@ -1582,8 +1573,8 @@
       "pos": "TE",
       "team": "PHI",
       "age": 35.9,
-      "value": 1577,
-      "rank": 56,
+      "value": 1472,
+      "rank": 59,
       "rookie": false
      }
     ],
@@ -1592,113 +1583,113 @@
       "name": "2027 1st from Thunder Gun Express",
       "year": "2027",
       "round": 1,
-      "value": 6200,
+      "value": 6163,
       "from": "Thunder Gun Express"
      },
      {
       "name": "2027 1st from Rum Hammers",
       "year": "2027",
       "round": 1,
-      "value": 6200,
+      "value": 6163,
       "from": "Rum Hammers"
      },
      {
       "name": "2027 1st from Brendawg21",
       "year": "2027",
       "round": 1,
-      "value": 6200,
+      "value": 6163,
       "from": "Brendawg21"
      },
      {
       "name": "2028 1st from Thunder Gun Express",
       "year": "2028",
       "round": 1,
-      "value": 5223,
+      "value": 5228,
       "from": "Thunder Gun Express"
      },
      {
       "name": "2029 1st from Thunder Gun Express",
       "year": "2029",
       "round": 1,
-      "value": 4606,
+      "value": 4672,
       "from": "Thunder Gun Express"
      },
      {
       "name": "2027 2nd from Thunder Gun Express",
       "year": "2027",
       "round": 2,
-      "value": 4556,
+      "value": 4529,
       "from": "Thunder Gun Express"
      },
      {
       "name": "2027 2nd from Kenzos",
       "year": "2027",
       "round": 2,
-      "value": 4556,
+      "value": 4529,
       "from": "Kenzos"
      },
      {
       "name": "2028 2nd from Thunder Gun Express",
       "year": "2028",
       "round": 2,
-      "value": 4017,
+      "value": 4022,
       "from": "Thunder Gun Express"
      },
      {
       "name": "2029 2nd from Thunder Gun Express",
       "year": "2029",
       "round": 2,
-      "value": 3530,
+      "value": 3617,
       "from": "Thunder Gun Express"
      },
      {
       "name": "2028 3rd from Thunder Gun Express",
       "year": "2028",
       "round": 3,
-      "value": 2827,
+      "value": 2841,
       "from": "Thunder Gun Express"
      },
      {
       "name": "2027 4th from Thunder Gun Express",
       "year": "2027",
       "round": 4,
-      "value": 2756,
+      "value": 2820,
       "from": "Thunder Gun Express"
      },
      {
       "name": "2029 3rd from Thunder Gun Express",
       "year": "2029",
       "round": 3,
-      "value": 2474,
+      "value": 2508,
       "from": "Thunder Gun Express"
      },
      {
       "name": "2028 4th from Thunder Gun Express",
       "year": "2028",
       "round": 4,
-      "value": 2462,
+      "value": 2502,
       "from": "Thunder Gun Express"
      },
      {
       "name": "2029 4th from Thunder Gun Express",
       "year": "2029",
       "round": 4,
-      "value": 2199,
+      "value": 2263,
       "from": "Thunder Gun Express"
      }
     ]
    },
    "rid": 2,
    "groupValues": {
-    "qb": 14617,
-    "rb": 34383,
-    "wr": 46740,
-    "te": 20507,
-    "picks": 57806
+    "qb": 16482,
+    "rb": 32184,
+    "wr": 46952,
+    "te": 20431,
+    "picks": 58020
    },
    "counts": {
-    "qb": 4,
-    "rb": 11,
+    "qb": 5,
+    "rb": 9,
     "wr": 12,
     "te": 6,
     "picks": 14
@@ -1707,17 +1698,17 @@
     {
      "name": "Brock Bowers",
      "pos": "TE",
-     "value": 7929
+     "value": 8125
     },
     {
      "name": "Ashton Jeanty",
      "pos": "RB",
-     "value": 7720
+     "value": 7536
     },
     {
      "name": "Justin Jefferson",
      "pos": "WR",
-     "value": 7438
+     "value": 7220
     }
    ],
    "team": "Thunder Gun Express",
@@ -1725,29 +1716,29 @@
   },
   {
    "rank": 5,
-   "rawRank": 6,
+   "rawRank": 5,
    "score": 85,
-   "total": 158986,
-   "adjTotal": 44875,
-   "avgAge": 26.4,
+   "total": 161074,
+   "adjTotal": 44961,
+   "avgAge": 26.5,
    "groups": {
     "qb": [
-     {
-      "name": "Trevor Lawrence",
-      "pos": "QB",
-      "team": "JAC",
-      "age": 27,
-      "value": 5269,
-      "rank": 8,
-      "rookie": false
-     },
      {
       "name": "Brock Purdy",
       "pos": "QB",
       "team": "SFO",
       "age": 26.8,
-      "value": 5110,
-      "rank": 10,
+      "value": 5327,
+      "rank": 7,
+      "rookie": false
+     },
+     {
+      "name": "Trevor Lawrence",
+      "pos": "QB",
+      "team": "JAC",
+      "age": 27,
+      "value": 5270,
+      "rank": 8,
       "rookie": false
      },
      {
@@ -1755,7 +1746,7 @@
       "pos": "QB",
       "team": "ATL",
       "age": 26.4,
-      "value": 2825,
+      "value": 2967,
       "rank": 29,
       "rookie": false
      },
@@ -1763,8 +1754,8 @@
       "name": "Shedeur Sanders",
       "pos": "QB",
       "team": "CLE",
-      "age": 24.6,
-      "value": 2300,
+      "age": 24.7,
+      "value": 2312,
       "rank": 30,
       "rookie": false
      },
@@ -1773,8 +1764,8 @@
       "pos": "QB",
       "team": "JAC",
       "age": 23.4,
-      "value": 1340,
-      "rank": 46,
+      "value": 1305,
+      "rank": 48,
       "rookie": false
      }
     ],
@@ -1784,7 +1775,7 @@
       "pos": "RB",
       "team": "MIA",
       "age": 25,
-      "value": 6068,
+      "value": 6075,
       "rank": 12,
       "rookie": false
      },
@@ -1793,8 +1784,8 @@
       "pos": "RB",
       "team": "CHI",
       "age": 27.7,
-      "value": 5528,
-      "rank": 22,
+      "value": 5387,
+      "rank": 21,
       "rookie": false
      },
      {
@@ -1802,8 +1793,8 @@
       "pos": "RB",
       "team": "NOS",
       "age": 27.7,
-      "value": 4514,
-      "rank": 25,
+      "value": 4299,
+      "rank": 27,
       "rookie": false
      },
      {
@@ -1811,8 +1802,8 @@
       "pos": "RB",
       "team": "HOU",
       "age": 25.8,
-      "value": 3570,
-      "rank": 40,
+      "value": 3616,
+      "rank": 41,
       "rookie": false
      },
      {
@@ -1820,17 +1811,17 @@
       "pos": "RB",
       "team": "DEN",
       "age": 27.8,
-      "value": 3569,
-      "rank": 41,
+      "value": 3453,
+      "rank": 42,
       "rookie": false
      },
      {
       "name": "Seth McGowan",
       "pos": "RB",
       "team": "IND",
-      "age": 24.9,
-      "value": 2368,
-      "rank": 72,
+      "age": 25,
+      "value": 2433,
+      "rank": 69,
       "rookie": true
      },
      {
@@ -1838,8 +1829,8 @@
       "pos": "RB",
       "team": "IND",
       "age": 23.1,
-      "value": 2172,
-      "rank": 79,
+      "value": 2080,
+      "rank": 80,
       "rookie": false
      },
      {
@@ -1847,8 +1838,17 @@
       "pos": "RB",
       "team": "PHI",
       "age": 22.7,
-      "value": 1647,
+      "value": 1622,
       "rank": 94,
+      "rookie": false
+     },
+     {
+      "name": "Kareem Hunt",
+      "pos": "RB",
+      "team": "FA",
+      "age": 31.2,
+      "value": 548,
+      "rank": 138,
       "rookie": false
      }
     ],
@@ -1858,7 +1858,7 @@
       "pos": "WR",
       "team": "SEA",
       "age": 24.6,
-      "value": 9998,
+      "value": 9997,
       "rank": 1,
       "rookie": false
      },
@@ -1867,26 +1867,8 @@
       "pos": "WR",
       "team": "TBB",
       "age": 24,
-      "value": 6122,
-      "rank": 17,
-      "rookie": false
-     },
-     {
-      "name": "Jaylen Waddle",
-      "pos": "WR",
-      "team": "DEN",
-      "age": 27.8,
-      "value": 5549,
-      "rank": 23,
-      "rookie": false
-     },
-     {
-      "name": "Rashee Rice",
-      "pos": "WR",
-      "team": "KCC",
-      "age": 26.4,
-      "value": 5426,
-      "rank": 25,
+      "value": 5889,
+      "rank": 19,
       "rookie": false
      },
      {
@@ -1894,17 +1876,44 @@
       "pos": "WR",
       "team": "CLE",
       "age": 22.8,
-      "value": 5191,
-      "rank": 29,
+      "value": 5577,
+      "rank": 25,
       "rookie": true
+     },
+     {
+      "name": "Jaylen Waddle",
+      "pos": "WR",
+      "team": "DEN",
+      "age": 27.9,
+      "value": 5331,
+      "rank": 26,
+      "rookie": false
+     },
+     {
+      "name": "Rashee Rice",
+      "pos": "WR",
+      "team": "KCC",
+      "age": 26.4,
+      "value": 5281,
+      "rank": 27,
+      "rookie": false
      },
      {
       "name": "Alec Pierce",
       "pos": "WR",
       "team": "IND",
       "age": 26.4,
-      "value": 4228,
+      "value": 4185,
       "rank": 42,
+      "rookie": false
+     },
+     {
+      "name": "Xavier Worthy",
+      "pos": "WR",
+      "team": "KCC",
+      "age": 23.4,
+      "value": 3860,
+      "rank": 50,
       "rookie": false
      },
      {
@@ -1912,26 +1921,17 @@
       "pos": "WR",
       "team": "BAL",
       "age": 22.2,
-      "value": 4007,
-      "rank": 47,
+      "value": 3840,
+      "rank": 51,
       "rookie": true
-     },
-     {
-      "name": "Xavier Worthy",
-      "pos": "WR",
-      "team": "KCC",
-      "age": 23.4,
-      "value": 3987,
-      "rank": 48,
-      "rookie": false
      },
      {
       "name": "Courtland Sutton",
       "pos": "WR",
       "team": "DEN",
       "age": 31,
-      "value": 3376,
-      "rank": 68,
+      "value": 3216,
+      "rank": 73,
       "rookie": false
      },
      {
@@ -1939,8 +1939,17 @@
       "pos": "WR",
       "team": "DET",
       "age": 24.6,
-      "value": 2967,
+      "value": 2950,
       "rank": 81,
+      "rookie": false
+     },
+     {
+      "name": "Konata Mumpfield",
+      "pos": "WR",
+      "team": "LAR",
+      "age": 24,
+      "value": 2095,
+      "rank": 115,
       "rookie": false
      },
      {
@@ -1948,17 +1957,8 @@
       "pos": "WR",
       "team": "PHI",
       "age": 29.3,
-      "value": 1391,
-      "rank": 152,
-      "rookie": false
-     },
-     {
-      "name": "Calvin Austin III",
-      "pos": "WR",
-      "team": "NYG",
-      "age": 27.5,
-      "value": 1289,
-      "rank": 157,
+      "value": 1292,
+      "rank": 156,
       "rookie": false
      },
      {
@@ -1966,8 +1966,17 @@
       "pos": "WR",
       "team": "SFO",
       "age": 32,
-      "value": 1191,
-      "rank": 163,
+      "value": 1264,
+      "rank": 158,
+      "rookie": false
+     },
+     {
+      "name": "Calvin Austin III",
+      "pos": "WR",
+      "team": "NYG",
+      "age": 27.5,
+      "value": 1210,
+      "rank": 160,
       "rookie": false
      }
     ],
@@ -1977,34 +1986,34 @@
       "pos": "TE",
       "team": "SFO",
       "age": 33,
-      "value": 4321,
-      "rank": 11,
+      "value": 4470,
+      "rank": 10,
       "rookie": false
      },
      {
       "name": "Eli Stowers",
       "pos": "TE",
       "team": "PHI",
-      "age": 23.4,
-      "value": 3344,
-      "rank": 19,
+      "age": 23.5,
+      "value": 3247,
+      "rank": 20,
       "rookie": true
-     },
-     {
-      "name": "Dawson Knox",
-      "pos": "TE",
-      "team": "BUF",
-      "age": 29.9,
-      "value": 2204,
-      "rank": 43,
-      "rookie": false
      },
      {
       "name": "Mike Gesicki",
       "pos": "TE",
       "team": "CIN",
       "age": 31,
-      "value": 2157,
+      "value": 2321,
+      "rank": 40,
+      "rookie": false
+     },
+     {
+      "name": "Dawson Knox",
+      "pos": "TE",
+      "team": "BUF",
+      "age": 29.9,
+      "value": 2193,
       "rank": 44,
       "rookie": false
      },
@@ -2013,8 +2022,8 @@
       "pos": "TE",
       "team": "SFO",
       "age": 27.2,
-      "value": 1991,
-      "rank": 45,
+      "value": 1885,
+      "rank": 47,
       "rookie": false
      }
     ],
@@ -2023,100 +2032,100 @@
       "name": "2027 1st from IR Specialist ",
       "year": "2027",
       "round": 1,
-      "value": 6200,
+      "value": 6163,
       "from": "IR Specialist "
      },
      {
       "name": "2028 1st from IR Specialist ",
       "year": "2028",
       "round": 1,
-      "value": 5223,
+      "value": 5228,
       "from": "IR Specialist "
      },
      {
       "name": "2029 1st from IR Specialist ",
       "year": "2029",
       "round": 1,
-      "value": 4606,
+      "value": 4672,
       "from": "IR Specialist "
      },
      {
       "name": "2027 2nd from IR Specialist ",
       "year": "2027",
       "round": 2,
-      "value": 4556,
+      "value": 4529,
       "from": "IR Specialist "
      },
      {
       "name": "2028 2nd from IR Specialist ",
       "year": "2028",
       "round": 2,
-      "value": 4017,
+      "value": 4022,
       "from": "IR Specialist "
      },
      {
       "name": "2029 2nd from IR Specialist ",
       "year": "2029",
       "round": 2,
-      "value": 3530,
+      "value": 3617,
       "from": "IR Specialist "
      },
      {
       "name": "2027 3rd from IR Specialist ",
       "year": "2027",
       "round": 3,
-      "value": 3117,
+      "value": 3112,
       "from": "IR Specialist "
      },
      {
       "name": "2028 3rd from IR Specialist ",
       "year": "2028",
       "round": 3,
-      "value": 2827,
+      "value": 2841,
       "from": "IR Specialist "
      },
      {
       "name": "2027 4th from IR Specialist ",
       "year": "2027",
       "round": 4,
-      "value": 2756,
+      "value": 2820,
       "from": "IR Specialist "
      },
      {
       "name": "2029 3rd from IR Specialist ",
       "year": "2029",
       "round": 3,
-      "value": 2474,
+      "value": 2508,
       "from": "IR Specialist "
      },
      {
       "name": "2028 4th from IR Specialist ",
       "year": "2028",
       "round": 4,
-      "value": 2462,
+      "value": 2502,
       "from": "IR Specialist "
      },
      {
       "name": "2029 4th from IR Specialist ",
       "year": "2029",
       "round": 4,
-      "value": 2199,
+      "value": 2263,
       "from": "IR Specialist "
      }
     ]
    },
    "rid": 7,
    "groupValues": {
-    "qb": 16844,
-    "rb": 29436,
-    "wr": 54722,
-    "te": 14017,
-    "picks": 43967
+    "qb": 17181,
+    "rb": 29513,
+    "wr": 55987,
+    "te": 14116,
+    "picks": 44277
    },
    "counts": {
     "qb": 5,
-    "rb": 8,
-    "wr": 13,
+    "rb": 9,
+    "wr": 14,
     "te": 5,
     "picks": 12
    },
@@ -2124,17 +2133,17 @@
     {
      "name": "Jaxon Smith-Njigba",
      "pos": "WR",
-     "value": 9998
-    },
-    {
-     "name": "Emeka Egbuka",
-     "pos": "WR",
-     "value": 6122
+     "value": 9997
     },
     {
      "name": "De'Von Achane",
      "pos": "RB",
-     "value": 6068
+     "value": 6075
+    },
+    {
+     "name": "Emeka Egbuka",
+     "pos": "WR",
+     "value": 5889
     }
    ],
    "team": "IR Specialist",
@@ -2142,425 +2151,10 @@
   },
   {
    "rank": 6,
-   "rawRank": 5,
-   "score": 79,
-   "total": 160765,
-   "adjTotal": 42156,
-   "avgAge": 27.5,
-   "groups": {
-    "qb": [
-     {
-      "name": "Dak Prescott",
-      "pos": "QB",
-      "team": "DAL",
-      "age": 33.2,
-      "value": 4628,
-      "rank": 14,
-      "rookie": false
-     },
-     {
-      "name": "C.J. Stroud",
-      "pos": "QB",
-      "team": "HOU",
-      "age": 25,
-      "value": 3806,
-      "rank": 21,
-      "rookie": false
-     },
-     {
-      "name": "Matthew Stafford",
-      "pos": "QB",
-      "team": "LAR",
-      "age": 38.6,
-      "value": 3794,
-      "rank": 22,
-      "rookie": false
-     },
-     {
-      "name": "Daniel Jones",
-      "pos": "QB",
-      "team": "IND",
-      "age": 29.3,
-      "value": 3312,
-      "rank": 28,
-      "rookie": false
-     }
-    ],
-    "rb": [
-     {
-      "name": "Christian McCaffrey",
-      "pos": "RB",
-      "team": "SFO",
-      "age": 30.3,
-      "value": 6265,
-      "rank": 10,
-      "rookie": false
-     },
-     {
-      "name": "Derrick Henry",
-      "pos": "RB",
-      "team": "BAL",
-      "age": 32.7,
-      "value": 5826,
-      "rank": 14,
-      "rookie": false
-     },
-     {
-      "name": "Cam Skattebo",
-      "pos": "RB",
-      "team": "NYG",
-      "age": 24.6,
-      "value": 5529,
-      "rank": 21,
-      "rookie": false
-     },
-     {
-      "name": "Chuba Hubbard",
-      "pos": "RB",
-      "team": "CAR",
-      "age": 27.3,
-      "value": 4617,
-      "rank": 24,
-      "rookie": false
-     },
-     {
-      "name": "Emmett Johnson",
-      "pos": "RB",
-      "team": "KCC",
-      "age": 23,
-      "value": 3892,
-      "rank": 35,
-      "rookie": true
-     },
-     {
-      "name": "Tony Pollard",
-      "pos": "RB",
-      "team": "TEN",
-      "age": 29.4,
-      "value": 3266,
-      "rank": 48,
-      "rookie": false
-     },
-     {
-      "name": "Tyjae Spears",
-      "pos": "RB",
-      "team": "TEN",
-      "age": 25.3,
-      "value": 3012,
-      "rank": 55,
-      "rookie": false
-     },
-     {
-      "name": "LeQuint Allen",
-      "pos": "RB",
-      "team": "JAC",
-      "age": 22.2,
-      "value": 2407,
-      "rank": 70,
-      "rookie": false
-     }
-    ],
-    "wr": [
-     {
-      "name": "Chris Olave",
-      "pos": "WR",
-      "team": "NOS",
-      "age": 26.2,
-      "value": 6978,
-      "rank": 9,
-      "rookie": false
-     },
-     {
-      "name": "Ladd McConkey",
-      "pos": "WR",
-      "team": "LAC",
-      "age": 24.9,
-      "value": 6114,
-      "rank": 18,
-      "rookie": false
-     },
-     {
-      "name": "Tee Higgins",
-      "pos": "WR",
-      "team": "CIN",
-      "age": 27.7,
-      "value": 5811,
-      "rank": 20,
-      "rookie": false
-     },
-     {
-      "name": "Jordan Addison",
-      "pos": "WR",
-      "team": "MIN",
-      "age": 24.7,
-      "value": 4404,
-      "rank": 38,
-      "rookie": false
-     },
-     {
-      "name": "De'Zhaun Stribling",
-      "pos": "WR",
-      "team": "SFO",
-      "age": 23.8,
-      "value": 4298,
-      "rank": 41,
-      "rookie": true
-     },
-     {
-      "name": "Mike Evans",
-      "pos": "WR",
-      "team": "SFO",
-      "age": 33.1,
-      "value": 4111,
-      "rank": 43,
-      "rookie": false
-     },
-     {
-      "name": "Omar Cooper Jr.",
-      "pos": "WR",
-      "team": "NYJ",
-      "age": 22.8,
-      "value": 4042,
-      "rank": 46,
-      "rookie": true
-     },
-     {
-      "name": "Jakobi Meyers",
-      "pos": "WR",
-      "team": "JAC",
-      "age": 29.9,
-      "value": 3360,
-      "rank": 69,
-      "rookie": false
-     },
-     {
-      "name": "Chris Brazzell II",
-      "pos": "WR",
-      "team": "CAR",
-      "age": 22.9,
-      "value": 2697,
-      "rank": 91,
-      "rookie": true
-     },
-     {
-      "name": "Kyle Williams",
-      "pos": "WR",
-      "team": "NEP",
-      "age": 23.9,
-      "value": 2663,
-      "rank": 92,
-      "rookie": false
-     },
-     {
-      "name": "Roman Wilson",
-      "pos": "WR",
-      "team": "PIT",
-      "age": 25.3,
-      "value": 2574,
-      "rank": 99,
-      "rookie": false
-     },
-     {
-      "name": "Christian Kirk",
-      "pos": "WR",
-      "team": "SFO",
-      "age": 29.9,
-      "value": 1893,
-      "rank": 122,
-      "rookie": false
-     },
-     {
-      "name": "Luke McCaffrey",
-      "pos": "WR",
-      "team": "WAS",
-      "age": 25.5,
-      "value": 1651,
-      "rank": 133,
-      "rookie": false
-     },
-     {
-      "name": "John Metchie",
-      "pos": "WR",
-      "team": "CAR",
-      "age": 26.2,
-      "value": 1625,
-      "rank": 135,
-      "rookie": false
-     }
-    ],
-    "te": [
-     {
-      "name": "Mark Andrews",
-      "pos": "TE",
-      "team": "BAL",
-      "age": 31.1,
-      "value": 3195,
-      "rank": 21,
-      "rookie": false
-     },
-     {
-      "name": "Evan Engram",
-      "pos": "TE",
-      "team": "DEN",
-      "age": 32.1,
-      "value": 2307,
-      "rank": 40,
-      "rookie": false
-     },
-     {
-      "name": "David Njoku",
-      "pos": "TE",
-      "team": "LAC",
-      "age": 30.2,
-      "value": 2257,
-      "rank": 42,
-      "rookie": false
-     },
-     {
-      "name": "Ja'Tavion Sanders",
-      "pos": "TE",
-      "team": "CAR",
-      "age": 23.5,
-      "value": 1908,
-      "rank": 47,
-      "rookie": false
-     }
-    ],
-    "picks": [
-     {
-      "name": "2027 1st from Shadynasty",
-      "year": "2027",
-      "round": 1,
-      "value": 6200,
-      "from": "Shadynasty"
-     },
-     {
-      "name": "2028 1st from Shadynasty",
-      "year": "2028",
-      "round": 1,
-      "value": 5223,
-      "from": "Shadynasty"
-     },
-     {
-      "name": "2029 1st from Shadynasty",
-      "year": "2029",
-      "round": 1,
-      "value": 4606,
-      "from": "Shadynasty"
-     },
-     {
-      "name": "2027 2nd from Shadynasty",
-      "year": "2027",
-      "round": 2,
-      "value": 4556,
-      "from": "Shadynasty"
-     },
-     {
-      "name": "2027 2nd from Los Muertos ",
-      "year": "2027",
-      "round": 2,
-      "value": 4556,
-      "from": "Los Muertos "
-     },
-     {
-      "name": "2028 2nd from Shadynasty",
-      "year": "2028",
-      "round": 2,
-      "value": 4017,
-      "from": "Shadynasty"
-     },
-     {
-      "name": "2029 2nd from Shadynasty",
-      "year": "2029",
-      "round": 2,
-      "value": 3530,
-      "from": "Shadynasty"
-     },
-     {
-      "name": "2027 3rd from Shadynasty",
-      "year": "2027",
-      "round": 3,
-      "value": 3117,
-      "from": "Shadynasty"
-     },
-     {
-      "name": "2028 3rd from Shadynasty",
-      "year": "2028",
-      "round": 3,
-      "value": 2827,
-      "from": "Shadynasty"
-     },
-     {
-      "name": "2027 4th from Shadynasty",
-      "year": "2027",
-      "round": 4,
-      "value": 2756,
-      "from": "Shadynasty"
-     },
-     {
-      "name": "2029 3rd from Shadynasty",
-      "year": "2029",
-      "round": 3,
-      "value": 2474,
-      "from": "Shadynasty"
-     },
-     {
-      "name": "2028 4th from Shadynasty",
-      "year": "2028",
-      "round": 4,
-      "value": 2462,
-      "from": "Shadynasty"
-     },
-     {
-      "name": "2029 4th from Shadynasty",
-      "year": "2029",
-      "round": 4,
-      "value": 2199,
-      "from": "Shadynasty"
-     }
-    ]
-   },
-   "rid": 8,
-   "groupValues": {
-    "qb": 15540,
-    "rb": 34814,
-    "wr": 52221,
-    "te": 9667,
-    "picks": 48523
-   },
-   "counts": {
-    "qb": 4,
-    "rb": 8,
-    "wr": 14,
-    "te": 4,
-    "picks": 13
-   },
-   "best": [
-    {
-     "name": "Chris Olave",
-     "pos": "WR",
-     "value": 6978
-    },
-    {
-     "name": "Christian McCaffrey",
-     "pos": "RB",
-     "value": 6265
-    },
-    {
-     "name": "Ladd McConkey",
-     "pos": "WR",
-     "value": 6114
-    }
-   ],
-   "team": "Shadynasty",
-   "move": 0
-  },
-  {
-   "rank": 7,
-   "rawRank": 9,
-   "score": 79,
-   "total": 147265,
-   "adjTotal": 41974,
+   "rawRank": 8,
+   "score": 80,
+   "total": 150083,
+   "adjTotal": 42587,
    "avgAge": 28.1,
    "groups": {
     "qb": [
@@ -2569,7 +2163,7 @@
       "pos": "QB",
       "team": "BAL",
       "age": 29.7,
-      "value": 6271,
+      "value": 6330,
       "rank": 2,
       "rookie": false
      },
@@ -2578,8 +2172,8 @@
       "pos": "QB",
       "team": "TBB",
       "age": 31.5,
-      "value": 3894,
-      "rank": 19,
+      "value": 3735,
+      "rank": 22,
       "rookie": false
      }
     ],
@@ -2589,7 +2183,7 @@
       "pos": "RB",
       "team": "IND",
       "age": 27.7,
-      "value": 7071,
+      "value": 7034,
       "rank": 6,
       "rookie": false
      },
@@ -2598,7 +2192,7 @@
       "pos": "RB",
       "team": "BUF",
       "age": 27,
-      "value": 6912,
+      "value": 6945,
       "rank": 7,
       "rookie": false
      },
@@ -2607,8 +2201,8 @@
       "pos": "RB",
       "team": "WAS",
       "age": 25.5,
-      "value": 3957,
-      "rank": 34,
+      "value": 3894,
+      "rank": 35,
       "rookie": false
      },
      {
@@ -2616,8 +2210,8 @@
       "pos": "RB",
       "team": "ATL",
       "age": 27.5,
-      "value": 2928,
-      "rank": 59,
+      "value": 3059,
+      "rank": 54,
       "rookie": false
      },
      {
@@ -2625,26 +2219,8 @@
       "pos": "RB",
       "team": "NOS",
       "age": 31.2,
-      "value": 2453,
-      "rank": 68,
-      "rookie": false
-     },
-     {
-      "name": "Ty Johnson",
-      "pos": "RB",
-      "team": "BUF",
-      "age": 29,
-      "value": 1455,
-      "rank": 97,
-      "rookie": false
-     },
-     {
-      "name": "Dameon Pierce",
-      "pos": "RB",
-      "team": "PHI",
-      "age": 26.6,
-      "value": 1019,
-      "rank": 111,
+      "value": 2613,
+      "rank": 64,
       "rookie": false
      },
      {
@@ -2652,8 +2228,26 @@
       "pos": "RB",
       "team": "FA",
       "age": 30.2,
-      "value": 550,
-      "rank": 137,
+      "value": 1873,
+      "rank": 87,
+      "rookie": false
+     },
+     {
+      "name": "Ty Johnson",
+      "pos": "RB",
+      "team": "BUF",
+      "age": 29,
+      "value": 1550,
+      "rank": 96,
+      "rookie": false
+     },
+     {
+      "name": "Dameon Pierce",
+      "pos": "RB",
+      "team": "PHI",
+      "age": 26.6,
+      "value": 965,
+      "rank": 114,
       "rookie": false
      }
     ],
@@ -2662,8 +2256,8 @@
       "name": "Amon-Ra St. Brown",
       "pos": "WR",
       "team": "DET",
-      "age": 26.9,
-      "value": 8220,
+      "age": 27,
+      "value": 8049,
       "rank": 3,
       "rookie": false
      },
@@ -2672,16 +2266,16 @@
       "pos": "WR",
       "team": "DAL",
       "age": 27.5,
-      "value": 7404,
-      "rank": 6,
+      "value": 7493,
+      "rank": 5,
       "rookie": false
      },
      {
       "name": "Zay Flowers",
       "pos": "WR",
       "team": "BAL",
-      "age": 26,
-      "value": 6510,
+      "age": 26.1,
+      "value": 6566,
       "rank": 10,
       "rookie": false
      },
@@ -2690,7 +2284,7 @@
       "pos": "WR",
       "team": "JAC",
       "age": 24.5,
-      "value": 6310,
+      "value": 6296,
       "rank": 14,
       "rookie": false
      },
@@ -2698,9 +2292,9 @@
       "name": "Caleb Douglas",
       "pos": "WR",
       "team": "MIA",
-      "age": 23,
-      "value": 3968,
-      "rank": 50,
+      "age": 23.1,
+      "value": 3931,
+      "rank": 49,
       "rookie": true
      },
      {
@@ -2708,7 +2302,7 @@
       "pos": "WR",
       "team": "NYJ",
       "age": 24,
-      "value": 3870,
+      "value": 3798,
       "rank": 52,
       "rookie": false
      },
@@ -2717,8 +2311,8 @@
       "pos": "WR",
       "team": "NYG",
       "age": 23.1,
-      "value": 3816,
-      "rank": 54,
+      "value": 3748,
+      "rank": 53,
       "rookie": true
      },
      {
@@ -2726,17 +2320,17 @@
       "pos": "WR",
       "team": "WAS",
       "age": 32.8,
-      "value": 3555,
-      "rank": 61,
+      "value": 3509,
+      "rank": 59,
       "rookie": false
      },
      {
       "name": "Elijah Sarratt",
       "pos": "WR",
       "team": "BAL",
-      "age": 23.3,
-      "value": 2796,
-      "rank": 88,
+      "age": 23.4,
+      "value": 2808,
+      "rank": 86,
       "rookie": true
      },
      {
@@ -2744,26 +2338,17 @@
       "pos": "WR",
       "team": "IND",
       "age": 34.4,
-      "value": 2074,
-      "rank": 115,
-      "rookie": false
-     },
-     {
-      "name": "Calvin Ridley",
-      "pos": "WR",
-      "team": "TEN",
-      "age": 31.8,
-      "value": 1643,
-      "rank": 134,
+      "value": 2205,
+      "rank": 113,
       "rookie": false
      },
      {
       "name": "Kalif Raymond",
       "pos": "WR",
       "team": "CHI",
-      "age": 32.1,
-      "value": 1473,
-      "rank": 147,
+      "age": 32.2,
+      "value": 2064,
+      "rank": 117,
       "rookie": false
      },
      {
@@ -2771,8 +2356,17 @@
       "pos": "WR",
       "team": "FA",
       "age": 32.6,
-      "value": 1195,
-      "rank": 162,
+      "value": 1492,
+      "rank": 143,
+      "rookie": false
+     },
+     {
+      "name": "Calvin Ridley",
+      "pos": "WR",
+      "team": "TEN",
+      "age": 31.8,
+      "value": 1460,
+      "rank": 149,
       "rookie": false
      },
      {
@@ -2780,8 +2374,8 @@
       "pos": "WR",
       "team": "IND",
       "age": 29.7,
-      "value": 1148,
-      "rank": 166,
+      "value": 1132,
+      "rank": 164,
       "rookie": false
      }
     ],
@@ -2790,9 +2384,9 @@
       "name": "Juwan Johnson",
       "pos": "TE",
       "team": "NOS",
-      "age": 30,
-      "value": 3559,
-      "rank": 16,
+      "age": 30.1,
+      "value": 3767,
+      "rank": 15,
       "rookie": false
      },
      {
@@ -2800,8 +2394,8 @@
       "pos": "TE",
       "team": "KCC",
       "age": 37,
-      "value": 3518,
-      "rank": 17,
+      "value": 3614,
+      "rank": 16,
       "rookie": false
      },
      {
@@ -2809,8 +2403,8 @@
       "pos": "TE",
       "team": "SEA",
       "age": 24.4,
-      "value": 3054,
-      "rank": 24,
+      "value": 3150,
+      "rank": 21,
       "rookie": false
      },
      {
@@ -2818,7 +2412,7 @@
       "pos": "TE",
       "team": "LVR",
       "age": 25.2,
-      "value": 3009,
+      "value": 3032,
       "rank": 25,
       "rookie": false
      },
@@ -2827,8 +2421,8 @@
       "pos": "TE",
       "team": "SEA",
       "age": 23.5,
-      "value": 2632,
-      "rank": 32,
+      "value": 2577,
+      "rank": 33,
       "rookie": false
      },
      {
@@ -2836,8 +2430,8 @@
       "pos": "TE",
       "team": "BAL",
       "age": 24.6,
-      "value": 1590,
-      "rank": 54,
+      "value": 1646,
+      "rank": 53,
       "rookie": true
      }
     ],
@@ -2846,88 +2440,88 @@
       "name": "2027 1st from Los Muertos ",
       "year": "2027",
       "round": 1,
-      "value": 6200,
+      "value": 6163,
       "from": "Los Muertos "
      },
      {
       "name": "2028 1st from Los Muertos ",
       "year": "2028",
       "round": 1,
-      "value": 5223,
+      "value": 5228,
       "from": "Los Muertos "
      },
      {
       "name": "2029 1st from Los Muertos ",
       "year": "2029",
       "round": 1,
-      "value": 4606,
+      "value": 4672,
       "from": "Los Muertos "
      },
      {
       "name": "2028 2nd from Los Muertos ",
       "year": "2028",
       "round": 2,
-      "value": 4017,
+      "value": 4022,
       "from": "Los Muertos "
      },
      {
       "name": "2029 2nd from Los Muertos ",
       "year": "2029",
       "round": 2,
-      "value": 3530,
+      "value": 3617,
       "from": "Los Muertos "
      },
      {
       "name": "2027 3rd from Los Muertos ",
       "year": "2027",
       "round": 3,
-      "value": 3117,
+      "value": 3112,
       "from": "Los Muertos "
      },
      {
       "name": "2028 3rd from Los Muertos ",
       "year": "2028",
       "round": 3,
-      "value": 2827,
+      "value": 2841,
       "from": "Los Muertos "
      },
      {
       "name": "2027 4th from Los Muertos ",
       "year": "2027",
       "round": 4,
-      "value": 2756,
+      "value": 2820,
       "from": "Los Muertos "
      },
      {
       "name": "2029 3rd from Los Muertos ",
       "year": "2029",
       "round": 3,
-      "value": 2474,
+      "value": 2508,
       "from": "Los Muertos "
      },
      {
       "name": "2028 4th from Los Muertos ",
       "year": "2028",
       "round": 4,
-      "value": 2462,
+      "value": 2502,
       "from": "Los Muertos "
      },
      {
       "name": "2029 4th from Los Muertos ",
       "year": "2029",
       "round": 4,
-      "value": 2199,
+      "value": 2263,
       "from": "Los Muertos "
      }
     ]
    },
    "rid": 9,
    "groupValues": {
-    "qb": 10165,
-    "rb": 26345,
-    "wr": 53982,
-    "te": 17362,
-    "picks": 39411
+    "qb": 10065,
+    "rb": 27933,
+    "wr": 54551,
+    "te": 17786,
+    "picks": 39748
    },
    "counts": {
     "qb": 2,
@@ -2940,29 +2534,444 @@
     {
      "name": "Amon-Ra St. Brown",
      "pos": "WR",
-     "value": 8220
+     "value": 8049
     },
     {
      "name": "CeeDee Lamb",
      "pos": "WR",
-     "value": 7404
+     "value": 7493
     },
     {
      "name": "Jonathan Taylor",
      "pos": "RB",
-     "value": 7071
+     "value": 7034
     }
    ],
    "team": "Los Muertos",
-   "move": 0
+   "move": 1
+  },
+  {
+   "rank": 7,
+   "rawRank": 6,
+   "score": 79,
+   "total": 160761,
+   "adjTotal": 42079,
+   "avgAge": 27.5,
+   "groups": {
+    "qb": [
+     {
+      "name": "Dak Prescott",
+      "pos": "QB",
+      "team": "DAL",
+      "age": 33.2,
+      "value": 4590,
+      "rank": 14,
+      "rookie": false
+     },
+     {
+      "name": "Matthew Stafford",
+      "pos": "QB",
+      "team": "LAR",
+      "age": 38.7,
+      "value": 3829,
+      "rank": 20,
+      "rookie": false
+     },
+     {
+      "name": "C.J. Stroud",
+      "pos": "QB",
+      "team": "HOU",
+      "age": 25,
+      "value": 3804,
+      "rank": 21,
+      "rookie": false
+     },
+     {
+      "name": "Daniel Jones",
+      "pos": "QB",
+      "team": "IND",
+      "age": 29.4,
+      "value": 3224,
+      "rank": 28,
+      "rookie": false
+     }
+    ],
+    "rb": [
+     {
+      "name": "Christian McCaffrey",
+      "pos": "RB",
+      "team": "SFO",
+      "age": 30.3,
+      "value": 6178,
+      "rank": 9,
+      "rookie": false
+     },
+     {
+      "name": "Derrick Henry",
+      "pos": "RB",
+      "team": "BAL",
+      "age": 32.8,
+      "value": 5848,
+      "rank": 14,
+      "rookie": false
+     },
+     {
+      "name": "Cam Skattebo",
+      "pos": "RB",
+      "team": "NYG",
+      "age": 24.7,
+      "value": 5470,
+      "rank": 19,
+      "rookie": false
+     },
+     {
+      "name": "Chuba Hubbard",
+      "pos": "RB",
+      "team": "CAR",
+      "age": 27.3,
+      "value": 4840,
+      "rank": 24,
+      "rookie": false
+     },
+     {
+      "name": "Emmett Johnson",
+      "pos": "RB",
+      "team": "KCC",
+      "age": 23,
+      "value": 3954,
+      "rank": 34,
+      "rookie": true
+     },
+     {
+      "name": "Tony Pollard",
+      "pos": "RB",
+      "team": "TEN",
+      "age": 29.4,
+      "value": 3324,
+      "rank": 47,
+      "rookie": false
+     },
+     {
+      "name": "Tyjae Spears",
+      "pos": "RB",
+      "team": "TEN",
+      "age": 25.3,
+      "value": 2956,
+      "rank": 57,
+      "rookie": false
+     },
+     {
+      "name": "LeQuint Allen",
+      "pos": "RB",
+      "team": "JAC",
+      "age": 22.2,
+      "value": 2210,
+      "rank": 78,
+      "rookie": false
+     }
+    ],
+    "wr": [
+     {
+      "name": "Chris Olave",
+      "pos": "WR",
+      "team": "NOS",
+      "age": 26.3,
+      "value": 6981,
+      "rank": 7,
+      "rookie": false
+     },
+     {
+      "name": "Tee Higgins",
+      "pos": "WR",
+      "team": "CIN",
+      "age": 27.7,
+      "value": 5898,
+      "rank": 18,
+      "rookie": false
+     },
+     {
+      "name": "Ladd McConkey",
+      "pos": "WR",
+      "team": "LAC",
+      "age": 24.9,
+      "value": 5862,
+      "rank": 21,
+      "rookie": false
+     },
+     {
+      "name": "Jordan Addison",
+      "pos": "WR",
+      "team": "MIN",
+      "age": 24.7,
+      "value": 4499,
+      "rank": 36,
+      "rookie": false
+     },
+     {
+      "name": "De'Zhaun Stribling",
+      "pos": "WR",
+      "team": "SFO",
+      "age": 23.8,
+      "value": 4293,
+      "rank": 39,
+      "rookie": true
+     },
+     {
+      "name": "Omar Cooper Jr.",
+      "pos": "WR",
+      "team": "NYJ",
+      "age": 22.8,
+      "value": 4076,
+      "rank": 44,
+      "rookie": true
+     },
+     {
+      "name": "Mike Evans",
+      "pos": "WR",
+      "team": "SFO",
+      "age": 33.1,
+      "value": 3988,
+      "rank": 48,
+      "rookie": false
+     },
+     {
+      "name": "Jakobi Meyers",
+      "pos": "WR",
+      "team": "JAC",
+      "age": 29.9,
+      "value": 3488,
+      "rank": 63,
+      "rookie": false
+     },
+     {
+      "name": "Roman Wilson",
+      "pos": "WR",
+      "team": "PIT",
+      "age": 25.3,
+      "value": 2941,
+      "rank": 82,
+      "rookie": false
+     },
+     {
+      "name": "Chris Brazzell II",
+      "pos": "WR",
+      "team": "CAR",
+      "age": 23,
+      "value": 2670,
+      "rank": 92,
+      "rookie": true
+     },
+     {
+      "name": "Kyle Williams",
+      "pos": "WR",
+      "team": "NEP",
+      "age": 23.9,
+      "value": 2593,
+      "rank": 96,
+      "rookie": false
+     },
+     {
+      "name": "Christian Kirk",
+      "pos": "WR",
+      "team": "SFO",
+      "age": 29.9,
+      "value": 1794,
+      "rank": 128,
+      "rookie": false
+     },
+     {
+      "name": "John Metchie",
+      "pos": "WR",
+      "team": "CAR",
+      "age": 26.2,
+      "value": 1683,
+      "rank": 132,
+      "rookie": false
+     },
+     {
+      "name": "Luke McCaffrey",
+      "pos": "WR",
+      "team": "WAS",
+      "age": 25.5,
+      "value": 1641,
+      "rank": 135,
+      "rookie": false
+     }
+    ],
+    "te": [
+     {
+      "name": "Mark Andrews",
+      "pos": "TE",
+      "team": "BAL",
+      "age": 31.1,
+      "value": 3125,
+      "rank": 24,
+      "rookie": false
+     },
+     {
+      "name": "Evan Engram",
+      "pos": "TE",
+      "team": "DEN",
+      "age": 32.1,
+      "value": 2279,
+      "rank": 41,
+      "rookie": false
+     },
+     {
+      "name": "David Njoku",
+      "pos": "TE",
+      "team": "LAC",
+      "age": 30.2,
+      "value": 2120,
+      "rank": 45,
+      "rookie": false
+     },
+     {
+      "name": "Ja'Tavion Sanders",
+      "pos": "TE",
+      "team": "CAR",
+      "age": 23.5,
+      "value": 1797,
+      "rank": 49,
+      "rookie": false
+     }
+    ],
+    "picks": [
+     {
+      "name": "2027 1st from Shadynasty",
+      "year": "2027",
+      "round": 1,
+      "value": 6163,
+      "from": "Shadynasty"
+     },
+     {
+      "name": "2028 1st from Shadynasty",
+      "year": "2028",
+      "round": 1,
+      "value": 5228,
+      "from": "Shadynasty"
+     },
+     {
+      "name": "2029 1st from Shadynasty",
+      "year": "2029",
+      "round": 1,
+      "value": 4672,
+      "from": "Shadynasty"
+     },
+     {
+      "name": "2027 2nd from Shadynasty",
+      "year": "2027",
+      "round": 2,
+      "value": 4529,
+      "from": "Shadynasty"
+     },
+     {
+      "name": "2027 2nd from Los Muertos ",
+      "year": "2027",
+      "round": 2,
+      "value": 4529,
+      "from": "Los Muertos "
+     },
+     {
+      "name": "2028 2nd from Shadynasty",
+      "year": "2028",
+      "round": 2,
+      "value": 4022,
+      "from": "Shadynasty"
+     },
+     {
+      "name": "2029 2nd from Shadynasty",
+      "year": "2029",
+      "round": 2,
+      "value": 3617,
+      "from": "Shadynasty"
+     },
+     {
+      "name": "2027 3rd from Shadynasty",
+      "year": "2027",
+      "round": 3,
+      "value": 3112,
+      "from": "Shadynasty"
+     },
+     {
+      "name": "2028 3rd from Shadynasty",
+      "year": "2028",
+      "round": 3,
+      "value": 2841,
+      "from": "Shadynasty"
+     },
+     {
+      "name": "2027 4th from Shadynasty",
+      "year": "2027",
+      "round": 4,
+      "value": 2820,
+      "from": "Shadynasty"
+     },
+     {
+      "name": "2029 3rd from Shadynasty",
+      "year": "2029",
+      "round": 3,
+      "value": 2508,
+      "from": "Shadynasty"
+     },
+     {
+      "name": "2028 4th from Shadynasty",
+      "year": "2028",
+      "round": 4,
+      "value": 2502,
+      "from": "Shadynasty"
+     },
+     {
+      "name": "2029 4th from Shadynasty",
+      "year": "2029",
+      "round": 4,
+      "value": 2263,
+      "from": "Shadynasty"
+     }
+    ]
+   },
+   "rid": 8,
+   "groupValues": {
+    "qb": 15447,
+    "rb": 34780,
+    "wr": 52407,
+    "te": 9321,
+    "picks": 48806
+   },
+   "counts": {
+    "qb": 4,
+    "rb": 8,
+    "wr": 14,
+    "te": 4,
+    "picks": 13
+   },
+   "best": [
+    {
+     "name": "Chris Olave",
+     "pos": "WR",
+     "value": 6981
+    },
+    {
+     "name": "Christian McCaffrey",
+     "pos": "RB",
+     "value": 6178
+    },
+    {
+     "name": "Tee Higgins",
+     "pos": "WR",
+     "value": 5898
+    }
+   ],
+   "team": "Shadynasty",
+   "move": -1
   },
   {
    "rank": 8,
    "rawRank": 7,
-   "score": 74,
-   "total": 156761,
-   "adjTotal": 39173,
-   "avgAge": 25.6,
+   "score": 73,
+   "total": 155414,
+   "adjTotal": 38582,
+   "avgAge": 25.7,
    "groups": {
     "qb": [
      {
@@ -2970,7 +2979,7 @@
       "pos": "QB",
       "team": "CHI",
       "age": 24.9,
-      "value": 6132,
+      "value": 6121,
       "rank": 3,
       "rookie": false
      },
@@ -2979,7 +2988,7 @@
       "pos": "QB",
       "team": "KCC",
       "age": 31,
-      "value": 5242,
+      "value": 5241,
       "rank": 9,
       "rookie": false
      },
@@ -2988,28 +2997,28 @@
       "pos": "QB",
       "team": "TEN",
       "age": 24.4,
-      "value": 3835,
-      "rank": 20,
+      "value": 3721,
+      "rank": 23,
       "rookie": false
      }
     ],
     "rb": [
      {
-      "name": "TreVeyon Henderson",
-      "pos": "RB",
-      "team": "NEP",
-      "age": 23.9,
-      "value": 5627,
-      "rank": 19,
-      "rookie": false
-     },
-     {
       "name": "Bhayshul Tuten",
       "pos": "RB",
       "team": "JAC",
       "age": 23.6,
-      "value": 5274,
-      "rank": 23,
+      "value": 5551,
+      "rank": 18,
+      "rookie": false
+     },
+     {
+      "name": "TreVeyon Henderson",
+      "pos": "RB",
+      "team": "NEP",
+      "age": 24,
+      "value": 5313,
+      "rank": 22,
       "rookie": false
      },
      {
@@ -3017,7 +3026,7 @@
       "pos": "RB",
       "team": "SFO",
       "age": 25,
-      "value": 3989,
+      "value": 3965,
       "rank": 33,
       "rookie": true
      },
@@ -3026,8 +3035,8 @@
       "pos": "RB",
       "team": "CAR",
       "age": 23.2,
-      "value": 3559,
-      "rank": 42,
+      "value": 3397,
+      "rank": 45,
       "rookie": false
      },
      {
@@ -3035,8 +3044,8 @@
       "pos": "RB",
       "team": "PHI",
       "age": 25.1,
-      "value": 3176,
-      "rank": 52,
+      "value": 3262,
+      "rank": 50,
       "rookie": false
      },
      {
@@ -3044,8 +3053,8 @@
       "pos": "RB",
       "team": "JAC",
       "age": 26,
-      "value": 2940,
-      "rank": 57,
+      "value": 2927,
+      "rank": 58,
       "rookie": false
      },
      {
@@ -3053,8 +3062,8 @@
       "pos": "RB",
       "team": "MIN",
       "age": 23,
-      "value": 2764,
-      "rank": 62,
+      "value": 2705,
+      "rank": 63,
       "rookie": true
      },
      {
@@ -3062,17 +3071,17 @@
       "pos": "RB",
       "team": "SFO",
       "age": 22.5,
-      "value": 2545,
-      "rank": 64,
+      "value": 2430,
+      "rank": 70,
       "rookie": false
      },
      {
       "name": "Tyrone Tracy",
       "pos": "RB",
       "team": "NYG",
-      "age": 26.8,
-      "value": 2279,
-      "rank": 75,
+      "age": 26.9,
+      "value": 2214,
+      "rank": 77,
       "rookie": false
      },
      {
@@ -3080,7 +3089,7 @@
       "pos": "RB",
       "team": "DET",
       "age": 27.6,
-      "value": 2096,
+      "value": 2009,
       "rank": 81,
       "rookie": false
      },
@@ -3088,9 +3097,9 @@
       "name": "Malik Davis",
       "pos": "RB",
       "team": "DAL",
-      "age": 27.8,
-      "value": 2011,
-      "rank": 85,
+      "age": 27.9,
+      "value": 1804,
+      "rank": 89,
       "rookie": false
      },
      {
@@ -3098,8 +3107,8 @@
       "pos": "RB",
       "team": "CIN",
       "age": 31,
-      "value": 1391,
-      "rank": 101,
+      "value": 1449,
+      "rank": 99,
       "rookie": false
      }
     ],
@@ -3109,8 +3118,8 @@
       "pos": "WR",
       "team": "DAL",
       "age": 25.6,
-      "value": 6452,
-      "rank": 12,
+      "value": 6259,
+      "rank": 15,
       "rookie": false
      },
      {
@@ -3118,8 +3127,8 @@
       "pos": "WR",
       "team": "TEN",
       "age": 21.7,
-      "value": 5629,
-      "rank": 22,
+      "value": 5879,
+      "rank": 20,
       "rookie": true
      },
      {
@@ -3127,8 +3136,8 @@
       "pos": "WR",
       "team": "CLE",
       "age": 22,
-      "value": 4970,
-      "rank": 31,
+      "value": 5135,
+      "rank": 29,
       "rookie": true
      },
      {
@@ -3136,8 +3145,8 @@
       "pos": "WR",
       "team": "DET",
       "age": 25.5,
-      "value": 4923,
-      "rank": 32,
+      "value": 4863,
+      "rank": 33,
       "rookie": false
      },
      {
@@ -3145,8 +3154,8 @@
       "pos": "WR",
       "team": "HOU",
       "age": 23.8,
-      "value": 3831,
-      "rank": 53,
+      "value": 3698,
+      "rank": 55,
       "rookie": false
      },
      {
@@ -3154,8 +3163,8 @@
       "pos": "WR",
       "team": "PIT",
       "age": 29,
-      "value": 3558,
-      "rank": 60,
+      "value": 3301,
+      "rank": 71,
       "rookie": false
      },
      {
@@ -3163,8 +3172,8 @@
       "pos": "WR",
       "team": "LVR",
       "age": 23.8,
-      "value": 2839,
-      "rank": 85,
+      "value": 2773,
+      "rank": 89,
       "rookie": false
      },
      {
@@ -3172,8 +3181,8 @@
       "pos": "WR",
       "team": "NOS",
       "age": 24.1,
-      "value": 2511,
-      "rank": 101,
+      "value": 2493,
+      "rank": 100,
       "rookie": true
      },
      {
@@ -3181,17 +3190,8 @@
       "pos": "WR",
       "team": "CLE",
       "age": 27.4,
-      "value": 2482,
-      "rank": 102,
-      "rookie": false
-     },
-     {
-      "name": "Dont'e Thornton",
-      "pos": "WR",
-      "team": "LVR",
-      "age": 23.8,
-      "value": 2204,
-      "rank": 112,
+      "value": 2420,
+      "rank": 103,
       "rookie": false
      },
      {
@@ -3199,7 +3199,16 @@
       "pos": "WR",
       "team": "BUF",
       "age": 27,
-      "value": 2161,
+      "value": 2211,
+      "rank": 111,
+      "rookie": false
+     },
+     {
+      "name": "Dont'e Thornton",
+      "pos": "WR",
+      "team": "LVR",
+      "age": 23.8,
+      "value": 2103,
       "rank": 114,
       "rookie": false
      },
@@ -3208,8 +3217,8 @@
       "pos": "WR",
       "team": "NOS",
       "age": 22.8,
-      "value": 2057,
-      "rank": 116,
+      "value": 1983,
+      "rank": 119,
       "rookie": true
      },
      {
@@ -3217,17 +3226,17 @@
       "pos": "WR",
       "team": "LVR",
       "age": 24,
-      "value": 2032,
-      "rank": 118,
+      "value": 1940,
+      "rank": 123,
       "rookie": true
      },
      {
       "name": "Brandon Aiyuk",
       "pos": "WR",
       "team": "SFO",
-      "age": 28.5,
-      "value": 632,
-      "rank": 184,
+      "age": 28.6,
+      "value": 550,
+      "rank": 193,
       "rookie": false
      }
     ],
@@ -3237,17 +3246,17 @@
       "pos": "TE",
       "team": "BUF",
       "age": 27,
-      "value": 5078,
-      "rank": 8,
+      "value": 4948,
+      "rank": 9,
       "rookie": false
      },
      {
       "name": "Chigoziem Okonkwo",
       "pos": "TE",
       "team": "WAS",
-      "age": 27,
-      "value": 2762,
-      "rank": 28,
+      "age": 27.1,
+      "value": 2709,
+      "rank": 29,
       "rookie": false
      },
      {
@@ -3255,7 +3264,7 @@
       "pos": "TE",
       "team": "NEP",
       "age": 31.8,
-      "value": 2696,
+      "value": 2651,
       "rank": 30,
       "rookie": false
      }
@@ -3265,102 +3274,102 @@
       "name": "2027 1st from druppert",
       "year": "2027",
       "round": 1,
-      "value": 6200,
+      "value": 6163,
       "from": "druppert"
      },
      {
       "name": "2028 1st from druppert",
       "year": "2028",
       "round": 1,
-      "value": 5223,
+      "value": 5228,
       "from": "druppert"
      },
      {
       "name": "2029 1st from druppert",
       "year": "2029",
       "round": 1,
-      "value": 4606,
+      "value": 4672,
       "from": "druppert"
      },
      {
       "name": "2027 2nd from druppert",
       "year": "2027",
       "round": 2,
-      "value": 4556,
+      "value": 4529,
       "from": "druppert"
      },
      {
       "name": "2028 2nd from druppert",
       "year": "2028",
       "round": 2,
-      "value": 4017,
+      "value": 4022,
       "from": "druppert"
      },
      {
       "name": "2029 2nd from druppert",
       "year": "2029",
       "round": 2,
-      "value": 3530,
+      "value": 3617,
       "from": "druppert"
      },
      {
       "name": "2027 3rd from druppert",
       "year": "2027",
       "round": 3,
-      "value": 3117,
+      "value": 3112,
       "from": "druppert"
      },
      {
       "name": "2027 3rd from Thunder Gun Express",
       "year": "2027",
       "round": 3,
-      "value": 3117,
+      "value": 3112,
       "from": "Thunder Gun Express"
      },
      {
       "name": "2028 3rd from druppert",
       "year": "2028",
       "round": 3,
-      "value": 2827,
+      "value": 2841,
       "from": "druppert"
      },
      {
       "name": "2027 4th from druppert",
       "year": "2027",
       "round": 4,
-      "value": 2756,
+      "value": 2820,
       "from": "druppert"
      },
      {
       "name": "2029 3rd from druppert",
       "year": "2029",
       "round": 3,
-      "value": 2474,
+      "value": 2508,
       "from": "druppert"
      },
      {
       "name": "2028 4th from druppert",
       "year": "2028",
       "round": 4,
-      "value": 2462,
+      "value": 2502,
       "from": "druppert"
      },
      {
       "name": "2029 4th from druppert",
       "year": "2029",
       "round": 4,
-      "value": 2199,
+      "value": 2263,
       "from": "druppert"
      }
     ]
    },
    "rid": 5,
    "groupValues": {
-    "qb": 15209,
-    "rb": 37651,
-    "wr": 46281,
-    "te": 10536,
-    "picks": 47084
+    "qb": 15083,
+    "rb": 37026,
+    "wr": 45608,
+    "te": 10308,
+    "picks": 47389
    },
    "counts": {
     "qb": 3,
@@ -3373,17 +3382,17 @@
     {
      "name": "George Pickens",
      "pos": "WR",
-     "value": 6452
+     "value": 6259
     },
     {
      "name": "Caleb Williams",
      "pos": "QB",
-     "value": 6132
+     "value": 6121
     },
     {
      "name": "Carnell Tate",
      "pos": "WR",
-     "value": 5629
+     "value": 5879
     }
    ],
    "team": "druppert",
@@ -3391,10 +3400,10 @@
   },
   {
    "rank": 9,
-   "rawRank": 8,
-   "score": 70,
-   "total": 147997,
-   "adjTotal": 36985,
+   "rawRank": 9,
+   "score": 69,
+   "total": 148022,
+   "adjTotal": 36893,
    "avgAge": 25.2,
    "groups": {
     "qb": [
@@ -3403,7 +3412,7 @@
       "pos": "QB",
       "team": "GBP",
       "age": 27.9,
-      "value": 4280,
+      "value": 4294,
       "rank": 17,
       "rookie": false
      },
@@ -3412,8 +3421,8 @@
       "pos": "QB",
       "team": "CAR",
       "age": 25.2,
-      "value": 3708,
-      "rank": 23,
+      "value": 3973,
+      "rank": 19,
       "rookie": false
      },
      {
@@ -3421,7 +3430,7 @@
       "pos": "QB",
       "team": "SEA",
       "age": 29.3,
-      "value": 3645,
+      "value": 3707,
       "rank": 24,
       "rookie": false
      },
@@ -3429,8 +3438,8 @@
       "name": "Kyler Murray",
       "pos": "QB",
       "team": "MIN",
-      "age": 29.1,
-      "value": 3567,
+      "age": 29.2,
+      "value": 3504,
       "rank": 25,
       "rookie": false
      }
@@ -3440,8 +3449,8 @@
       "name": "Jeremiyah Love",
       "pos": "RB",
       "team": "ARI",
-      "age": 21.3,
-      "value": 7374,
+      "age": 21.4,
+      "value": 7370,
       "rank": 5,
       "rookie": true
      },
@@ -3450,26 +3459,26 @@
       "pos": "RB",
       "team": "SEA",
       "age": 23,
-      "value": 5661,
-      "rank": 18,
+      "value": 5221,
+      "rank": 23,
       "rookie": true
      },
      {
-      "name": "Ollie Gordon",
+      "name": "Ollie Gordon II",
       "pos": "RB",
       "team": "MIA",
       "age": 22.7,
-      "value": 3667,
-      "rank": 38,
+      "value": 3743,
+      "rank": 40,
       "rookie": false
      },
      {
       "name": "Nicholas Singleton",
       "pos": "RB",
       "team": "TEN",
-      "age": 22.7,
-      "value": 3289,
-      "rank": 47,
+      "age": 22.8,
+      "value": 3196,
+      "rank": 51,
       "rookie": true
      },
      {
@@ -3477,17 +3486,17 @@
       "pos": "RB",
       "team": "WAS",
       "age": 27.7,
-      "value": 3236,
-      "rank": 49,
+      "value": 3133,
+      "rank": 52,
       "rookie": false
      },
      {
       "name": "Dylan Sampson",
       "pos": "RB",
       "team": "CLE",
-      "age": 22,
-      "value": 2965,
-      "rank": 56,
+      "age": 22.1,
+      "value": 2966,
+      "rank": 55,
       "rookie": false
      },
      {
@@ -3495,16 +3504,16 @@
       "pos": "RB",
       "team": "NYG",
       "age": 28.6,
-      "value": 1916,
-      "rank": 87,
+      "value": 1875,
+      "rank": 86,
       "rookie": false
      },
      {
       "name": "Devin Neal",
       "pos": "RB",
-      "team": "FA",
-      "age": 23.1,
-      "value": 1412,
+      "team": "MIN",
+      "age": 23.2,
+      "value": 1447,
       "rank": 100,
       "rookie": false
      },
@@ -3512,9 +3521,9 @@
       "name": "Jerome Ford",
       "pos": "RB",
       "team": "MIN",
-      "age": 27,
-      "value": 1044,
-      "rank": 110,
+      "age": 27.1,
+      "value": 1035,
+      "rank": 111,
       "rookie": false
      }
     ],
@@ -3524,16 +3533,16 @@
       "pos": "WR",
       "team": "PHI",
       "age": 27.9,
-      "value": 6178,
-      "rank": 15,
+      "value": 6088,
+      "rank": 16,
       "rookie": false
      },
      {
       "name": "Marvin Harrison Jr.",
       "pos": "WR",
       "team": "ARI",
-      "age": 24.1,
-      "value": 4344,
+      "age": 24.2,
+      "value": 4261,
       "rank": 40,
       "rookie": false
      },
@@ -3542,8 +3551,17 @@
       "pos": "WR",
       "team": "PIT",
       "age": 28.8,
-      "value": 3982,
-      "rank": 49,
+      "value": 4034,
+      "rank": 46,
+      "rookie": false
+     },
+     {
+      "name": "Khalil Shakir",
+      "pos": "WR",
+      "team": "BUF",
+      "age": 26.7,
+      "value": 3562,
+      "rank": 58,
       "rookie": false
      },
      {
@@ -3551,17 +3569,8 @@
       "pos": "WR",
       "team": "LAC",
       "age": 25.1,
-      "value": 3738,
-      "rank": 55,
-      "rookie": false
-     },
-     {
-      "name": "Khalil Shakir",
-      "pos": "WR",
-      "team": "BUF",
-      "age": 26.6,
-      "value": 3585,
-      "rank": 58,
+      "value": 3470,
+      "rank": 64,
       "rookie": false
      },
      {
@@ -3569,8 +3578,8 @@
       "pos": "WR",
       "team": "LAC",
       "age": 24.6,
-      "value": 3174,
-      "rank": 74,
+      "value": 3263,
+      "rank": 72,
       "rookie": false
      },
      {
@@ -3578,8 +3587,8 @@
       "pos": "WR",
       "team": "ATL",
       "age": 22.5,
-      "value": 3054,
-      "rank": 79,
+      "value": 3112,
+      "rank": 76,
       "rookie": true
      },
      {
@@ -3587,17 +3596,8 @@
       "pos": "WR",
       "team": "HOU",
       "age": 26.9,
-      "value": 2724,
-      "rank": 90,
-      "rookie": false
-     },
-     {
-      "name": "Isaiah Bond",
-      "pos": "WR",
-      "team": "CLE",
-      "age": 22.5,
-      "value": 2282,
-      "rank": 109,
+      "value": 2787,
+      "rank": 88,
       "rookie": false
      },
      {
@@ -3605,8 +3605,17 @@
       "pos": "WR",
       "team": "CAR",
       "age": 25.7,
-      "value": 2219,
-      "rank": 111,
+      "value": 2230,
+      "rank": 110,
+      "rookie": false
+     },
+     {
+      "name": "Isaiah Bond",
+      "pos": "WR",
+      "team": "CLE",
+      "age": 22.6,
+      "value": 2207,
+      "rank": 112,
       "rookie": false
      },
      {
@@ -3614,8 +3623,8 @@
       "pos": "WR",
       "team": "LAC",
       "age": 23.2,
-      "value": 2012,
-      "rank": 119,
+      "value": 1962,
+      "rank": 122,
       "rookie": true
      }
     ],
@@ -3625,8 +3634,8 @@
       "pos": "TE",
       "team": "NYJ",
       "age": 21.6,
-      "value": 4766,
-      "rank": 9,
+      "value": 5280,
+      "rank": 7,
       "rookie": true
      },
      {
@@ -3634,8 +3643,8 @@
       "pos": "TE",
       "team": "ATL",
       "age": 26,
-      "value": 4221,
-      "rank": 12,
+      "value": 4004,
+      "rank": 13,
       "rookie": false
      },
      {
@@ -3643,7 +3652,7 @@
       "pos": "TE",
       "team": "DAL",
       "age": 27.7,
-      "value": 3823,
+      "value": 3796,
       "rank": 14,
       "rookie": false
      },
@@ -3652,7 +3661,7 @@
       "pos": "TE",
       "team": "NEP",
       "age": 22.6,
-      "value": 2941,
+      "value": 2997,
       "rank": 26,
       "rookie": true
      }
@@ -3662,102 +3671,102 @@
       "name": "2027 1st from The Uncletaker",
       "year": "2027",
       "round": 1,
-      "value": 6200,
+      "value": 6163,
       "from": "The Uncletaker"
      },
      {
       "name": "2028 1st from Brendawg21",
       "year": "2028",
       "round": 1,
-      "value": 5223,
+      "value": 5228,
       "from": "Brendawg21"
      },
      {
       "name": "2028 1st from The Uncletaker",
       "year": "2028",
       "round": 1,
-      "value": 5223,
+      "value": 5228,
       "from": "The Uncletaker"
      },
      {
       "name": "2029 1st from Brendawg21",
       "year": "2029",
       "round": 1,
-      "value": 4606,
+      "value": 4672,
       "from": "Brendawg21"
      },
      {
       "name": "2027 2nd from Brendawg21",
       "year": "2027",
       "round": 2,
-      "value": 4556,
+      "value": 4529,
       "from": "Brendawg21"
      },
      {
       "name": "2028 2nd from Brendawg21",
       "year": "2028",
       "round": 2,
-      "value": 4017,
+      "value": 4022,
       "from": "Brendawg21"
      },
      {
       "name": "2029 2nd from Brendawg21",
       "year": "2029",
       "round": 2,
-      "value": 3530,
+      "value": 3617,
       "from": "Brendawg21"
      },
      {
       "name": "2027 3rd from Brendawg21",
       "year": "2027",
       "round": 3,
-      "value": 3117,
+      "value": 3112,
       "from": "Brendawg21"
      },
      {
       "name": "2028 3rd from Brendawg21",
       "year": "2028",
       "round": 3,
-      "value": 2827,
+      "value": 2841,
       "from": "Brendawg21"
      },
      {
       "name": "2027 4th from Brendawg21",
       "year": "2027",
       "round": 4,
-      "value": 2756,
+      "value": 2820,
       "from": "Brendawg21"
      },
      {
       "name": "2029 3rd from Brendawg21",
       "year": "2029",
       "round": 3,
-      "value": 2474,
+      "value": 2508,
       "from": "Brendawg21"
      },
      {
       "name": "2028 4th from Brendawg21",
       "year": "2028",
       "round": 4,
-      "value": 2462,
+      "value": 2502,
       "from": "Brendawg21"
      },
      {
       "name": "2029 4th from Brendawg21",
       "year": "2029",
       "round": 4,
-      "value": 2199,
+      "value": 2263,
       "from": "Brendawg21"
      }
     ]
    },
    "rid": 10,
    "groupValues": {
-    "qb": 15200,
-    "rb": 30564,
-    "wr": 37292,
-    "te": 15751,
-    "picks": 49190
+    "qb": 15478,
+    "rb": 29986,
+    "wr": 36976,
+    "te": 16077,
+    "picks": 49505
    },
    "counts": {
     "qb": 4,
@@ -3770,17 +3779,17 @@
     {
      "name": "Jeremiyah Love",
      "pos": "RB",
-     "value": 7374
+     "value": 7370
     },
     {
      "name": "DeVonta Smith",
      "pos": "WR",
-     "value": 6178
+     "value": 6088
     },
     {
-     "name": "Jadarian Price",
-     "pos": "RB",
-     "value": 5661
+     "name": "Kenyon Sadiq",
+     "pos": "TE",
+     "value": 5280
     }
    ],
    "team": "Brendawg21",
@@ -3789,9 +3798,9 @@
   {
    "rank": 10,
    "rawRank": 10,
-   "score": 56,
-   "total": 131939,
-   "adjTotal": 29867,
+   "score": 57,
+   "total": 134451,
+   "adjTotal": 30256,
    "avgAge": 28.1,
    "groups": {
     "qb": [
@@ -3800,7 +3809,7 @@
       "pos": "QB",
       "team": "WAS",
       "age": 25.8,
-      "value": 5531,
+      "value": 5397,
       "rank": 6,
       "rookie": false
      },
@@ -3809,8 +3818,8 @@
       "pos": "QB",
       "team": "NOS",
       "age": 27,
-      "value": 4471,
-      "rank": 15,
+      "value": 4696,
+      "rank": 13,
       "rookie": false
      },
      {
@@ -3818,26 +3827,26 @@
       "pos": "QB",
       "team": "LVR",
       "age": 23,
-      "value": 4378,
+      "value": 4397,
       "rank": 16,
       "rookie": true
-     },
-     {
-      "name": "Justin Fields",
-      "pos": "QB",
-      "team": "KCC",
-      "age": 27.6,
-      "value": 1724,
-      "rank": 39,
-      "rookie": false
      },
      {
       "name": "Kirk Cousins",
       "pos": "QB",
       "team": "LVR",
       "age": 38.1,
-      "value": 1655,
-      "rank": 40,
+      "value": 1849,
+      "rank": 37,
+      "rookie": false
+     },
+     {
+      "name": "Justin Fields",
+      "pos": "QB",
+      "team": "KCC",
+      "age": 27.6,
+      "value": 1634,
+      "rank": 41,
       "rookie": false
      },
      {
@@ -3845,8 +3854,8 @@
       "pos": "QB",
       "team": "PIT",
       "age": 42.8,
-      "value": 1478,
-      "rank": 44,
+      "value": 1510,
+      "rank": 43,
       "rookie": false
      }
     ],
@@ -3856,17 +3865,8 @@
       "pos": "RB",
       "team": "PHI",
       "age": 29.6,
-      "value": 5700,
-      "rank": 17,
-      "rookie": false
-     },
-     {
-      "name": "David Montgomery",
-      "pos": "RB",
-      "team": "HOU",
-      "age": 29.3,
-      "value": 4450,
-      "rank": 26,
+      "value": 5442,
+      "rank": 20,
       "rookie": false
      },
      {
@@ -3874,8 +3874,17 @@
       "pos": "RB",
       "team": "PIT",
       "age": 27.9,
-      "value": 4182,
-      "rank": 30,
+      "value": 4476,
+      "rank": 25,
+      "rookie": false
+     },
+     {
+      "name": "David Montgomery",
+      "pos": "RB",
+      "team": "HOU",
+      "age": 29.3,
+      "value": 4200,
+      "rank": 31,
       "rookie": false
      },
      {
@@ -3883,17 +3892,17 @@
       "pos": "RB",
       "team": "PIT",
       "age": 28.3,
-      "value": 3375,
-      "rank": 45,
+      "value": 3278,
+      "rank": 49,
       "rookie": false
      },
      {
       "name": "Kenneth Gainwell",
       "pos": "RB",
       "team": "TBB",
-      "age": 27.5,
-      "value": 3180,
-      "rank": 51,
+      "age": 27.6,
+      "value": 3078,
+      "rank": 53,
       "rookie": false
      },
      {
@@ -3901,17 +3910,17 @@
       "pos": "RB",
       "team": "GBP",
       "age": 23.1,
-      "value": 2768,
+      "value": 2821,
       "rank": 61,
       "rookie": false
      },
      {
       "name": "Audric Estime",
       "pos": "RB",
-      "team": "FA",
+      "team": "MIN",
       "age": 23.1,
-      "value": 1549,
-      "rank": 96,
+      "value": 1380,
+      "rank": 102,
       "rookie": false
      }
     ],
@@ -3921,17 +3930,17 @@
       "pos": "WR",
       "team": "GBP",
       "age": 27.4,
-      "value": 5814,
-      "rank": 19,
+      "value": 5835,
+      "rank": 22,
       "rookie": false
      },
      {
       "name": "A.J. Brown",
       "pos": "WR",
       "team": "NEP",
-      "age": 29.2,
-      "value": 5236,
-      "rank": 28,
+      "age": 29.3,
+      "value": 5124,
+      "rank": 30,
       "rookie": false
      },
      {
@@ -3939,7 +3948,7 @@
       "pos": "WR",
       "team": "LAR",
       "age": 33.8,
-      "value": 4597,
+      "value": 4599,
       "rank": 35,
       "rookie": false
      },
@@ -3948,8 +3957,8 @@
       "pos": "WR",
       "team": "PHI",
       "age": 25.3,
-      "value": 3688,
-      "rank": 57,
+      "value": 3707,
+      "rank": 54,
       "rookie": false
      },
      {
@@ -3957,8 +3966,8 @@
       "pos": "WR",
       "team": "NEP",
       "age": 26.5,
-      "value": 3480,
-      "rank": 65,
+      "value": 3502,
+      "rank": 61,
       "rookie": false
      },
      {
@@ -3966,8 +3975,8 @@
       "pos": "WR",
       "team": "NOS",
       "age": 28.8,
-      "value": 3241,
-      "rank": 72,
+      "value": 3327,
+      "rank": 69,
       "rookie": false
      },
      {
@@ -3975,7 +3984,7 @@
       "pos": "WR",
       "team": "HOU",
       "age": 24.1,
-      "value": 2983,
+      "value": 2968,
       "rank": 80,
       "rookie": false
      },
@@ -3984,8 +3993,8 @@
       "pos": "WR",
       "team": "TEN",
       "age": 23.3,
-      "value": 2750,
-      "rank": 89,
+      "value": 2708,
+      "rank": 91,
       "rookie": false
      },
      {
@@ -3993,16 +4002,16 @@
       "pos": "WR",
       "team": "BUF",
       "age": 24.2,
-      "value": 2613,
-      "rank": 96,
+      "value": 2595,
+      "rank": 95,
       "rookie": true
      },
      {
       "name": "Tyquan Thornton",
       "pos": "WR",
       "team": "KCC",
-      "age": 26.1,
-      "value": 2378,
+      "age": 26.2,
+      "value": 2400,
       "rank": 106,
       "rookie": false
      },
@@ -4011,8 +4020,8 @@
       "pos": "WR",
       "team": "NEP",
       "age": 33,
-      "value": 1779,
-      "rank": 126,
+      "value": 1978,
+      "rank": 120,
       "rookie": false
      }
     ],
@@ -4021,8 +4030,8 @@
       "name": "Pat Freiermuth",
       "pos": "TE",
       "team": "PIT",
-      "age": 27.9,
-      "value": 2856,
+      "age": 28,
+      "value": 2858,
       "rank": 27,
       "rookie": false
      },
@@ -4031,8 +4040,17 @@
       "pos": "TE",
       "team": "PIT",
       "age": 25.1,
-      "value": 2358,
-      "rank": 39,
+      "value": 2534,
+      "rank": 34,
+      "rookie": false
+     },
+     {
+      "name": "Darren Waller",
+      "pos": "TE",
+      "team": "CAR",
+      "age": 34.1,
+      "value": 2270,
+      "rank": 42,
       "rookie": false
      },
      {
@@ -4040,17 +4058,17 @@
       "pos": "TE",
       "team": "NYG",
       "age": 25.6,
-      "value": 2263,
-      "rank": 41,
+      "value": 2228,
+      "rank": 43,
       "rookie": false
      },
      {
-      "name": "Darren Waller",
+      "name": "Noah Fant",
       "pos": "TE",
-      "team": "CAR",
-      "age": 34,
-      "value": 1943,
-      "rank": 46,
+      "team": "NOS",
+      "age": 28.9,
+      "value": 1843,
+      "rank": 48,
       "rookie": false
      },
      {
@@ -4058,7 +4076,7 @@
       "pos": "TE",
       "team": "GBP",
       "age": 26.1,
-      "value": 1752,
+      "value": 1703,
       "rank": 52,
       "rookie": false
      }
@@ -4068,111 +4086,111 @@
       "name": "2028 1st from Jimmy Marino",
       "year": "2028",
       "round": 1,
-      "value": 5223,
+      "value": 5228,
       "from": "Jimmy Marino"
      },
      {
       "name": "2029 1st from Jimmy Marino",
       "year": "2029",
       "round": 1,
-      "value": 4606,
+      "value": 4672,
       "from": "Jimmy Marino"
      },
      {
       "name": "2027 2nd from Jimmy Marino",
       "year": "2027",
       "round": 2,
-      "value": 4556,
+      "value": 4529,
       "from": "Jimmy Marino"
      },
      {
       "name": "2028 2nd from Jimmy Marino",
       "year": "2028",
       "round": 2,
-      "value": 4017,
+      "value": 4022,
       "from": "Jimmy Marino"
      },
      {
       "name": "2029 2nd from Jimmy Marino",
       "year": "2029",
       "round": 2,
-      "value": 3530,
+      "value": 3617,
       "from": "Jimmy Marino"
      },
      {
       "name": "2027 3rd from Jimmy Marino",
       "year": "2027",
       "round": 3,
-      "value": 3117,
+      "value": 3112,
       "from": "Jimmy Marino"
      },
      {
       "name": "2028 3rd from Jimmy Marino",
       "year": "2028",
       "round": 3,
-      "value": 2827,
+      "value": 2841,
       "from": "Jimmy Marino"
      },
      {
       "name": "2027 4th from Jimmy Marino",
       "year": "2027",
       "round": 4,
-      "value": 2756,
+      "value": 2820,
       "from": "Jimmy Marino"
      },
      {
       "name": "2029 3rd from Jimmy Marino",
       "year": "2029",
       "round": 3,
-      "value": 2474,
+      "value": 2508,
       "from": "Jimmy Marino"
      },
      {
       "name": "2028 4th from Jimmy Marino",
       "year": "2028",
       "round": 4,
-      "value": 2462,
+      "value": 2502,
       "from": "Jimmy Marino"
      },
      {
       "name": "2029 4th from Jimmy Marino",
       "year": "2029",
       "round": 4,
-      "value": 2199,
+      "value": 2263,
       "from": "Jimmy Marino"
      }
     ]
    },
    "rid": 3,
    "groupValues": {
-    "qb": 19237,
-    "rb": 25204,
-    "wr": 38559,
-    "te": 11172,
-    "picks": 37767
+    "qb": 19483,
+    "rb": 24675,
+    "wr": 38743,
+    "te": 13436,
+    "picks": 38114
    },
    "counts": {
     "qb": 6,
     "rb": 7,
     "wr": 11,
-    "te": 5,
+    "te": 6,
     "picks": 11
    },
    "best": [
     {
      "name": "Christian Watson",
      "pos": "WR",
-     "value": 5814
+     "value": 5835
     },
     {
      "name": "Saquon Barkley",
      "pos": "RB",
-     "value": 5700
+     "value": 5442
     },
     {
      "name": "Jayden Daniels",
      "pos": "QB",
-     "value": 5531
+     "value": 5397
     }
    ],
    "team": "Jimmy Marino",
